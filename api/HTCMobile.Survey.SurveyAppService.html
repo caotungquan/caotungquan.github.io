@@ -1,0 +1,1179 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SurveyAppService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SurveyAppService
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.Survey.SurveyAppService">
+  
+  
+  <h1 id="HTCMobile_Survey_SurveyAppService" data-uid="HTCMobile.Survey.SurveyAppService" class="text-break">Class SurveyAppService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.AbpServiceBase</span></div>
+    <div class="level2"><span class="xref">Abp.Application.Services.ApplicationService</span></div>
+    <div class="level3"><a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html">HTCMobileAppServiceBase</a></div>
+    <div class="level4"><span class="xref">SurveyAppService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span></div>
+    <div><a class="xref" href="HTCMobile.Survey.ISurveyAppService.html">ISurveyAppService</a></div>
+    <div><span class="xref">Abp.Application.Services.IApplicationService</span></div>
+    <div><span class="xref">Abp.Dependency.ITransientDependency</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_TenantManager">HTCMobileAppServiceBase.TenantManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_UserManager">HTCMobileAppServiceBase.UserManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserAsync">HTCMobileAppServiceBase.GetCurrentUserAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserTimeZoneAsync">HTCMobileAppServiceBase.GetCurrentUserTimeZoneAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetUserTimeZone_System_Nullable_System_Int64__">HTCMobileAppServiceBase.GetUserTimeZone(Nullable&lt;Int64&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentTenantAsync">HTCMobileAppServiceBase.GetCurrentTenantAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_CheckErrors_Microsoft_AspNetCore_Identity_IdentityResult_">HTCMobileAppServiceBase.CheckErrors(IdentityResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcel__1_System_Collections_Generic_List___0__System_String_">HTCMobileAppServiceBase.ExportExcel&lt;T&gt;(List&lt;T&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcelNoData__1_System_String_">HTCMobileAppServiceBase.ExportExcelNoData&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_Base64ToImage_System_String_">HTCMobileAppServiceBase.Base64ToImage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImage_Microsoft_AspNetCore_Http_IFormFile_">HTCMobileAppServiceBase.SaveImage(IFormFile)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImageFromBase64_System_String_System_String_">HTCMobileAppServiceBase.SaveImageFromBase64(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveFileFromBase64_System_String_System_String_System_String_System_String_System_Int32_">HTCMobileAppServiceBase.SaveFileFromBase64(String, String, String, String, Int32)</a>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.CommonPostfixes</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGrantedAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGranted(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabledAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabled(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AbpSession</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AppliedCrossCuttingConcerns</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.SettingManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.UnitOfWorkManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.CurrentUnitOfWork</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSourceName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSource</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.ObjectMapper</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.Survey.html">HTCMobile.Survey</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Application.dll</h6>
+  <h5 id="HTCMobile_Survey_SurveyAppService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DontWrapResult]
+[ApiVersion(&quot;1&quot;)]
+[ApiVersion(&quot;2&quot;)]
+[Route(&quot;api/v{version}/Survey&quot;)]
+public class SurveyAppService : HTCMobileAppServiceBase, IAvoidDuplicateCrossCuttingConcerns, ISurveyAppService, IApplicationService, ITransientDependency</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService__ctor_" data-uid="HTCMobile.Survey.SurveyAppService.#ctor*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService__ctor_Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcSurveyAnswer_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcCar_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcAgency_System_Int64__Abp_Runtime_Caching_ICacheManager_" data-uid="HTCMobile.Survey.SurveyAppService.#ctor(Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcSurveyAnswer,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcCar,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcAgency,System.Int64},Abp.Runtime.Caching.ICacheManager)">SurveyAppService(IRepository&lt;HtcSurveyAnswer, Int64&gt;, IRepository&lt;HtcCar, Int64&gt;, IRepository&lt;HtcAgency, Int64&gt;, ICacheManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurveyAppService(IRepository&lt;HtcSurveyAnswer, long&gt; surveyRepository, IRepository&lt;HtcCar, long&gt; carRepository, IRepository&lt;HtcAgency, long&gt; agencyRepository, ICacheManager cacheManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcSurveyAnswer.html">HtcSurveyAnswer</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">surveyRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCar.html">HtcCar</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">carRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcAgency.html">HtcAgency</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">agencyRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Runtime.Caching.ICacheManager</span></td>
+        <td><span class="parametername">cacheManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_CheckSurveyCustomer_" data-uid="HTCMobile.Survey.SurveyAppService.CheckSurveyCustomer*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_CheckSurveyCustomer_System_String_" data-uid="HTCMobile.Survey.SurveyAppService.CheckSurveyCustomer(System.String)">CheckSurveyCustomer(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;CMSCheckSurvey&quot;)]
+[HttpGet]
+public Task&lt;ResponseModel&lt;SurveyDto&gt;&gt; CheckSurveyCustomer(string _token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">_token</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_CMSDeleteAnswerSale_" data-uid="HTCMobile.Survey.SurveyAppService.CMSDeleteAnswerSale*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_CMSDeleteAnswerSale_System_Collections_Generic_List_System_Int64__" data-uid="HTCMobile.Survey.SurveyAppService.CMSDeleteAnswerSale(System.Collections.Generic.List{System.Int64})">CMSDeleteAnswerSale(List&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSDeleteAnswerSale&quot;)]
+public Task&lt;ResponseModel&lt;SurveyDto&gt;&gt; CMSDeleteAnswerSale(List&lt;long&gt; Ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">Ids</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_CMSDeleteAnswerService_" data-uid="HTCMobile.Survey.SurveyAppService.CMSDeleteAnswerService*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_CMSDeleteAnswerService_System_Collections_Generic_List_System_Int64__" data-uid="HTCMobile.Survey.SurveyAppService.CMSDeleteAnswerService(System.Collections.Generic.List{System.Int64})">CMSDeleteAnswerService(List&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSDeleteAnswerService&quot;)]
+public Task&lt;ResponseModel&lt;SurveyDto&gt;&gt; CMSDeleteAnswerService(List&lt;long&gt; Ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">Ids</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_CMSExportSaleAnswer_" data-uid="HTCMobile.Survey.SurveyAppService.CMSExportSaleAnswer*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_CMSExportSaleAnswer_HTCMobile_Survey_Dto_ConditionExportAnswerInput_" data-uid="HTCMobile.Survey.SurveyAppService.CMSExportSaleAnswer(HTCMobile.Survey.Dto.ConditionExportAnswerInput)">CMSExportSaleAnswer(ConditionExportAnswerInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;CMSExportSaleAnswer&quot;)]
+[HttpGet]
+public Task&lt;IActionResult&gt; CMSExportSaleAnswer(ConditionExportAnswerInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.ConditionExportAnswerInput.html">ConditionExportAnswerInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_CMSExportSaleSurvey_" data-uid="HTCMobile.Survey.SurveyAppService.CMSExportSaleSurvey*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_CMSExportSaleSurvey_HTCMobile_Survey_Dto_ConditionExportSurveyInput_" data-uid="HTCMobile.Survey.SurveyAppService.CMSExportSaleSurvey(HTCMobile.Survey.Dto.ConditionExportSurveyInput)">CMSExportSaleSurvey(ConditionExportSurveyInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;CMSExportSaleSurvey&quot;)]
+[HttpGet]
+public Task&lt;IActionResult&gt; CMSExportSaleSurvey(ConditionExportSurveyInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.ConditionExportSurveyInput.html">ConditionExportSurveyInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_CMSExportServiceAnswer_" data-uid="HTCMobile.Survey.SurveyAppService.CMSExportServiceAnswer*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_CMSExportServiceAnswer_HTCMobile_Survey_Dto_ConditionExportAnswerInput_" data-uid="HTCMobile.Survey.SurveyAppService.CMSExportServiceAnswer(HTCMobile.Survey.Dto.ConditionExportAnswerInput)">CMSExportServiceAnswer(ConditionExportAnswerInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;CMSExportServiceAnswer&quot;)]
+[HttpGet]
+public Task&lt;IActionResult&gt; CMSExportServiceAnswer(ConditionExportAnswerInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.ConditionExportAnswerInput.html">ConditionExportAnswerInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_CMSExportServiceSurvey_" data-uid="HTCMobile.Survey.SurveyAppService.CMSExportServiceSurvey*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_CMSExportServiceSurvey_HTCMobile_Survey_Dto_ConditionExportSurveyInput_" data-uid="HTCMobile.Survey.SurveyAppService.CMSExportServiceSurvey(HTCMobile.Survey.Dto.ConditionExportSurveyInput)">CMSExportServiceSurvey(ConditionExportSurveyInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;CMSExportServiceSurvey&quot;)]
+[HttpGet]
+public Task&lt;IActionResult&gt; CMSExportServiceSurvey(ConditionExportSurveyInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.ConditionExportSurveyInput.html">ConditionExportSurveyInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_CMSGetDetailAnswer_" data-uid="HTCMobile.Survey.SurveyAppService.CMSGetDetailAnswer*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_CMSGetDetailAnswer_Abp_Application_Services_Dto_EntityDto_System_Int64__" data-uid="HTCMobile.Survey.SurveyAppService.CMSGetDetailAnswer(Abp.Application.Services.Dto.EntityDto{System.Int64})">CMSGetDetailAnswer(EntityDto&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetDetailAnswer&quot;)]
+public Task&lt;ResponseModel&lt;SurveyAnswerDto&gt;&gt; CMSGetDetailAnswer(EntityDto&lt;long&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyAnswerDto.html">SurveyAnswerDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_GetAllSaleSurveyAnswer_" data-uid="HTCMobile.Survey.SurveyAppService.GetAllSaleSurveyAnswer*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_GetAllSaleSurveyAnswer_HTCMobile_Survey_Dto_SurveyAnswerFilterInput_" data-uid="HTCMobile.Survey.SurveyAppService.GetAllSaleSurveyAnswer(HTCMobile.Survey.Dto.SurveyAnswerFilterInput)">GetAllSaleSurveyAnswer(SurveyAnswerFilterInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;CMSGetListSaleSurveyAnswer&quot;)]
+[HttpPost]
+public Task&lt;ResponseCMSModel&lt;List&lt;SurveyDto&gt;&gt;&gt; GetAllSaleSurveyAnswer(SurveyAnswerFilterInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.SurveyAnswerFilterInput.html">SurveyAnswerFilterInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_GetAllSaleSurveyRequested_" data-uid="HTCMobile.Survey.SurveyAppService.GetAllSaleSurveyRequested*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_GetAllSaleSurveyRequested_HTCMobile_Survey_Dto_SurveyRequestedFilterInput_" data-uid="HTCMobile.Survey.SurveyAppService.GetAllSaleSurveyRequested(HTCMobile.Survey.Dto.SurveyRequestedFilterInput)">GetAllSaleSurveyRequested(SurveyRequestedFilterInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;CMSGetListSaleSurveyRequested&quot;)]
+[HttpPost]
+public Task&lt;ResponseCMSModel&lt;List&lt;SurveyDto&gt;&gt;&gt; GetAllSaleSurveyRequested(SurveyRequestedFilterInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.SurveyRequestedFilterInput.html">SurveyRequestedFilterInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_GetAllServiceSurveyAnswer_" data-uid="HTCMobile.Survey.SurveyAppService.GetAllServiceSurveyAnswer*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_GetAllServiceSurveyAnswer_HTCMobile_Survey_Dto_SurveyAnswerFilterInput_" data-uid="HTCMobile.Survey.SurveyAppService.GetAllServiceSurveyAnswer(HTCMobile.Survey.Dto.SurveyAnswerFilterInput)">GetAllServiceSurveyAnswer(SurveyAnswerFilterInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;CMSGetListServiceSurveyAnswer&quot;)]
+[HttpPost]
+public Task&lt;ResponseCMSModel&lt;List&lt;SurveyDto&gt;&gt;&gt; GetAllServiceSurveyAnswer(SurveyAnswerFilterInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.SurveyAnswerFilterInput.html">SurveyAnswerFilterInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_GetAllServiceSurveyRequested_" data-uid="HTCMobile.Survey.SurveyAppService.GetAllServiceSurveyRequested*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_GetAllServiceSurveyRequested_HTCMobile_Survey_Dto_SurveyRequestedFilterInput_" data-uid="HTCMobile.Survey.SurveyAppService.GetAllServiceSurveyRequested(HTCMobile.Survey.Dto.SurveyRequestedFilterInput)">GetAllServiceSurveyRequested(SurveyRequestedFilterInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;CMSGetListServiceSurveyRequested&quot;)]
+[HttpPost]
+public Task&lt;ResponseCMSModel&lt;List&lt;SurveyDto&gt;&gt;&gt; GetAllServiceSurveyRequested(SurveyRequestedFilterInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.SurveyRequestedFilterInput.html">SurveyRequestedFilterInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_GetListCarName_" data-uid="HTCMobile.Survey.SurveyAppService.GetListCarName*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_GetListCarName_System_Int32_System_Int32_" data-uid="HTCMobile.Survey.SurveyAppService.GetListCarName(System.Int32,System.Int32)">GetListCarName(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetListCarNameSurvey&quot;)]
+public Task&lt;ResponseModel&lt;List&lt;string&gt;&gt;&gt; GetListCarName(int surveyType, int status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">surveyType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">status</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_GetSurveyCustomer_" data-uid="HTCMobile.Survey.SurveyAppService.GetSurveyCustomer*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_GetSurveyCustomer_System_String_" data-uid="HTCMobile.Survey.SurveyAppService.GetSurveyCustomer(System.String)">GetSurveyCustomer(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;MobileGetSurvey&quot;)]
+[HttpGet]
+public Task&lt;ResponseModel&lt;SurveyDto&gt;&gt; GetSurveyCustomer(string _phone)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">_phone</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_MobileCheckSurveyCustomer_" data-uid="HTCMobile.Survey.SurveyAppService.MobileCheckSurveyCustomer*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_MobileCheckSurveyCustomer_System_String_" data-uid="HTCMobile.Survey.SurveyAppService.MobileCheckSurveyCustomer(System.String)">MobileCheckSurveyCustomer(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;MobileCheckSurvey&quot;)]
+[HttpGet]
+[AbpAuthorize(new string[]{})]
+public Task&lt;ResponseModel&lt;SurveyDto&gt;&gt; MobileCheckSurveyCustomer(string _token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">_token</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_MobilePostSurveyAnswer_" data-uid="HTCMobile.Survey.SurveyAppService.MobilePostSurveyAnswer*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_MobilePostSurveyAnswer_HTCMobile_Survey_Dto_MobileSurveyAnswerInputDto_" data-uid="HTCMobile.Survey.SurveyAppService.MobilePostSurveyAnswer(HTCMobile.Survey.Dto.MobileSurveyAnswerInputDto)">MobilePostSurveyAnswer(MobileSurveyAnswerInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;MobilePostSurveyAnswer&quot;)]
+[Route(&quot;CMSPostSurveyAnswer&quot;)]
+public Task&lt;ResponseModel&lt;string&gt;&gt; MobilePostSurveyAnswer(MobileSurveyAnswerInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.MobileSurveyAnswerInputDto.html">MobileSurveyAnswerInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_UpdateAnwserSale_" data-uid="HTCMobile.Survey.SurveyAppService.UpdateAnwserSale*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_UpdateAnwserSale_HTCMobile_Survey_Dto_SurveyAnswerDto_" data-uid="HTCMobile.Survey.SurveyAppService.UpdateAnwserSale(HTCMobile.Survey.Dto.SurveyAnswerDto)">UpdateAnwserSale(SurveyAnswerDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSPostAnwserSale&quot;)]
+public Task&lt;ResponseModel&lt;SurveyDto&gt;&gt; UpdateAnwserSale(SurveyAnswerDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.SurveyAnswerDto.html">SurveyAnswerDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_UpdateAnwserService_" data-uid="HTCMobile.Survey.SurveyAppService.UpdateAnwserService*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_UpdateAnwserService_HTCMobile_Survey_Dto_SurveyAnswerDto_" data-uid="HTCMobile.Survey.SurveyAppService.UpdateAnwserService(HTCMobile.Survey.Dto.SurveyAnswerDto)">UpdateAnwserService(SurveyAnswerDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSPostAnwserService&quot;)]
+public Task&lt;ResponseModel&lt;SurveyDto&gt;&gt; UpdateAnwserService(SurveyAnswerDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.SurveyAnswerDto.html">SurveyAnswerDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_SurveyAppService_UpdateApproved_" data-uid="HTCMobile.Survey.SurveyAppService.UpdateApproved*"></a>
+  <h4 id="HTCMobile_Survey_SurveyAppService_UpdateApproved_HTCMobile_Survey_Dto_UpdateSurveyStatusDto_" data-uid="HTCMobile.Survey.SurveyAppService.UpdateApproved(HTCMobile.Survey.Dto.UpdateSurveyStatusDto)">UpdateApproved(UpdateSurveyStatusDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;CMSUpdateApproved&quot;)]
+[HttpPost]
+public Task&lt;ResponseModel&gt; UpdateApproved(UpdateSurveyStatusDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.UpdateSurveyStatusDto.html">UpdateSurveyStatusDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel.html">ResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Survey.ISurveyAppService.html">ISurveyAppService</a>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IApplicationService</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Dependency.ITransientDependency</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

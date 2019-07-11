@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HTCMobileRepositoryBase&lt;TEntity&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HTCMobileRepositoryBase&lt;TEntity&gt;
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.EntityFrameworkCore.Repositories.HTCMobileRepositoryBase`1">
+  
+  
+  <h1 id="HTCMobile_EntityFrameworkCore_Repositories_HTCMobileRepositoryBase_1" data-uid="HTCMobile.EntityFrameworkCore.Repositories.HTCMobileRepositoryBase`1" class="text-break">Class HTCMobileRepositoryBase&lt;TEntity&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for custom repositories of the application.
+This is a shortcut of <a class="xref" href="HTCMobile.EntityFrameworkCore.Repositories.HTCMobileRepositoryBase-2.html">HTCMobileRepositoryBase&lt;TEntity, TPrimaryKey&gt;</a> for <span class="xref">System.Int32</span> primary key.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.Domain.Repositories.AbpRepositoryBase</span>&lt;TEntity, <span class="xref">System.Int32</span>&gt;</div>
+    <div class="level2"><span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase</span>&lt;<a class="xref" href="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.html">HTCMobileDbContext</a>, TEntity, <span class="xref">System.Int32</span>&gt;</div>
+    <div class="level3"><a class="xref" href="HTCMobile.EntityFrameworkCore.Repositories.HTCMobileRepositoryBase-2.html">HTCMobileRepositoryBase</a>&lt;TEntity, <span class="xref">System.Int32</span>&gt;</div>
+    <div class="level4"><span class="xref">HTCMobileRepositoryBase&lt;TEntity&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Domain.Uow.IUnitOfWorkManagerAccessor</span></div>
+    <div><span class="xref">Abp.Domain.Repositories.ISupportsExplicitLoading</span>&lt;TEntity, <span class="xref">System.Int32</span>&gt;</div>
+    <div><span class="xref">Abp.EntityFrameworkCore.Repositories.IRepositoryWithDbContext</span></div>
+    <div><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;TEntity&gt;</div>
+    <div><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;TEntity, <span class="xref">System.Int32</span>&gt;</div>
+    <div><span class="xref">Abp.Domain.Repositories.IRepository</span></div>
+    <div><span class="xref">Abp.Dependency.ITransientDependency</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.GetAll()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.GetAllIncluding(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Object&gt;&gt;[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.GetAllListAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.GetAllListAsync(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.SingleAsync(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.FirstOrDefaultAsync(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.FirstOrDefaultAsync(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.Insert(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.InsertAsync(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.InsertAndGetId(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.InsertAndGetIdAsync(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.InsertOrUpdateAndGetId(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.InsertOrUpdateAndGetIdAsync(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.Update(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.UpdateAsync(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.Delete(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.Delete(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.CountAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.CountAsync(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.LongCountAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.LongCountAsync(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.AttachIfNot(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.GetDbContext()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.EnsureCollectionLoadedAsync&lt;TProperty&gt;(TEntity, System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Collections.Generic.IEnumerable&lt;TProperty&gt;&gt;&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.EnsurePropertyLoadedAsync&lt;TProperty&gt;(TEntity, System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, TProperty&gt;&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.Context</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.Table</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.Transaction</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.Connection</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase&lt;HTCMobile.EntityFrameworkCore.HTCMobileDbContext, TEntity, System.Int32&gt;.TransactionProvider</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.GetAll()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.GetAllIncluding(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Object&gt;&gt;[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.GetAllList()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.GetAllListAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.GetAllList(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.GetAllListAsync(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.Query&lt;T&gt;(System.Func&lt;System.Linq.IQueryable&lt;TEntity&gt;, T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.Get(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.GetAsync(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.Single(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.SingleAsync(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.FirstOrDefault(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.FirstOrDefaultAsync(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.FirstOrDefault(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.FirstOrDefaultAsync(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.Load(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.Insert(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.InsertAsync(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.InsertAndGetId(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.InsertAndGetIdAsync(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.InsertOrUpdate(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.InsertOrUpdateAsync(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.InsertOrUpdateAndGetId(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.InsertOrUpdateAndGetIdAsync(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.Update(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.UpdateAsync(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.Update(System.Int32, System.Action&lt;TEntity&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.UpdateAsync(System.Int32, System.Func&lt;TEntity, System.Threading.Tasks.Task&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.Delete(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.DeleteAsync(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.Delete(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.DeleteAsync(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.Delete(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.DeleteAsync(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.Count()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.CountAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.Count(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.CountAsync(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.LongCount()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.LongCountAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.LongCount(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.LongCountAsync(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.CreateEqualityExpressionForId(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.MultiTenancySide</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.UnitOfWorkManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Repositories.AbpRepositoryBase&lt;TEntity, System.Int32&gt;.IocResolver</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.EntityFrameworkCore.Repositories.html">HTCMobile.EntityFrameworkCore.Repositories</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.EntityFrameworkCore.dll</h6>
+  <h5 id="HTCMobile_EntityFrameworkCore_Repositories_HTCMobileRepositoryBase_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class HTCMobileRepositoryBase&lt;TEntity&gt; : HTCMobileRepositoryBase&lt;TEntity, int&gt;, IUnitOfWorkManagerAccessor, ISupportsExplicitLoading&lt;TEntity, int&gt;, IRepositoryWithDbContext, IRepository&lt;TEntity&gt;, IRepository&lt;TEntity, int&gt;, IRepository, ITransientDependency where TEntity : class, IEntity&lt;int&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td><p>Entity type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_Repositories_HTCMobileRepositoryBase_1__ctor_" data-uid="HTCMobile.EntityFrameworkCore.Repositories.HTCMobileRepositoryBase`1.#ctor*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_Repositories_HTCMobileRepositoryBase_1__ctor_Abp_EntityFrameworkCore_IDbContextProvider_HTCMobile_EntityFrameworkCore_HTCMobileDbContext__" data-uid="HTCMobile.EntityFrameworkCore.Repositories.HTCMobileRepositoryBase`1.#ctor(Abp.EntityFrameworkCore.IDbContextProvider{HTCMobile.EntityFrameworkCore.HTCMobileDbContext})">HTCMobileRepositoryBase(IDbContextProvider&lt;HTCMobileDbContext&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HTCMobileRepositoryBase(IDbContextProvider&lt;HTCMobileDbContext&gt; dbContextProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.EntityFrameworkCore.IDbContextProvider</span>&lt;<a class="xref" href="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.html">HTCMobileDbContext</a>&gt;</td>
+        <td><span class="parametername">dbContextProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Domain.Uow.IUnitOfWorkManagerAccessor</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Repositories.ISupportsExplicitLoading&lt;TEntity, TPrimaryKey&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.EntityFrameworkCore.Repositories.IRepositoryWithDbContext</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Repositories.IRepository&lt;TEntity&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Repositories.IRepository&lt;TEntity, TPrimaryKey&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Repositories.IRepository</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Dependency.ITransientDependency</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

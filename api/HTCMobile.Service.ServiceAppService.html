@@ -1,0 +1,1958 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ServiceAppService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ServiceAppService
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.Service.ServiceAppService">
+  
+  
+  <h1 id="HTCMobile_Service_ServiceAppService" data-uid="HTCMobile.Service.ServiceAppService" class="text-break">Class ServiceAppService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.AbpServiceBase</span></div>
+    <div class="level2"><span class="xref">Abp.Application.Services.ApplicationService</span></div>
+    <div class="level3"><a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html">HTCMobileAppServiceBase</a></div>
+    <div class="level4"><span class="xref">ServiceAppService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span></div>
+    <div><a class="xref" href="HTCMobile.Service.IServiceAppService.html">IServiceAppService</a></div>
+    <div><span class="xref">Abp.Application.Services.IApplicationService</span></div>
+    <div><span class="xref">Abp.Dependency.ITransientDependency</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_TenantManager">HTCMobileAppServiceBase.TenantManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_UserManager">HTCMobileAppServiceBase.UserManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserAsync">HTCMobileAppServiceBase.GetCurrentUserAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserTimeZoneAsync">HTCMobileAppServiceBase.GetCurrentUserTimeZoneAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetUserTimeZone_System_Nullable_System_Int64__">HTCMobileAppServiceBase.GetUserTimeZone(Nullable&lt;Int64&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentTenantAsync">HTCMobileAppServiceBase.GetCurrentTenantAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_CheckErrors_Microsoft_AspNetCore_Identity_IdentityResult_">HTCMobileAppServiceBase.CheckErrors(IdentityResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcel__1_System_Collections_Generic_List___0__System_String_">HTCMobileAppServiceBase.ExportExcel&lt;T&gt;(List&lt;T&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcelNoData__1_System_String_">HTCMobileAppServiceBase.ExportExcelNoData&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_Base64ToImage_System_String_">HTCMobileAppServiceBase.Base64ToImage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImage_Microsoft_AspNetCore_Http_IFormFile_">HTCMobileAppServiceBase.SaveImage(IFormFile)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImageFromBase64_System_String_System_String_">HTCMobileAppServiceBase.SaveImageFromBase64(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveFileFromBase64_System_String_System_String_System_String_System_String_System_Int32_">HTCMobileAppServiceBase.SaveFileFromBase64(String, String, String, String, Int32)</a>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.CommonPostfixes</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGrantedAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGranted(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabledAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabled(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AbpSession</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AppliedCrossCuttingConcerns</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.SettingManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.UnitOfWorkManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.CurrentUnitOfWork</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSourceName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSource</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.ObjectMapper</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.Service.html">HTCMobile.Service</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Application.dll</h6>
+  <h5 id="HTCMobile_Service_ServiceAppService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DontWrapResult]
+[ApiVersion(&quot;1&quot;)]
+[ApiVersion(&quot;2&quot;)]
+[Route(&quot;api/v{version}&quot;)]
+public class ServiceAppService : HTCMobileAppServiceBase, IAvoidDuplicateCrossCuttingConcerns, IServiceAppService, IApplicationService, ITransientDependency</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService__ctor_" data-uid="HTCMobile.Service.ServiceAppService.#ctor*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService__ctor_Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcSetServiceSchedule_System_Int64__Abp_EntityFrameworkCore_IDbContextProvider_HTCMobile_EntityFrameworkCore_HTCMobileDbContext__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcAgency_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcMaintenancePriceLists_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcMaintenancePriceDetails_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcMaintenancePriceAgency_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcCar_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcCity_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcTerm_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcMaintenanceLevel_System_Int64__HTCMobile_ISendMailManager_HTCMobile_Services_Dto_SendMailAppointmentDto__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcTemplateEmail_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Authorization_Users_User_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcCustomerCar_System_Int64__Abp_Runtime_Caching_ICacheManager_" data-uid="HTCMobile.Service.ServiceAppService.#ctor(Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcSetServiceSchedule,System.Int64},Abp.EntityFrameworkCore.IDbContextProvider{HTCMobile.EntityFrameworkCore.HTCMobileDbContext},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcAgency,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcMaintenancePriceLists,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcMaintenancePriceDetails,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcMaintenancePriceAgency,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcCar,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcCity,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcTerm,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcMaintenanceLevel,System.Int64},HTCMobile.ISendMailManager{HTCMobile.Services.Dto.SendMailAppointmentDto},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcTemplateEmail,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Authorization.Users.User,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcCustomerCar,System.Int64},Abp.Runtime.Caching.ICacheManager)">ServiceAppService(IRepository&lt;HtcSetServiceSchedule, Int64&gt;, IDbContextProvider&lt;HTCMobileDbContext&gt;, IRepository&lt;HtcAgency, Int64&gt;, IRepository&lt;HtcMaintenancePriceLists, Int64&gt;, IRepository&lt;HtcMaintenancePriceDetails, Int64&gt;, IRepository&lt;HtcMaintenancePriceAgency, Int64&gt;, IRepository&lt;HtcCar, Int64&gt;, IRepository&lt;HtcCity, Int64&gt;, IRepository&lt;HtcTerm, Int64&gt;, IRepository&lt;HtcMaintenanceLevel, Int64&gt;, ISendMailManager&lt;SendMailAppointmentDto&gt;, IRepository&lt;HtcTemplateEmail, Int64&gt;, IRepository&lt;User, Int64&gt;, IRepository&lt;HtcCustomerCar, Int64&gt;, ICacheManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServiceAppService(IRepository&lt;HtcSetServiceSchedule, long&gt; scheduleRepository, IDbContextProvider&lt;HTCMobileDbContext&gt; DbContextProvider, IRepository&lt;HtcAgency, long&gt; agencyRepository, IRepository&lt;HtcMaintenancePriceLists, long&gt; HtcMaintenancePriceListsRepository, IRepository&lt;HtcMaintenancePriceDetails, long&gt; HtcMaintenancePriceDetailsRepository, IRepository&lt;HtcMaintenancePriceAgency, long&gt; HtcMaintenancePriceAgencyRepository, IRepository&lt;HtcCar, long&gt; carRepository, IRepository&lt;HtcCity, long&gt; cityRepository, IRepository&lt;HtcTerm, long&gt; termRepository, IRepository&lt;HtcMaintenanceLevel, long&gt; maintenanceLevelRepository, ISendMailManager&lt;SendMailAppointmentDto&gt; sendMailManager, IRepository&lt;HtcTemplateEmail, long&gt; templateMailRepository, IRepository&lt;User, long&gt; userRepository, IRepository&lt;HtcCustomerCar, long&gt; customerCarRepository, ICacheManager cacheManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcSetServiceSchedule.html">HtcSetServiceSchedule</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">scheduleRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.EntityFrameworkCore.IDbContextProvider</span>&lt;<a class="xref" href="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.html">HTCMobileDbContext</a>&gt;</td>
+        <td><span class="parametername">DbContextProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcAgency.html">HtcAgency</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">agencyRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcMaintenancePriceLists.html">HtcMaintenancePriceLists</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">HtcMaintenancePriceListsRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcMaintenancePriceDetails.html">HtcMaintenancePriceDetails</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">HtcMaintenancePriceDetailsRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcMaintenancePriceAgency.html">HtcMaintenancePriceAgency</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">HtcMaintenancePriceAgencyRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCar.html">HtcCar</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">carRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCity.html">HtcCity</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">cityRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcTerm.html">HtcTerm</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">termRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcMaintenanceLevel.html">HtcMaintenanceLevel</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">maintenanceLevelRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ISendMailManager-1.html">ISendMailManager</a>&lt;<a class="xref" href="HTCMobile.Services.Dto.SendMailAppointmentDto.html">SendMailAppointmentDto</a>&gt;</td>
+        <td><span class="parametername">sendMailManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcTemplateEmail.html">HtcTemplateEmail</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">templateMailRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">userRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCustomerCar.html">HtcCustomerCar</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">customerCarRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Runtime.Caching.ICacheManager</span></td>
+        <td><span class="parametername">cacheManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSCreateUpdateMaintenanceCar_" data-uid="HTCMobile.Service.ServiceAppService.CMSCreateUpdateMaintenanceCar*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSCreateUpdateMaintenanceCar_HTCMobile_Services_Dto_CMSCreateUpdateInputMaintanenceCarDto_" data-uid="HTCMobile.Service.ServiceAppService.CMSCreateUpdateMaintenanceCar(HTCMobile.Services.Dto.CMSCreateUpdateInputMaintanenceCarDto)">CMSCreateUpdateMaintenanceCar(CMSCreateUpdateInputMaintanenceCarDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AbpAuthorize(new string[]{&quot;Pages.Services.CreateEdit&quot;})]
+[HttpPost]
+[Route(&quot;Maintenance/CMSMaintenanceCarPost&quot;)]
+public Task&lt;ResponseModel&lt;CMSResponseMaintenanceCarDto&gt;&gt; CMSCreateUpdateMaintenanceCar(CMSCreateUpdateInputMaintanenceCarDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.CMSCreateUpdateInputMaintanenceCarDto.html">CMSCreateUpdateInputMaintanenceCarDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Services.Dto.CMSResponseMaintenanceCarDto.html">CMSResponseMaintenanceCarDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSDeleteAccessary_" data-uid="HTCMobile.Service.ServiceAppService.CMSDeleteAccessary*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSDeleteAccessary_System_Collections_Generic_List_System_Int64__" data-uid="HTCMobile.Service.ServiceAppService.CMSDeleteAccessary(System.Collections.Generic.List{System.Int64})">CMSDeleteAccessary(List&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSDeleteAccessary&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Services.Delete&quot;})]
+public Task&lt;ResponseModel&lt;string&gt;&gt; CMSDeleteAccessary(List&lt;long&gt; Ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">Ids</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSDeleteAgencies_" data-uid="HTCMobile.Service.ServiceAppService.CMSDeleteAgencies*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSDeleteAgencies_System_Collections_Generic_List_System_Int64__" data-uid="HTCMobile.Service.ServiceAppService.CMSDeleteAgencies(System.Collections.Generic.List{System.Int64})">CMSDeleteAgencies(List&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSDeleteAgencies&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Services.Delete&quot;})]
+public Task&lt;ResponseModel&lt;string&gt;&gt; CMSDeleteAgencies(List&lt;long&gt; Ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">Ids</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSDeleteMaintaenanceCarMulti_" data-uid="HTCMobile.Service.ServiceAppService.CMSDeleteMaintaenanceCarMulti*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSDeleteMaintaenanceCarMulti_HTCMobile_Services_Dto_CMSDeleteMaintenanceCarInputDto_" data-uid="HTCMobile.Service.ServiceAppService.CMSDeleteMaintaenanceCarMulti(HTCMobile.Services.Dto.CMSDeleteMaintenanceCarInputDto)">CMSDeleteMaintaenanceCarMulti(CMSDeleteMaintenanceCarInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;Maintenance/CMSMaintenanceCarDelete&quot;)]
+public Task&lt;ResponseModel&gt; CMSDeleteMaintaenanceCarMulti(CMSDeleteMaintenanceCarInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.CMSDeleteMaintenanceCarInputDto.html">CMSDeleteMaintenanceCarInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel.html">ResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSExportMaintenanceCar_" data-uid="HTCMobile.Service.ServiceAppService.CMSExportMaintenanceCar*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSExportMaintenanceCar_HTCMobile_Services_Dto_GetMaintenanceInput_" data-uid="HTCMobile.Service.ServiceAppService.CMSExportMaintenanceCar(HTCMobile.Services.Dto.GetMaintenanceInput)">CMSExportMaintenanceCar(GetMaintenanceInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;Maintenance/CMSExportMaintenanceCarList&quot;)]
+public Task&lt;IActionResult&gt; CMSExportMaintenanceCar(GetMaintenanceInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.GetMaintenanceInput.html">GetMaintenanceInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSExportSchedule_" data-uid="HTCMobile.Service.ServiceAppService.CMSExportSchedule*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSExportSchedule_HTCMobile_Services_Dto_ConditionExportAppointment_" data-uid="HTCMobile.Service.ServiceAppService.CMSExportSchedule(HTCMobile.Services.Dto.ConditionExportAppointment)">CMSExportSchedule(ConditionExportAppointment)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;Appointment/CMSExport&quot;)]
+public Task&lt;IActionResult&gt; CMSExportSchedule(ConditionExportAppointment input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.ConditionExportAppointment.html">ConditionExportAppointment</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSGetDetailMaintenanceCar_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetDetailMaintenanceCar*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSGetDetailMaintenanceCar_System_Int64_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetDetailMaintenanceCar(System.Int64)">CMSGetDetailMaintenanceCar(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;Maintenance/CMSMaintenanceCarGetDetail&quot;)]
+public Task&lt;ResponseModel&lt;CMSResponseMaintenanceCarDto&gt;&gt; CMSGetDetailMaintenanceCar(long id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Services.Dto.CMSResponseMaintenanceCarDto.html">CMSResponseMaintenanceCarDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSGetListAgencies_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListAgencies*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSGetListAgencies_System_Nullable_System_Int64__System_String_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListAgencies(System.Nullable{System.Int64},System.String)">CMSGetListAgencies(Nullable&lt;Int64&gt;, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetListAgencies&quot;)]
+public Task&lt;ResponseModel&lt;List&lt;CMSAgencyWithMaintenanceNameDto&gt;&gt;&gt; CMSGetListAgencies(long? currentMaintenanceId, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">currentMaintenanceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Services.Dto.CMSAgencyWithMaintenanceNameDto.html">CMSAgencyWithMaintenanceNameDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSGetListCarModelById_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListCarModelById*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSGetListCarModelById_System_Int64_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListCarModelById(System.Int64)">CMSGetListCarModelById(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;Maintenance/CMSGetListCarModel&quot;)]
+public Task&lt;ResponseModel&lt;List&lt;string&gt;&gt;&gt; CMSGetListCarModelById(long maintenanceId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">maintenanceId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSGetListCarModelByIdPreview_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListCarModelByIdPreview*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSGetListCarModelByIdPreview" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListCarModelByIdPreview">CMSGetListCarModelByIdPreview()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;Maintenance/CMSGetListCarModelPreview&quot;)]
+public Task&lt;ResponseModel&lt;List&lt;string&gt;&gt;&gt; CMSGetListCarModelByIdPreview()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSGetListMaintenanceCar_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListMaintenanceCar*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSGetListMaintenanceCar_HTCMobile_Services_Dto_CMSGetListMaintenanceCarInputDto_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListMaintenanceCar(HTCMobile.Services.Dto.CMSGetListMaintenanceCarInputDto)">CMSGetListMaintenanceCar(CMSGetListMaintenanceCarInputDto)</h4>
+  <div class="markdown level1 summary"><p>Get list cap bao duong +xe for CMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;Maintenance/CMSMaintenanceCarGetList&quot;)]
+public Task&lt;ResponseCMSModel&lt;List&lt;CMSResponseMaintenanceCarDto&gt;&gt;&gt; CMSGetListMaintenanceCar(CMSGetListMaintenanceCarInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.CMSGetListMaintenanceCarInputDto.html">CMSGetListMaintenanceCarInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Services.Dto.CMSResponseMaintenanceCarDto.html">CMSResponseMaintenanceCarDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSGetListMaintenanceCarAndAccessary_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListMaintenanceCarAndAccessary*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSGetListMaintenanceCarAndAccessary_HTCMobile_Services_Dto_GetMaintenanceCarAndAccessaryInput_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListMaintenanceCarAndAccessary(HTCMobile.Services.Dto.GetMaintenanceCarAndAccessaryInput)">CMSGetListMaintenanceCarAndAccessary(GetMaintenanceCarAndAccessaryInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;Maintenance/CMSGetListMaintenanceCarAndAccessary&quot;)]
+public Task&lt;ResponseCMSModel&lt;List&lt;MaintenanceCarAndAccessaryDto&gt;&gt;&gt; CMSGetListMaintenanceCarAndAccessary(GetMaintenanceCarAndAccessaryInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.GetMaintenanceCarAndAccessaryInput.html">GetMaintenanceCarAndAccessaryInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Services.Dto.MaintenanceCarAndAccessaryDto.html">MaintenanceCarAndAccessaryDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSGetListMaintenanceCarAndAccessaryPreview_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListMaintenanceCarAndAccessaryPreview*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSGetListMaintenanceCarAndAccessaryPreview_HTCMobile_Services_Dto_GetMaintenanceCarAndAccessaryPreviewInput_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListMaintenanceCarAndAccessaryPreview(HTCMobile.Services.Dto.GetMaintenanceCarAndAccessaryPreviewInput)">CMSGetListMaintenanceCarAndAccessaryPreview(GetMaintenanceCarAndAccessaryPreviewInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;Maintenance/CMSGetListMaintenanceCarAndAccessaryPreview&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Services&quot;})]
+public Task&lt;ResponseCMSModel&lt;List&lt;MaintenanceCarAndAccessaryDto&gt;&gt;&gt; CMSGetListMaintenanceCarAndAccessaryPreview(GetMaintenanceCarAndAccessaryPreviewInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.GetMaintenanceCarAndAccessaryPreviewInput.html">GetMaintenanceCarAndAccessaryPreviewInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Services.Dto.MaintenanceCarAndAccessaryDto.html">MaintenanceCarAndAccessaryDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSGetListMaintenanceCarAndAgency_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListMaintenanceCarAndAgency*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSGetListMaintenanceCarAndAgency_HTCMobile_Services_Dto_GetMaintenanceCarAndAgencyInput_" data-uid="HTCMobile.Service.ServiceAppService.CMSGetListMaintenanceCarAndAgency(HTCMobile.Services.Dto.GetMaintenanceCarAndAgencyInput)">CMSGetListMaintenanceCarAndAgency(GetMaintenanceCarAndAgencyInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;Maintenance/CMSGetListMaintenanceCarAndAgency&quot;)]
+public Task&lt;ResponseCMSModel&lt;List&lt;MaintenanceCarAndAgencyDto&gt;&gt;&gt; CMSGetListMaintenanceCarAndAgency(GetMaintenanceCarAndAgencyInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.GetMaintenanceCarAndAgencyInput.html">GetMaintenanceCarAndAgencyInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Services.Dto.MaintenanceCarAndAgencyDto.html">MaintenanceCarAndAgencyDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSImportExcelMaintenanceFee_" data-uid="HTCMobile.Service.ServiceAppService.CMSImportExcelMaintenanceFee*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSImportExcelMaintenanceFee_HTCMobile_Services_Dto_CMSImportMaintainanceFeeDto_" data-uid="HTCMobile.Service.ServiceAppService.CMSImportExcelMaintenanceFee(HTCMobile.Services.Dto.CMSImportMaintainanceFeeDto)">CMSImportExcelMaintenanceFee(CMSImportMaintainanceFeeDto)</h4>
+  <div class="markdown level1 summary"><p>Import dữ liệu câu hỏi và gợi ý kết quả vào CSDL</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSImportExcel&quot;)]
+[AbpAuthorize(new string[]{})]
+public Task&lt;ResponseModel&lt;CMSPreviewMaintenanceFeeDto&gt;&gt; CMSImportExcelMaintenanceFee(CMSImportMaintainanceFeeDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.CMSImportMaintainanceFeeDto.html">CMSImportMaintainanceFeeDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Services.Dto.CMSPreviewMaintenanceFeeDto.html">CMSPreviewMaintenanceFeeDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSSavePreview_" data-uid="HTCMobile.Service.ServiceAppService.CMSSavePreview*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSSavePreview_System_Boolean_" data-uid="HTCMobile.Service.ServiceAppService.CMSSavePreview(System.Boolean)">CMSSavePreview(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSSavePreview&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Services.CreateEdit&quot;})]
+public Task&lt;ResponseModel&lt;string&gt;&gt; CMSSavePreview(bool isSave)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSave</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_CMSUpdateAgencyToMaintenance_" data-uid="HTCMobile.Service.ServiceAppService.CMSUpdateAgencyToMaintenance*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_CMSUpdateAgencyToMaintenance_HTCMobile_Services_Dto_CMSUpdateAgencyDtoInput_" data-uid="HTCMobile.Service.ServiceAppService.CMSUpdateAgencyToMaintenance(HTCMobile.Services.Dto.CMSUpdateAgencyDtoInput)">CMSUpdateAgencyToMaintenance(CMSUpdateAgencyDtoInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSUpdateAgencyToMaintenance&quot;)]
+public Task&lt;ResponseModel&lt;string&gt;&gt; CMSUpdateAgencyToMaintenance(CMSUpdateAgencyDtoInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.CMSUpdateAgencyDtoInput.html">CMSUpdateAgencyDtoInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_Common_GetAllList_MaintenanceCarCMS_" data-uid="HTCMobile.Service.ServiceAppService.Common_GetAllList_MaintenanceCarCMS*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_Common_GetAllList_MaintenanceCarCMS" data-uid="HTCMobile.Service.ServiceAppService.Common_GetAllList_MaintenanceCarCMS">Common_GetAllList_MaintenanceCarCMS()</h4>
+  <div class="markdown level1 summary"><p>Hàm lấy tất cả dữ liệu insert vào cache all GetAllMaintenanceCarCMSKey</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiExplorerSettings(IgnoreApi = true)]
+public Task&lt;List&lt;CMSResponseMaintenanceCarDto&gt;&gt; Common_GetAllList_MaintenanceCarCMS()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Services.Dto.CMSResponseMaintenanceCarDto.html">CMSResponseMaintenanceCarDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_Common_GetCacheAll_MaintenanceCar_" data-uid="HTCMobile.Service.ServiceAppService.Common_GetCacheAll_MaintenanceCar*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_Common_GetCacheAll_MaintenanceCar" data-uid="HTCMobile.Service.ServiceAppService.Common_GetCacheAll_MaintenanceCar">Common_GetCacheAll_MaintenanceCar()</h4>
+  <div class="markdown level1 summary"><p>Lấy cache all MaintenanceCar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiExplorerSettings(IgnoreApi = true)]
+public Task&lt;List&lt;CMSResponseMaintenanceCarDto&gt;&gt; Common_GetCacheAll_MaintenanceCar()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Services.Dto.CMSResponseMaintenanceCarDto.html">CMSResponseMaintenanceCarDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_Common_GetCacheDetail_MaintenanceCar_" data-uid="HTCMobile.Service.ServiceAppService.Common_GetCacheDetail_MaintenanceCar*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_Common_GetCacheDetail_MaintenanceCar_System_Int64_" data-uid="HTCMobile.Service.ServiceAppService.Common_GetCacheDetail_MaintenanceCar(System.Int64)">Common_GetCacheDetail_MaintenanceCar(Int64)</h4>
+  <div class="markdown level1 summary"><p>Lấy  cache detail GetDetailMaintenanceCarCMSKey</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiExplorerSettings(IgnoreApi = true)]
+public Task&lt;CMSResponseGetDetailMaintenanceCarDto&gt; Common_GetCacheDetail_MaintenanceCar(long id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.Services.Dto.CMSResponseGetDetailMaintenanceCarDto.html">CMSResponseGetDetailMaintenanceCarDto</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_Common_GetDetail_MaintenanceCar_" data-uid="HTCMobile.Service.ServiceAppService.Common_GetDetail_MaintenanceCar*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_Common_GetDetail_MaintenanceCar_System_Int64_" data-uid="HTCMobile.Service.ServiceAppService.Common_GetDetail_MaintenanceCar(System.Int64)">Common_GetDetail_MaintenanceCar(Int64)</h4>
+  <div class="markdown level1 summary"><p>Lấy thông tin MaintenanceCar theo ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiExplorerSettings(IgnoreApi = true)]
+public Task&lt;CMSResponseGetDetailMaintenanceCarDto&gt; Common_GetDetail_MaintenanceCar(long Id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">Id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.Services.Dto.CMSResponseGetDetailMaintenanceCarDto.html">CMSResponseGetDetailMaintenanceCarDto</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_Common_GetItemById_MaintenanceCar_" data-uid="HTCMobile.Service.ServiceAppService.Common_GetItemById_MaintenanceCar*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_Common_GetItemById_MaintenanceCar_System_Int64_" data-uid="HTCMobile.Service.ServiceAppService.Common_GetItemById_MaintenanceCar(System.Int64)">Common_GetItemById_MaintenanceCar(Int64)</h4>
+  <div class="markdown level1 summary"><p>Hàm lấy item MaintenanceCar theo Id để cập nhật cache GetAllMaintenanceCarCMSKey</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiExplorerSettings(IgnoreApi = true)]
+public CMSResponseMaintenanceCarDto Common_GetItemById_MaintenanceCar(long id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.CMSResponseMaintenanceCarDto.html">CMSResponseMaintenanceCarDto</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_Common_RemoveItemCacheGetAll_MaintenanceCar_" data-uid="HTCMobile.Service.ServiceAppService.Common_RemoveItemCacheGetAll_MaintenanceCar*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_Common_RemoveItemCacheGetAll_MaintenanceCar_System_Collections_Generic_List_System_Int64__" data-uid="HTCMobile.Service.ServiceAppService.Common_RemoveItemCacheGetAll_MaintenanceCar(System.Collections.Generic.List{System.Int64})">Common_RemoveItemCacheGetAll_MaintenanceCar(List&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"><p>Xóa cache một số item trong key GetAllMaintenanceCarCMSKey</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiExplorerSettings(IgnoreApi = true)]
+public Task Common_RemoveItemCacheGetAll_MaintenanceCar(List&lt;long&gt; Ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">Ids</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_Common_RemoveItemCacheGetDetail_MaintenanceCar_" data-uid="HTCMobile.Service.ServiceAppService.Common_RemoveItemCacheGetDetail_MaintenanceCar*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_Common_RemoveItemCacheGetDetail_MaintenanceCar_System_Collections_Generic_List_System_Int64__" data-uid="HTCMobile.Service.ServiceAppService.Common_RemoveItemCacheGetDetail_MaintenanceCar(System.Collections.Generic.List{System.Int64})">Common_RemoveItemCacheGetDetail_MaintenanceCar(List&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"><p>Xóa cache detail MaintenanceCar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiExplorerSettings(IgnoreApi = true)]
+public Task Common_RemoveItemCacheGetDetail_MaintenanceCar(List&lt;long&gt; Ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">Ids</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_Common_UpdateCacheDetail_MaintenanceCar_" data-uid="HTCMobile.Service.ServiceAppService.Common_UpdateCacheDetail_MaintenanceCar*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_Common_UpdateCacheDetail_MaintenanceCar_System_Int64_" data-uid="HTCMobile.Service.ServiceAppService.Common_UpdateCacheDetail_MaintenanceCar(System.Int64)">Common_UpdateCacheDetail_MaintenanceCar(Int64)</h4>
+  <div class="markdown level1 summary"><p>Update cache detail của MaintenanceCar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiExplorerSettings(IgnoreApi = true)]
+public Task Common_UpdateCacheDetail_MaintenanceCar(long id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_Common_UpdateCacheGetAll_MaintenanceCarCMS_" data-uid="HTCMobile.Service.ServiceAppService.Common_UpdateCacheGetAll_MaintenanceCarCMS*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_Common_UpdateCacheGetAll_MaintenanceCarCMS" data-uid="HTCMobile.Service.ServiceAppService.Common_UpdateCacheGetAll_MaintenanceCarCMS">Common_UpdateCacheGetAll_MaintenanceCarCMS()</h4>
+  <div class="markdown level1 summary"><p>Update cache All CacheKeys.GetAllMaintenanceCarCMSKey
+Reload cache</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiExplorerSettings(IgnoreApi = true)]
+public Task Common_UpdateCacheGetAll_MaintenanceCarCMS()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_Common_UpdateCacheGetAll_MaintenanceCarCMS_" data-uid="HTCMobile.Service.ServiceAppService.Common_UpdateCacheGetAll_MaintenanceCarCMS*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_Common_UpdateCacheGetAll_MaintenanceCarCMS_System_Int64_" data-uid="HTCMobile.Service.ServiceAppService.Common_UpdateCacheGetAll_MaintenanceCarCMS(System.Int64)">Common_UpdateCacheGetAll_MaintenanceCarCMS(Int64)</h4>
+  <div class="markdown level1 summary"><p>Hàm cập nhật từng item trong cache GetAllMaintenanceCarCMSKey</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiExplorerSettings(IgnoreApi = true)]
+public Task Common_UpdateCacheGetAll_MaintenanceCarCMS(long id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_GetAllMaintenanceLevel_" data-uid="HTCMobile.Service.ServiceAppService.GetAllMaintenanceLevel*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_GetAllMaintenanceLevel" data-uid="HTCMobile.Service.ServiceAppService.GetAllMaintenanceLevel">GetAllMaintenanceLevel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;Maintenance/CMSGetMaintenanceLevel&quot;)]
+public Task&lt;ResponseModel&lt;List&lt;MaintenanceLevelDto&gt;&gt;&gt; GetAllMaintenanceLevel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Services.Dto.MaintenanceLevelDto.html">MaintenanceLevelDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_GetAllMaintenanceLevelMobile_" data-uid="HTCMobile.Service.ServiceAppService.GetAllMaintenanceLevelMobile*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_GetAllMaintenanceLevelMobile" data-uid="HTCMobile.Service.ServiceAppService.GetAllMaintenanceLevelMobile">GetAllMaintenanceLevelMobile()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;Maintenance/MobileGetMaintenanceLevel&quot;)]
+public Task&lt;ResponseModel&lt;List&lt;MaintenanceLevelDto&gt;&gt;&gt; GetAllMaintenanceLevelMobile()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Services.Dto.MaintenanceLevelDto.html">MaintenanceLevelDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_GetAllScheduleCMS_" data-uid="HTCMobile.Service.ServiceAppService.GetAllScheduleCMS*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_GetAllScheduleCMS_HTCMobile_Services_Dto_GetScheduleInput_" data-uid="HTCMobile.Service.ServiceAppService.GetAllScheduleCMS(HTCMobile.Services.Dto.GetScheduleInput)">GetAllScheduleCMS(GetScheduleInput)</h4>
+  <div class="markdown level1 summary"><p>Get danh sach lich hen dich vu cho cms</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;Appointment/CMSGetListSchedule&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Services&quot;})]
+public Task&lt;ResponseCMSModel&lt;List&lt;ScheduleListDto&gt;&gt;&gt; GetAllScheduleCMS(GetScheduleInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.GetScheduleInput.html">GetScheduleInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Services.Dto.ScheduleListDto.html">ScheduleListDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_GetAllServiceName_" data-uid="HTCMobile.Service.ServiceAppService.GetAllServiceName*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_GetAllServiceName" data-uid="HTCMobile.Service.ServiceAppService.GetAllServiceName">GetAllServiceName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;Appointment/CMSGetAllServiceName&quot;)]
+public Task&lt;List&lt;string&gt;&gt; GetAllServiceName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_GetDetailSchedule_" data-uid="HTCMobile.Service.ServiceAppService.GetDetailSchedule*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_GetDetailSchedule_System_Int64_" data-uid="HTCMobile.Service.ServiceAppService.GetDetailSchedule(System.Int64)">GetDetailSchedule(Int64)</h4>
+  <div class="markdown level1 summary"><p>Get chi tiet lich hen dich vu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;Appointment/CMSGetDetailSchedule&quot;)]
+[Route(&quot;Appointment/MobileGetDetailSchedule&quot;)]
+public Task&lt;ResponseModel&lt;ScheduleListDto&gt;&gt; GetDetailSchedule(long id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Services.Dto.ScheduleListDto.html">ScheduleListDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_GetListMobile_" data-uid="HTCMobile.Service.ServiceAppService.GetListMobile*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_GetListMobile_HTCMobile_Services_Dto_MobileGetListDtoInput_" data-uid="HTCMobile.Service.ServiceAppService.GetListMobile(HTCMobile.Services.Dto.MobileGetListDtoInput)">GetListMobile(MobileGetListDtoInput)</h4>
+  <div class="markdown level1 summary"><p>Get danh sach lich hen dich vu cho mobile</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[AbpAuthorize(new string[]{&quot;IsCustomer&quot;})]
+[Route(&quot;Appointment/MobileGetList&quot;)]
+public Task&lt;ResponseCMSModel&lt;List&lt;MobileResponseServiceScheduleDto&gt;&gt;&gt; GetListMobile(MobileGetListDtoInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.MobileGetListDtoInput.html">MobileGetListDtoInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.ServiceSchedule.Dto.MobileResponseServiceScheduleDto.html">MobileResponseServiceScheduleDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_GetListNature_" data-uid="HTCMobile.Service.ServiceAppService.GetListNature*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_GetListNature" data-uid="HTCMobile.Service.ServiceAppService.GetListNature">GetListNature()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiExplorerSettings(IgnoreApi = true)]
+public List&lt;HtcMaintenancePriceLists&gt; GetListNature()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Model.HtcMaintenancePriceLists.html">HtcMaintenancePriceLists</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_GetTerm_" data-uid="HTCMobile.Service.ServiceAppService.GetTerm*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_GetTerm" data-uid="HTCMobile.Service.ServiceAppService.GetTerm">GetTerm()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;Term/MobileGetDetail&quot;)]
+public Task&lt;ResponseModel&lt;TermDto&gt;&gt; GetTerm()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Services.Dto.TermDto.html">TermDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_MobileGetCarVersionName_" data-uid="HTCMobile.Service.ServiceAppService.MobileGetCarVersionName*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_MobileGetCarVersionName" data-uid="HTCMobile.Service.ServiceAppService.MobileGetCarVersionName">MobileGetCarVersionName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;Maintenance/MobileCarVersionNameList&quot;)]
+public Task&lt;ResponseModel&lt;List&lt;GetCarVersionNameListDto&gt;&gt;&gt; MobileGetCarVersionName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Services.Dto.GetCarVersionNameListDto.html">GetCarVersionNameListDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_MobileGetCarVersionName_Maintenance_" data-uid="HTCMobile.Service.ServiceAppService.MobileGetCarVersionName_Maintenance*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_MobileGetCarVersionName_Maintenance_System_Int64_" data-uid="HTCMobile.Service.ServiceAppService.MobileGetCarVersionName_Maintenance(System.Int64)">MobileGetCarVersionName_Maintenance(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;Maintenance/MobileCarVersionNameMaintenanceList&quot;)]
+public Task&lt;ResponseModel&lt;GetVersionName_Maintenance&gt;&gt; MobileGetCarVersionName_Maintenance(long _agencyId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">_agencyId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Services.Dto.GetVersionName_Maintenance.html">GetVersionName_Maintenance</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_MobileGetDetail_" data-uid="HTCMobile.Service.ServiceAppService.MobileGetDetail*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_MobileGetDetail_HTCMobile_Services_Dto_MobileGetDetailInputDto_" data-uid="HTCMobile.Service.ServiceAppService.MobileGetDetail(HTCMobile.Services.Dto.MobileGetDetailInputDto)">MobileGetDetail(MobileGetDetailInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;Maintenance/MobileMaintenanceCarGetDetail&quot;)]
+public Task&lt;ResponseModel&lt;MobileResponseGetDetailDto&gt;&gt; MobileGetDetail(MobileGetDetailInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Services.Dto.MobileGetDetailInputDto.html">MobileGetDetailInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Services.Dto.MobileResponseGetDetailDto.html">MobileResponseGetDetailDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Service_ServiceAppService_SetServiceSchedule_" data-uid="HTCMobile.Service.ServiceAppService.SetServiceSchedule*"></a>
+  <h4 id="HTCMobile_Service_ServiceAppService_SetServiceSchedule_HTCMobile_ServiceSchedule_Dto_MobileSetAppointmentInputDto_" data-uid="HTCMobile.Service.ServiceAppService.SetServiceSchedule(HTCMobile.ServiceSchedule.Dto.MobileSetAppointmentInputDto)">SetServiceSchedule(MobileSetAppointmentInputDto)</h4>
+  <div class="markdown level1 summary"><p>Tạo lịch hẹn dịch vụ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[AbpAuthorize(new string[]{&quot;IsCustomer&quot;})]
+[Route(&quot;Appointment/MobilePost&quot;)]
+public Task&lt;ResponseModel&lt;MobileResponseServiceScheduleDto&gt;&gt; SetServiceSchedule(MobileSetAppointmentInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ServiceSchedule.Dto.MobileSetAppointmentInputDto.html">MobileSetAppointmentInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.ServiceSchedule.Dto.MobileResponseServiceScheduleDto.html">MobileResponseServiceScheduleDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Service.IServiceAppService.html">IServiceAppService</a>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IApplicationService</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Dependency.ITransientDependency</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

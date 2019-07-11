@@ -1,0 +1,671 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TenantAppService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TenantAppService
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.MultiTenancy.TenantAppService">
+  
+  
+  <h1 id="HTCMobile_MultiTenancy_TenantAppService" data-uid="HTCMobile.MultiTenancy.TenantAppService" class="text-break">Class TenantAppService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.AbpServiceBase</span></div>
+    <div class="level2"><span class="xref">Abp.Application.Services.ApplicationService</span></div>
+    <div class="level3"><span class="xref">Abp.Application.Services.CrudAppServiceBase</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Tenant.html">Tenant</a>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.CreateTenantDto.html">CreateTenantDto</a>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>&gt;</div>
+    <div class="level4"><span class="xref">Abp.Application.Services.AsyncCrudAppService</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Tenant.html">Tenant</a>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.CreateTenantDto.html">CreateTenantDto</a>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>, <span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;, <span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</div>
+    <div class="level5"><span class="xref">Abp.Application.Services.AsyncCrudAppService</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Tenant.html">Tenant</a>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.CreateTenantDto.html">CreateTenantDto</a>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>, <span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</div>
+    <div class="level6"><span class="xref">Abp.Application.Services.AsyncCrudAppService</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Tenant.html">Tenant</a>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.CreateTenantDto.html">CreateTenantDto</a>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>&gt;</div>
+    <div class="level7"><span class="xref">TenantAppService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span></div>
+    <div><a class="xref" href="HTCMobile.MultiTenancy.ITenantAppService.html">ITenantAppService</a></div>
+    <div><span class="xref">Abp.Application.Services.IAsyncCrudAppService</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.CreateTenantDto.html">CreateTenantDto</a>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>&gt;</div>
+    <div><span class="xref">Abp.Application.Services.IAsyncCrudAppService</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.CreateTenantDto.html">CreateTenantDto</a>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>, <span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</div>
+    <div><span class="xref">Abp.Application.Services.IAsyncCrudAppService</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.CreateTenantDto.html">CreateTenantDto</a>, <a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>, <span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;, <span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</div>
+    <div><span class="xref">Abp.Application.Services.IApplicationService</span></div>
+    <div><span class="xref">Abp.Dependency.ITransientDependency</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Get(Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.GetAll(Abp.Application.Services.Dto.PagedResultRequestDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Create(HTCMobile.MultiTenancy.Dto.CreateTenantDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Update(HTCMobile.MultiTenancy.Dto.TenantDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Delete(Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.GetEntityByIdAsync(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.AsyncQueryableExecuter</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.Repository</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.ApplySorting(System.Linq.IQueryable&lt;HTCMobile.MultiTenancy.Tenant&gt;, Abp.Application.Services.Dto.PagedResultRequestDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.ApplyPaging(System.Linq.IQueryable&lt;HTCMobile.MultiTenancy.Tenant&gt;, Abp.Application.Services.Dto.PagedResultRequestDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.CreateFilteredQuery(Abp.Application.Services.Dto.PagedResultRequestDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.MapToEntityDto(HTCMobile.MultiTenancy.Tenant)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.MapToEntity(HTCMobile.MultiTenancy.Dto.CreateTenantDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.MapToEntity(HTCMobile.MultiTenancy.Dto.TenantDto, HTCMobile.MultiTenancy.Tenant)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.CheckPermission(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.CheckGetPermission()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.CheckGetAllPermission()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.CheckCreatePermission()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.CheckUpdatePermission()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.CheckDeletePermission()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.GetPermissionName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.GetAllPermissionName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.CreatePermissionName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.UpdatePermissionName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.DeletePermissionName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.CommonPostfixes</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGrantedAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGranted(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabledAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabled(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AbpSession</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AppliedCrossCuttingConcerns</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.SettingManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.UnitOfWorkManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.CurrentUnitOfWork</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSourceName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSource</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.ObjectMapper</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.MultiTenancy.html">HTCMobile.MultiTenancy</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Application.dll</h6>
+  <h5 id="HTCMobile_MultiTenancy_TenantAppService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AbpAuthorize(new string[]{})]
+[ApiVersion(&quot;1&quot;)]
+[ApiVersion(&quot;2&quot;)]
+[Route(&quot;api/v{version}/Tenant&quot;)]
+public class TenantAppService : AsyncCrudAppService&lt;Tenant, TenantDto, int, PagedResultRequestDto, CreateTenantDto, TenantDto&gt;, IAvoidDuplicateCrossCuttingConcerns, ITenantAppService, IAsyncCrudAppService&lt;TenantDto, int, PagedResultRequestDto, CreateTenantDto, TenantDto&gt;, IAsyncCrudAppService&lt;TenantDto, int, PagedResultRequestDto, CreateTenantDto, TenantDto, EntityDto&lt;int&gt;&gt;, IAsyncCrudAppService&lt;TenantDto, int, PagedResultRequestDto, CreateTenantDto, TenantDto, EntityDto&lt;int&gt;, EntityDto&lt;int&gt;&gt;, IApplicationService, ITransientDependency</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HTCMobile_MultiTenancy_TenantAppService__ctor_" data-uid="HTCMobile.MultiTenancy.TenantAppService.#ctor*"></a>
+  <h4 id="HTCMobile_MultiTenancy_TenantAppService__ctor_Abp_Domain_Repositories_IRepository_HTCMobile_MultiTenancy_Tenant_System_Int32__HTCMobile_MultiTenancy_TenantManager_HTCMobile_Editions_EditionManager_HTCMobile_Authorization_Users_UserManager_HTCMobile_Authorization_Roles_RoleManager_Abp_MultiTenancy_IAbpZeroDbMigrator_Microsoft_AspNetCore_Identity_IPasswordHasher_HTCMobile_Authorization_Users_User__" data-uid="HTCMobile.MultiTenancy.TenantAppService.#ctor(Abp.Domain.Repositories.IRepository{HTCMobile.MultiTenancy.Tenant,System.Int32},HTCMobile.MultiTenancy.TenantManager,HTCMobile.Editions.EditionManager,HTCMobile.Authorization.Users.UserManager,HTCMobile.Authorization.Roles.RoleManager,Abp.MultiTenancy.IAbpZeroDbMigrator,Microsoft.AspNetCore.Identity.IPasswordHasher{HTCMobile.Authorization.Users.User})">TenantAppService(IRepository&lt;Tenant, Int32&gt;, TenantManager, EditionManager, UserManager, RoleManager, IAbpZeroDbMigrator, IPasswordHasher&lt;User&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TenantAppService(IRepository&lt;Tenant, int&gt; repository, TenantManager tenantManager, EditionManager editionManager, UserManager userManager, RoleManager roleManager, IAbpZeroDbMigrator abpZeroDbMigrator, IPasswordHasher&lt;User&gt; passwordHasher)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Tenant.html">Tenant</a>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">repository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.MultiTenancy.TenantManager.html">TenantManager</a></td>
+        <td><span class="parametername">tenantManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Editions.EditionManager.html">EditionManager</a></td>
+        <td><span class="parametername">editionManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Authorization.Users.UserManager.html">UserManager</a></td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Authorization.Roles.RoleManager.html">RoleManager</a></td>
+        <td><span class="parametername">roleManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.MultiTenancy.IAbpZeroDbMigrator</span></td>
+        <td><span class="parametername">abpZeroDbMigrator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IPasswordHasher</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</td>
+        <td><span class="parametername">passwordHasher</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTCMobile_MultiTenancy_TenantAppService_Create_" data-uid="HTCMobile.MultiTenancy.TenantAppService.Create*"></a>
+  <h4 id="HTCMobile_MultiTenancy_TenantAppService_Create_HTCMobile_MultiTenancy_Dto_CreateTenantDto_" data-uid="HTCMobile.MultiTenancy.TenantAppService.Create(HTCMobile.MultiTenancy.Dto.CreateTenantDto)">Create(CreateTenantDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;MobilePost&quot;)]
+[Route(&quot;CMSPost&quot;)]
+public override Task&lt;TenantDto&gt; Create(CreateTenantDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.MultiTenancy.Dto.CreateTenantDto.html">CreateTenantDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Create(HTCMobile.MultiTenancy.Dto.CreateTenantDto)</span></div>
+  
+  
+  <a id="HTCMobile_MultiTenancy_TenantAppService_Delete_" data-uid="HTCMobile.MultiTenancy.TenantAppService.Delete*"></a>
+  <h4 id="HTCMobile_MultiTenancy_TenantAppService_Delete_Abp_Application_Services_Dto_EntityDto_System_Int32__" data-uid="HTCMobile.MultiTenancy.TenantAppService.Delete(Abp.Application.Services.Dto.EntityDto{System.Int32})">Delete(EntityDto&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpDelete]
+[Route(&quot;MobileDelete&quot;)]
+[Route(&quot;CMSDelete&quot;)]
+public override Task Delete(EntityDto&lt;int&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Delete(Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;)</span></div>
+  
+  
+  <a id="HTCMobile_MultiTenancy_TenantAppService_Get_" data-uid="HTCMobile.MultiTenancy.TenantAppService.Get*"></a>
+  <h4 id="HTCMobile_MultiTenancy_TenantAppService_Get_Abp_Application_Services_Dto_EntityDto_System_Int32__" data-uid="HTCMobile.MultiTenancy.TenantAppService.Get(Abp.Application.Services.Dto.EntityDto{System.Int32})">Get(EntityDto&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGetDetail&quot;)]
+[Route(&quot;CMSGetDetail&quot;)]
+public override Task&lt;TenantDto&gt; Get(EntityDto&lt;int&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Get(Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;)</span></div>
+  
+  
+  <a id="HTCMobile_MultiTenancy_TenantAppService_GetAll_" data-uid="HTCMobile.MultiTenancy.TenantAppService.GetAll*"></a>
+  <h4 id="HTCMobile_MultiTenancy_TenantAppService_GetAll_Abp_Application_Services_Dto_PagedResultRequestDto_" data-uid="HTCMobile.MultiTenancy.TenantAppService.GetAll(Abp.Application.Services.Dto.PagedResultRequestDto)">GetAll(PagedResultRequestDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGetList&quot;)]
+[Route(&quot;CMSGetList&quot;)]
+public override Task&lt;PagedResultDto&lt;TenantDto&gt;&gt; GetAll(PagedResultRequestDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Abp.Application.Services.Dto.PagedResultDto</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.GetAll(Abp.Application.Services.Dto.PagedResultRequestDto)</span></div>
+  
+  
+  <a id="HTCMobile_MultiTenancy_TenantAppService_MapToEntity_" data-uid="HTCMobile.MultiTenancy.TenantAppService.MapToEntity*"></a>
+  <h4 id="HTCMobile_MultiTenancy_TenantAppService_MapToEntity_HTCMobile_MultiTenancy_Dto_TenantDto_HTCMobile_MultiTenancy_Tenant_" data-uid="HTCMobile.MultiTenancy.TenantAppService.MapToEntity(HTCMobile.MultiTenancy.Dto.TenantDto,HTCMobile.MultiTenancy.Tenant)">MapToEntity(TenantDto, Tenant)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void MapToEntity(TenantDto updateInput, Tenant entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a></td>
+        <td><span class="parametername">updateInput</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.MultiTenancy.Tenant.html">Tenant</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto&gt;.MapToEntity(HTCMobile.MultiTenancy.Dto.TenantDto, HTCMobile.MultiTenancy.Tenant)</span></div>
+  
+  
+  <a id="HTCMobile_MultiTenancy_TenantAppService_Update_" data-uid="HTCMobile.MultiTenancy.TenantAppService.Update*"></a>
+  <h4 id="HTCMobile_MultiTenancy_TenantAppService_Update_HTCMobile_MultiTenancy_Dto_TenantDto_" data-uid="HTCMobile.MultiTenancy.TenantAppService.Update(HTCMobile.MultiTenancy.Dto.TenantDto)">Update(TenantDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPut]
+[Route(&quot;MobilePut&quot;)]
+[Route(&quot;CMSPut&quot;)]
+public override Task&lt;TenantDto&gt; Update(TenantDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Dto.TenantDto.html">TenantDto</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.MultiTenancy.Dto.TenantDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.MultiTenancy.Dto.CreateTenantDto, HTCMobile.MultiTenancy.Dto.TenantDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Update(HTCMobile.MultiTenancy.Dto.TenantDto)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.MultiTenancy.ITenantAppService.html">ITenantAppService</a>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IAsyncCrudAppService&lt;TEntityDto, TPrimaryKey, TGetAllInput, TCreateInput, TUpdateInput&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IAsyncCrudAppService&lt;TEntityDto, TPrimaryKey, TGetAllInput, TCreateInput, TUpdateInput, TGetInput&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IAsyncCrudAppService&lt;TEntityDto, TPrimaryKey, TGetAllInput, TCreateInput, TUpdateInput, TGetInput, TDeleteInput&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IApplicationService</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Dependency.ITransientDependency</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

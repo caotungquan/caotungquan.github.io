@@ -1,0 +1,1109 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MembershipAppService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MembershipAppService
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.Membership.MembershipAppService">
+  
+  
+  <h1 id="HTCMobile_Membership_MembershipAppService" data-uid="HTCMobile.Membership.MembershipAppService" class="text-break">Class MembershipAppService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.AbpServiceBase</span></div>
+    <div class="level2"><span class="xref">Abp.Application.Services.ApplicationService</span></div>
+    <div class="level3"><a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html">HTCMobileAppServiceBase</a></div>
+    <div class="level4"><span class="xref">MembershipAppService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span></div>
+    <div><a class="xref" href="HTCMobile.Customers.IMembershipAppService.html">IMembershipAppService</a></div>
+    <div><span class="xref">Abp.Application.Services.IApplicationService</span></div>
+    <div><span class="xref">Abp.Dependency.ITransientDependency</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_TenantManager">HTCMobileAppServiceBase.TenantManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_UserManager">HTCMobileAppServiceBase.UserManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserAsync">HTCMobileAppServiceBase.GetCurrentUserAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserTimeZoneAsync">HTCMobileAppServiceBase.GetCurrentUserTimeZoneAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetUserTimeZone_System_Nullable_System_Int64__">HTCMobileAppServiceBase.GetUserTimeZone(Nullable&lt;Int64&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentTenantAsync">HTCMobileAppServiceBase.GetCurrentTenantAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_CheckErrors_Microsoft_AspNetCore_Identity_IdentityResult_">HTCMobileAppServiceBase.CheckErrors(IdentityResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcel__1_System_Collections_Generic_List___0__System_String_">HTCMobileAppServiceBase.ExportExcel&lt;T&gt;(List&lt;T&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcelNoData__1_System_String_">HTCMobileAppServiceBase.ExportExcelNoData&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_Base64ToImage_System_String_">HTCMobileAppServiceBase.Base64ToImage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImage_Microsoft_AspNetCore_Http_IFormFile_">HTCMobileAppServiceBase.SaveImage(IFormFile)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImageFromBase64_System_String_System_String_">HTCMobileAppServiceBase.SaveImageFromBase64(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveFileFromBase64_System_String_System_String_System_String_System_String_System_Int32_">HTCMobileAppServiceBase.SaveFileFromBase64(String, String, String, String, Int32)</a>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.CommonPostfixes</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGrantedAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGranted(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabledAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabled(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AbpSession</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AppliedCrossCuttingConcerns</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.SettingManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.UnitOfWorkManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.CurrentUnitOfWork</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSourceName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSource</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.ObjectMapper</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.Membership.html">HTCMobile.Membership</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Application.dll</h6>
+  <h5 id="HTCMobile_Membership_MembershipAppService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DontWrapResult]
+[ApiVersion(&quot;1&quot;)]
+[Route(&quot;api/v{version}/Membership&quot;)]
+public class MembershipAppService : HTCMobileAppServiceBase, IAvoidDuplicateCrossCuttingConcerns, IMembershipAppService, IApplicationService, ITransientDependency</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService__ctor_" data-uid="HTCMobile.Membership.MembershipAppService.#ctor*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService__ctor_Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcMembership_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcCustomerMemberships_System_Int64__Abp_EntityFrameworkCore_IDbContextProvider_HTCMobile_EntityFrameworkCore_HTCMobileDbContext__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcBenefits_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcCity_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcBenefitType_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcIncentiveUsingHistory_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcPointHistory_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcAgency_System_Int64__Abp_Runtime_Caching_ICacheManager_Abp_Domain_Repositories_IRepository_HTCMobile_Authorization_Users_User_System_Int64__" data-uid="HTCMobile.Membership.MembershipAppService.#ctor(Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcMembership,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcCustomerMemberships,System.Int64},Abp.EntityFrameworkCore.IDbContextProvider{HTCMobile.EntityFrameworkCore.HTCMobileDbContext},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcBenefits,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcCity,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcBenefitType,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcIncentiveUsingHistory,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcPointHistory,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcAgency,System.Int64},Abp.Runtime.Caching.ICacheManager,Abp.Domain.Repositories.IRepository{HTCMobile.Authorization.Users.User,System.Int64})">MembershipAppService(IRepository&lt;HtcMembership, Int64&gt;, IRepository&lt;HtcCustomerMemberships, Int64&gt;, IDbContextProvider&lt;HTCMobileDbContext&gt;, IRepository&lt;HtcBenefits, Int64&gt;, IRepository&lt;HtcCity, Int64&gt;, IRepository&lt;HtcBenefitType, Int64&gt;, IRepository&lt;HtcIncentiveUsingHistory, Int64&gt;, IRepository&lt;HtcPointHistory, Int64&gt;, IRepository&lt;HtcAgency, Int64&gt;, ICacheManager, IRepository&lt;User, Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MembershipAppService(IRepository&lt;HtcMembership, long&gt; HtcMembershipRepository, IRepository&lt;HtcCustomerMemberships, long&gt; HtcCustomerMembershipsRepository, IDbContextProvider&lt;HTCMobileDbContext&gt; dbContextProvider, IRepository&lt;HtcBenefits, long&gt; benefitsRepository, IRepository&lt;HtcCity, long&gt; cityRepository, IRepository&lt;HtcBenefitType, long&gt; benefitTypeRepository, IRepository&lt;HtcIncentiveUsingHistory, long&gt; incentiveUsingHistoryRepository, IRepository&lt;HtcPointHistory, long&gt; pointHistoryRepository, IRepository&lt;HtcAgency, long&gt; AgencyRepository, ICacheManager cacheManager, IRepository&lt;User, long&gt; userRepository)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcMembership.html">HtcMembership</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">HtcMembershipRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCustomerMemberships.html">HtcCustomerMemberships</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">HtcCustomerMembershipsRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.EntityFrameworkCore.IDbContextProvider</span>&lt;<a class="xref" href="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.html">HTCMobileDbContext</a>&gt;</td>
+        <td><span class="parametername">dbContextProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcBenefits.html">HtcBenefits</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">benefitsRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCity.html">HtcCity</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">cityRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcBenefitType.html">HtcBenefitType</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">benefitTypeRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcIncentiveUsingHistory.html">HtcIncentiveUsingHistory</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">incentiveUsingHistoryRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcPointHistory.html">HtcPointHistory</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">pointHistoryRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcAgency.html">HtcAgency</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">AgencyRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Runtime.Caching.ICacheManager</span></td>
+        <td><span class="parametername">cacheManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">userRepository</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_BenefitsGetList_" data-uid="HTCMobile.Membership.MembershipAppService.BenefitsGetList*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_BenefitsGetList_System_Int64_System_String_" data-uid="HTCMobile.Membership.MembershipAppService.BenefitsGetList(System.Int64,System.String)">BenefitsGetList(Int64, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;BenefitsList&quot;)]
+public Task&lt;ResponseModel&lt;List&lt;MembershipBenefitsDto&gt;&gt;&gt; BenefitsGetList(long benefitTypeId, string agencyCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">benefitTypeId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">agencyCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.MembershipBenefitsDto.html">MembershipBenefitsDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_CMSExport_" data-uid="HTCMobile.Membership.MembershipAppService.CMSExport*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_CMSExport_HTCMobile_Membership_Dto_CMSGetDataExportDto_" data-uid="HTCMobile.Membership.MembershipAppService.CMSExport(HTCMobile.Membership.Dto.CMSGetDataExportDto)">CMSExport(CMSGetDataExportDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSExport&quot;)]
+public Task&lt;IActionResult&gt; CMSExport(CMSGetDataExportDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.CMSGetDataExportDto.html">CMSGetDataExportDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_CMSExport2_" data-uid="HTCMobile.Membership.MembershipAppService.CMSExport2*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_CMSExport2_HTCMobile_Membership_Dto_CMSGetDataExportDto_" data-uid="HTCMobile.Membership.MembershipAppService.CMSExport2(HTCMobile.Membership.Dto.CMSGetDataExportDto)">CMSExport2(CMSGetDataExportDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSExportPost&quot;)]
+public Task&lt;IActionResult&gt; CMSExport2(CMSGetDataExportDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.CMSGetDataExportDto.html">CMSGetDataExportDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_CMSGetDetailMembership_" data-uid="HTCMobile.Membership.MembershipAppService.CMSGetDetailMembership*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_CMSGetDetailMembership_System_Int64_" data-uid="HTCMobile.Membership.MembershipAppService.CMSGetDetailMembership(System.Int64)">CMSGetDetailMembership(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetDetail&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Membership&quot;})]
+public Task&lt;ResponseModel&lt;CMSResponseMembershipGetDetailDto&gt;&gt; CMSGetDetailMembership(long id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Membership.Dto.CMSResponseMembershipGetDetailDto.html">CMSResponseMembershipGetDetailDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_CMSGetIncentiveUsingHistoryByMembershipCode_" data-uid="HTCMobile.Membership.MembershipAppService.CMSGetIncentiveUsingHistoryByMembershipCode*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_CMSGetIncentiveUsingHistoryByMembershipCode_HTCMobile_Membership_Dto_CMSGetIncentiveUsingHistoryInputDto_" data-uid="HTCMobile.Membership.MembershipAppService.CMSGetIncentiveUsingHistoryByMembershipCode(HTCMobile.Membership.Dto.CMSGetIncentiveUsingHistoryInputDto)">CMSGetIncentiveUsingHistoryByMembershipCode(CMSGetIncentiveUsingHistoryInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetIncentiveUsingHistory&quot;)]
+[Route(&quot;MobileGetIncentiveUsingHistory&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Membership&quot;, &quot;IsCustomer&quot;})]
+public Task&lt;ResponseCMSModel&lt;List&lt;CMSResponseIncentiveUsingHistoryDto&gt;&gt;&gt; CMSGetIncentiveUsingHistoryByMembershipCode(CMSGetIncentiveUsingHistoryInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.CMSGetIncentiveUsingHistoryInputDto.html">CMSGetIncentiveUsingHistoryInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.CMSResponseIncentiveUsingHistoryDto.html">CMSResponseIncentiveUsingHistoryDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_CMSGetList_" data-uid="HTCMobile.Membership.MembershipAppService.CMSGetList*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_CMSGetList_HTCMobile_Membership_Dto_CMSGetListInputDto_" data-uid="HTCMobile.Membership.MembershipAppService.CMSGetList(HTCMobile.Membership.Dto.CMSGetListInputDto)">CMSGetList(CMSGetListInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSGetList&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Membership&quot;})]
+public Task&lt;ResponseCMSModel&lt;List&lt;CMSResponseGetListMembershipDto&gt;&gt;&gt; CMSGetList(CMSGetListInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.CMSGetListInputDto.html">CMSGetListInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.CMSResponseGetListMembershipDto.html">CMSResponseGetListMembershipDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_CMSGetRankUpPointHistory_" data-uid="HTCMobile.Membership.MembershipAppService.CMSGetRankUpPointHistory*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_CMSGetRankUpPointHistory_HTCMobile_Membership_Dto_CMSRankUpPointGetListInputDto_" data-uid="HTCMobile.Membership.MembershipAppService.CMSGetRankUpPointHistory(HTCMobile.Membership.Dto.CMSRankUpPointGetListInputDto)">CMSGetRankUpPointHistory(CMSRankUpPointGetListInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetRankUpPointHistory&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Membership&quot;})]
+public Task&lt;ResponseCMSModel&lt;List&lt;ResponseRankUpPointDto&gt;&gt;&gt; CMSGetRankUpPointHistory(CMSRankUpPointGetListInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.CMSRankUpPointGetListInputDto.html">CMSRankUpPointGetListInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.ResponseRankUpPointDto.html">ResponseRankUpPointDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_CMSGetUsingPointHistory_" data-uid="HTCMobile.Membership.MembershipAppService.CMSGetUsingPointHistory*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_CMSGetUsingPointHistory_HTCMobile_Membership_Dto_CMSUsingPointGetlistInputDto_" data-uid="HTCMobile.Membership.MembershipAppService.CMSGetUsingPointHistory(HTCMobile.Membership.Dto.CMSUsingPointGetlistInputDto)">CMSGetUsingPointHistory(CMSUsingPointGetlistInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetUsingPointHistory&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Membership&quot;})]
+public Task&lt;ResponseCMSModel&lt;List&lt;ResponseUsingPointHistoryDto&gt;&gt;&gt; CMSGetUsingPointHistory(CMSUsingPointGetlistInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.CMSUsingPointGetlistInputDto.html">CMSUsingPointGetlistInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.ResponseUsingPointHistoryDto.html">ResponseUsingPointHistoryDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_GetListBenefitTypeName_" data-uid="HTCMobile.Membership.MembershipAppService.GetListBenefitTypeName*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_GetListBenefitTypeName" data-uid="HTCMobile.Membership.MembershipAppService.GetListBenefitTypeName">GetListBenefitTypeName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetListBenefitTypeName&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Membership&quot;})]
+public Task&lt;ResponseModel&lt;List&lt;BenefitTypeNameDto&gt;&gt;&gt; GetListBenefitTypeName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.BenefitTypeNameDto.html">BenefitTypeNameDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_MobileAddMembership_" data-uid="HTCMobile.Membership.MembershipAppService.MobileAddMembership*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_MobileAddMembership_HTCMobile_Membership_Dto_MobileInputAddMembershipDto_" data-uid="HTCMobile.Membership.MembershipAppService.MobileAddMembership(HTCMobile.Membership.Dto.MobileInputAddMembershipDto)">MobileAddMembership(MobileInputAddMembershipDto)</h4>
+  <div class="markdown level1 summary"><p>Thêm một thẻ mới cho Customer
+Mobile</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;MobileAddCard&quot;)]
+[AbpAuthorize(new string[]{&quot;IsCustomer&quot;})]
+public Task&lt;ResponseModel&lt;MobileResponseMembershipDto&gt;&gt; MobileAddMembership(MobileInputAddMembershipDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.MobileInputAddMembershipDto.html">MobileInputAddMembershipDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Membership.Dto.MobileResponseMembershipDto.html">MobileResponseMembershipDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_MobileBenefitOfMembership_" data-uid="HTCMobile.Membership.MembershipAppService.MobileBenefitOfMembership*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_MobileBenefitOfMembership_System_Int64_" data-uid="HTCMobile.Membership.MembershipAppService.MobileBenefitOfMembership(System.Int64)">MobileBenefitOfMembership(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSMembershipBenefit&quot;)]
+[Route(&quot;MobileMembershipBenefit&quot;)]
+[AbpAuthorize(new string[]{&quot;IsCustomer&quot;, &quot;Pages.Membership&quot;})]
+public Task&lt;ResponseModel&lt;List&lt;MobileResponseBenefitDto&gt;&gt;&gt; MobileBenefitOfMembership(long Id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">Id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.MobileResponseBenefitDto.html">MobileResponseBenefitDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_MobileDetailBenefit_" data-uid="HTCMobile.Membership.MembershipAppService.MobileDetailBenefit*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_MobileDetailBenefit_System_Int64_" data-uid="HTCMobile.Membership.MembershipAppService.MobileDetailBenefit(System.Int64)">MobileDetailBenefit(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileBenefitDetail&quot;)]
+[AbpAuthorize(new string[]{&quot;IsCustomer&quot;})]
+public Task&lt;ResponseModel&lt;MobileResponseBenefitDetailDto&gt;&gt; MobileDetailBenefit(long id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Membership.Dto.MobileResponseBenefitDetailDto.html">MobileResponseBenefitDetailDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_MobileGetDetail_" data-uid="HTCMobile.Membership.MembershipAppService.MobileGetDetail*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_MobileGetDetail_System_Int64_" data-uid="HTCMobile.Membership.MembershipAppService.MobileGetDetail(System.Int64)">MobileGetDetail(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGetDetail&quot;)]
+[AbpAuthorize(new string[]{&quot;IsCustomer&quot;})]
+public Task&lt;ResponseModel&lt;MobileResponseMembershipDto&gt;&gt; MobileGetDetail(long membershipId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">membershipId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Membership.Dto.MobileResponseMembershipDto.html">MobileResponseMembershipDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_MobileGetList_" data-uid="HTCMobile.Membership.MembershipAppService.MobileGetList*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_MobileGetList" data-uid="HTCMobile.Membership.MembershipAppService.MobileGetList">MobileGetList()</h4>
+  <div class="markdown level1 summary"><p>Lấy danh sách thẻ của customer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGetList&quot;)]
+[AbpAuthorize(new string[]{&quot;IsCustomer&quot;})]
+public Task&lt;ResponseModel&lt;List&lt;MobileResponseMembershipDto&gt;&gt;&gt; MobileGetList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.MobileResponseMembershipDto.html">MobileResponseMembershipDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_MobileGetRankUpPointHistory_" data-uid="HTCMobile.Membership.MembershipAppService.MobileGetRankUpPointHistory*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_MobileGetRankUpPointHistory_HTCMobile_Membership_Dto_MobileRankUpPointGetListInputDto_" data-uid="HTCMobile.Membership.MembershipAppService.MobileGetRankUpPointHistory(HTCMobile.Membership.Dto.MobileRankUpPointGetListInputDto)">MobileGetRankUpPointHistory(MobileRankUpPointGetListInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGetRankUpPointHistory&quot;)]
+[AbpAuthorize(new string[]{&quot;IsCustomer&quot;})]
+public Task&lt;ResponseCMSModel&lt;List&lt;ResponseRankUpPointDto&gt;&gt;&gt; MobileGetRankUpPointHistory(MobileRankUpPointGetListInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.MobileRankUpPointGetListInputDto.html">MobileRankUpPointGetListInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.ResponseRankUpPointDto.html">ResponseRankUpPointDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_MobileGetUsingPointHistory_" data-uid="HTCMobile.Membership.MembershipAppService.MobileGetUsingPointHistory*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_MobileGetUsingPointHistory_HTCMobile_Membership_Dto_MobileUsingPointGetlistInputDto_" data-uid="HTCMobile.Membership.MembershipAppService.MobileGetUsingPointHistory(HTCMobile.Membership.Dto.MobileUsingPointGetlistInputDto)">MobileGetUsingPointHistory(MobileUsingPointGetlistInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGetUsingPointHistory&quot;)]
+[AbpAuthorize(new string[]{&quot;IsCustomer&quot;})]
+public Task&lt;ResponseCMSModel&lt;List&lt;ResponseUsingPointHistoryDto&gt;&gt;&gt; MobileGetUsingPointHistory(MobileUsingPointGetlistInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.MobileUsingPointGetlistInputDto.html">MobileUsingPointGetlistInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.ResponseUsingPointHistoryDto.html">ResponseUsingPointHistoryDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Membership_MembershipAppService_MobileRemoveCustomerMembership_" data-uid="HTCMobile.Membership.MembershipAppService.MobileRemoveCustomerMembership*"></a>
+  <h4 id="HTCMobile_Membership_MembershipAppService_MobileRemoveCustomerMembership_System_Int64_" data-uid="HTCMobile.Membership.MembershipAppService.MobileRemoveCustomerMembership(System.Int64)">MobileRemoveCustomerMembership(Int64)</h4>
+  <div class="markdown level1 summary"><p>Xóa thẻ thành viên khách hàng đã add</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpDelete]
+[Route(&quot;MobileRemoveCard&quot;)]
+[AbpAuthorize(new string[]{&quot;IsCustomer&quot;})]
+public Task&lt;ResponseModel&gt; MobileRemoveCustomerMembership(long Id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">Id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel.html">ResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Customers.IMembershipAppService.html">IMembershipAppService</a>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IApplicationService</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Dependency.ITransientDependency</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,516 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UserStore
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UserStore
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.Authorization.Users.UserStore">
+  
+  
+  <h1 id="HTCMobile_Authorization_Users_UserStore" data-uid="HTCMobile.Authorization.Users.UserStore" class="text-break">Class UserStore
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.Authorization.Users.AbpUserStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>, <a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div class="level2"><span class="xref">UserStore</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserLoginStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserRoleStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserClaimStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserPasswordStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserSecurityStampStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserEmailStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserLockoutStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserPhoneNumberStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserTwoFactorStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserAuthenticationTokenStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Abp.Authorization.Users.IUserPermissionStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IQueryableUserStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserAuthenticatorKeyStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserStore</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">Abp.Dependency.ITransientDependency</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SaveChanges(System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetUserIdAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetUserNameAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetUserNameAsync(HTCMobile.Authorization.Users.User, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetNormalizedUserNameAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetNormalizedUserNameAsync(HTCMobile.Authorization.Users.User, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.CreateAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.UpdateAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.DeleteAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.FindByIdAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.FindByNameAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetPasswordHashAsync(HTCMobile.Authorization.Users.User, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetPasswordHashAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.HasPasswordAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.AddToRoleAsync(HTCMobile.Authorization.Users.User, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.RemoveFromRoleAsync(HTCMobile.Authorization.Users.User, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetRolesAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.IsInRoleAsync(HTCMobile.Authorization.Users.User, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetClaimsAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.AddClaimsAsync(HTCMobile.Authorization.Users.User, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.ReplaceClaimAsync(HTCMobile.Authorization.Users.User, System.Security.Claims.Claim, System.Security.Claims.Claim, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.RemoveClaimsAsync(HTCMobile.Authorization.Users.User, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.AddLoginAsync(HTCMobile.Authorization.Users.User, Microsoft.AspNetCore.Identity.UserLoginInfo, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.RemoveLoginAsync(HTCMobile.Authorization.Users.User, System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetLoginsAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.FindByLoginAsync(System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetEmailConfirmedAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetEmailConfirmedAsync(HTCMobile.Authorization.Users.User, System.Boolean, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetEmailAsync(HTCMobile.Authorization.Users.User, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetEmailAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetNormalizedEmailAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetNormalizedEmailAsync(HTCMobile.Authorization.Users.User, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.FindByEmailAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetLockoutEndDateAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetLockoutEndDateAsync(HTCMobile.Authorization.Users.User, System.Nullable&lt;System.DateTimeOffset&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.IncrementAccessFailedCountAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.ResetAccessFailedCountAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetAccessFailedCountAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetLockoutEnabledAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetLockoutEnabledAsync(HTCMobile.Authorization.Users.User, System.Boolean, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetPhoneNumberAsync(HTCMobile.Authorization.Users.User, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetPhoneNumberAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetPhoneNumberConfirmedAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetPhoneNumberConfirmedAsync(HTCMobile.Authorization.Users.User, System.Boolean, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetSecurityStampAsync(HTCMobile.Authorization.Users.User, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetSecurityStampAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetTwoFactorEnabledAsync(HTCMobile.Authorization.Users.User, System.Boolean, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetTwoFactorEnabledAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetUsersForClaimAsync(System.Security.Claims.Claim, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetUsersInRoleAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetTokenAsync(HTCMobile.Authorization.Users.User, System.String, System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.RemoveTokenAsync(HTCMobile.Authorization.Users.User, System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetTokenAsync(HTCMobile.Authorization.Users.User, System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.FindByNameOrEmailAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.FindByNameOrEmailAsync(System.Nullable&lt;System.Int32&gt;, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.FindAsync(Microsoft.AspNetCore.Identity.UserLoginInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.FindAllAsync(Microsoft.AspNetCore.Identity.UserLoginInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.FindAsync(System.Nullable&lt;System.Int32&gt;, Microsoft.AspNetCore.Identity.UserLoginInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetUserNameFromDatabaseAsync(System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.AddPermissionAsync(HTCMobile.Authorization.Users.User, Abp.Authorization.PermissionGrantInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.RemovePermissionAsync(HTCMobile.Authorization.Users.User, Abp.Authorization.PermissionGrantInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetPermissionsAsync(System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.HasPermissionAsync(System.Int64, Abp.Authorization.PermissionGrantInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.RemoveAllPermissionSettingsAsync(HTCMobile.Authorization.Users.User)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SetAuthenticatorKeyAsync(HTCMobile.Authorization.Users.User, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetAuthenticatorKeyAsync(HTCMobile.Authorization.Users.User, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.AddTokenValidityKeyAsync(HTCMobile.Authorization.Users.User, System.String, System.DateTime, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.IsTokenValidityKeyValidAsync(HTCMobile.Authorization.Users.User, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.RemoveTokenValidityKeyAsync(HTCMobile.Authorization.Users.User, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.ErrorDescriber</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.AutoSaveChanges</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.AbpSession</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.Users</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserStore&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.UserRepository</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.Authorization.Users.html">HTCMobile.Authorization.Users</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Core.dll</h6>
+  <h5 id="HTCMobile_Authorization_Users_UserStore_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UserStore : AbpUserStore&lt;Role, User&gt;, IUserLoginStore&lt;User&gt;, IUserRoleStore&lt;User&gt;, IUserClaimStore&lt;User&gt;, IUserPasswordStore&lt;User&gt;, IUserSecurityStampStore&lt;User&gt;, IUserEmailStore&lt;User&gt;, IUserLockoutStore&lt;User&gt;, IUserPhoneNumberStore&lt;User&gt;, IUserTwoFactorStore&lt;User&gt;, IUserAuthenticationTokenStore&lt;User&gt;, IUserPermissionStore&lt;User&gt;, IQueryableUserStore&lt;User&gt;, IUserAuthenticatorKeyStore&lt;User&gt;, IUserStore&lt;User&gt;, IDisposable, ITransientDependency</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HTCMobile_Authorization_Users_UserStore__ctor_" data-uid="HTCMobile.Authorization.Users.UserStore.#ctor*"></a>
+  <h4 id="HTCMobile_Authorization_Users_UserStore__ctor_Abp_Domain_Uow_IUnitOfWorkManager_Abp_Domain_Repositories_IRepository_HTCMobile_Authorization_Users_User_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Authorization_Roles_Role__Abp_Linq_IAsyncQueryableExecuter_Abp_Domain_Repositories_IRepository_Abp_Authorization_Users_UserRole_System_Int64__Abp_Domain_Repositories_IRepository_Abp_Authorization_Users_UserLogin_System_Int64__Abp_Domain_Repositories_IRepository_Abp_Authorization_Users_UserClaim_System_Int64__Abp_Domain_Repositories_IRepository_Abp_Authorization_Users_UserPermissionSetting_System_Int64__" data-uid="HTCMobile.Authorization.Users.UserStore.#ctor(Abp.Domain.Uow.IUnitOfWorkManager,Abp.Domain.Repositories.IRepository{HTCMobile.Authorization.Users.User,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Authorization.Roles.Role},Abp.Linq.IAsyncQueryableExecuter,Abp.Domain.Repositories.IRepository{Abp.Authorization.Users.UserRole,System.Int64},Abp.Domain.Repositories.IRepository{Abp.Authorization.Users.UserLogin,System.Int64},Abp.Domain.Repositories.IRepository{Abp.Authorization.Users.UserClaim,System.Int64},Abp.Domain.Repositories.IRepository{Abp.Authorization.Users.UserPermissionSetting,System.Int64})">UserStore(IUnitOfWorkManager, IRepository&lt;User, Int64&gt;, IRepository&lt;Role&gt;, IAsyncQueryableExecuter, IRepository&lt;UserRole, Int64&gt;, IRepository&lt;UserLogin, Int64&gt;, IRepository&lt;UserClaim, Int64&gt;, IRepository&lt;UserPermissionSetting, Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserStore(IUnitOfWorkManager unitOfWorkManager, IRepository&lt;User, long&gt; userRepository, IRepository&lt;Role&gt; roleRepository, IAsyncQueryableExecuter asyncQueryableExecuter, IRepository&lt;UserRole, long&gt; userRoleRepository, IRepository&lt;UserLogin, long&gt; userLoginRepository, IRepository&lt;UserClaim, long&gt; userClaimRepository, IRepository&lt;UserPermissionSetting, long&gt; userPermissionSettingRepository)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Domain.Uow.IUnitOfWorkManager</span></td>
+        <td><span class="parametername">unitOfWorkManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">userRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>&gt;</td>
+        <td><span class="parametername">roleRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Linq.IAsyncQueryableExecuter</span></td>
+        <td><span class="parametername">asyncQueryableExecuter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<span class="xref">Abp.Authorization.Users.UserRole</span>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">userRoleRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<span class="xref">Abp.Authorization.Users.UserLogin</span>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">userLoginRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<span class="xref">Abp.Authorization.Users.UserClaim</span>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">userClaimRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<span class="xref">Abp.Authorization.Users.UserPermissionSetting</span>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">userPermissionSettingRepository</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserLoginStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserRoleStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserClaimStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserPasswordStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserSecurityStampStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserEmailStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserLockoutStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserPhoneNumberStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserTwoFactorStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserAuthenticationTokenStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Authorization.Users.IUserPermissionStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IQueryableUserStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserAuthenticatorKeyStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Dependency.ITransientDependency</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

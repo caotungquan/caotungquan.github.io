@@ -1,0 +1,615 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IMembershipAppService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IMembershipAppService
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.Customers.IMembershipAppService">
+  
+  
+  <h1 id="HTCMobile_Customers_IMembershipAppService" data-uid="HTCMobile.Customers.IMembershipAppService" class="text-break">Interface IMembershipAppService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.Customers.html">HTCMobile.Customers</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Application.dll</h6>
+  <h5 id="HTCMobile_Customers_IMembershipAppService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IMembershipAppService : IApplicationService, ITransientDependency</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTCMobile_Customers_IMembershipAppService_CMSGetDetailMembership_" data-uid="HTCMobile.Customers.IMembershipAppService.CMSGetDetailMembership*"></a>
+  <h4 id="HTCMobile_Customers_IMembershipAppService_CMSGetDetailMembership_System_Int64_" data-uid="HTCMobile.Customers.IMembershipAppService.CMSGetDetailMembership(System.Int64)">CMSGetDetailMembership(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;CMSResponseMembershipGetDetailDto&gt;&gt; CMSGetDetailMembership(long Id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">Id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Membership.Dto.CMSResponseMembershipGetDetailDto.html">CMSResponseMembershipGetDetailDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_IMembershipAppService_CMSGetList_" data-uid="HTCMobile.Customers.IMembershipAppService.CMSGetList*"></a>
+  <h4 id="HTCMobile_Customers_IMembershipAppService_CMSGetList_HTCMobile_Membership_Dto_CMSGetListInputDto_" data-uid="HTCMobile.Customers.IMembershipAppService.CMSGetList(HTCMobile.Membership.Dto.CMSGetListInputDto)">CMSGetList(CMSGetListInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseCMSModel&lt;List&lt;CMSResponseGetListMembershipDto&gt;&gt;&gt; CMSGetList(CMSGetListInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.CMSGetListInputDto.html">CMSGetListInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.CMSResponseGetListMembershipDto.html">CMSResponseGetListMembershipDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_IMembershipAppService_CMSGetRankUpPointHistory_" data-uid="HTCMobile.Customers.IMembershipAppService.CMSGetRankUpPointHistory*"></a>
+  <h4 id="HTCMobile_Customers_IMembershipAppService_CMSGetRankUpPointHistory_HTCMobile_Membership_Dto_CMSRankUpPointGetListInputDto_" data-uid="HTCMobile.Customers.IMembershipAppService.CMSGetRankUpPointHistory(HTCMobile.Membership.Dto.CMSRankUpPointGetListInputDto)">CMSGetRankUpPointHistory(CMSRankUpPointGetListInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseCMSModel&lt;List&lt;ResponseRankUpPointDto&gt;&gt;&gt; CMSGetRankUpPointHistory(CMSRankUpPointGetListInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.CMSRankUpPointGetListInputDto.html">CMSRankUpPointGetListInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.ResponseRankUpPointDto.html">ResponseRankUpPointDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_IMembershipAppService_CMSGetUsingPointHistory_" data-uid="HTCMobile.Customers.IMembershipAppService.CMSGetUsingPointHistory*"></a>
+  <h4 id="HTCMobile_Customers_IMembershipAppService_CMSGetUsingPointHistory_HTCMobile_Membership_Dto_CMSUsingPointGetlistInputDto_" data-uid="HTCMobile.Customers.IMembershipAppService.CMSGetUsingPointHistory(HTCMobile.Membership.Dto.CMSUsingPointGetlistInputDto)">CMSGetUsingPointHistory(CMSUsingPointGetlistInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseCMSModel&lt;List&lt;ResponseUsingPointHistoryDto&gt;&gt;&gt; CMSGetUsingPointHistory(CMSUsingPointGetlistInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.CMSUsingPointGetlistInputDto.html">CMSUsingPointGetlistInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.ResponseUsingPointHistoryDto.html">ResponseUsingPointHistoryDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_IMembershipAppService_MobileAddMembership_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileAddMembership*"></a>
+  <h4 id="HTCMobile_Customers_IMembershipAppService_MobileAddMembership_HTCMobile_Membership_Dto_MobileInputAddMembershipDto_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileAddMembership(HTCMobile.Membership.Dto.MobileInputAddMembershipDto)">MobileAddMembership(MobileInputAddMembershipDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;MobileResponseMembershipDto&gt;&gt; MobileAddMembership(MobileInputAddMembershipDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.MobileInputAddMembershipDto.html">MobileInputAddMembershipDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Membership.Dto.MobileResponseMembershipDto.html">MobileResponseMembershipDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_IMembershipAppService_MobileBenefitOfMembership_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileBenefitOfMembership*"></a>
+  <h4 id="HTCMobile_Customers_IMembershipAppService_MobileBenefitOfMembership_System_Int64_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileBenefitOfMembership(System.Int64)">MobileBenefitOfMembership(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;List&lt;MobileResponseBenefitDto&gt;&gt;&gt; MobileBenefitOfMembership(long cardId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">cardId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.MobileResponseBenefitDto.html">MobileResponseBenefitDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_IMembershipAppService_MobileDetailBenefit_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileDetailBenefit*"></a>
+  <h4 id="HTCMobile_Customers_IMembershipAppService_MobileDetailBenefit_System_Int64_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileDetailBenefit(System.Int64)">MobileDetailBenefit(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;MobileResponseBenefitDetailDto&gt;&gt; MobileDetailBenefit(long id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Membership.Dto.MobileResponseBenefitDetailDto.html">MobileResponseBenefitDetailDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_IMembershipAppService_MobileGetDetail_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileGetDetail*"></a>
+  <h4 id="HTCMobile_Customers_IMembershipAppService_MobileGetDetail_System_Int64_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileGetDetail(System.Int64)">MobileGetDetail(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;MobileResponseMembershipDto&gt;&gt; MobileGetDetail(long membershipId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">membershipId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Membership.Dto.MobileResponseMembershipDto.html">MobileResponseMembershipDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_IMembershipAppService_MobileGetList_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileGetList*"></a>
+  <h4 id="HTCMobile_Customers_IMembershipAppService_MobileGetList" data-uid="HTCMobile.Customers.IMembershipAppService.MobileGetList">MobileGetList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;List&lt;MobileResponseMembershipDto&gt;&gt;&gt; MobileGetList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.MobileResponseMembershipDto.html">MobileResponseMembershipDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_IMembershipAppService_MobileGetRankUpPointHistory_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileGetRankUpPointHistory*"></a>
+  <h4 id="HTCMobile_Customers_IMembershipAppService_MobileGetRankUpPointHistory_HTCMobile_Membership_Dto_MobileRankUpPointGetListInputDto_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileGetRankUpPointHistory(HTCMobile.Membership.Dto.MobileRankUpPointGetListInputDto)">MobileGetRankUpPointHistory(MobileRankUpPointGetListInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseCMSModel&lt;List&lt;ResponseRankUpPointDto&gt;&gt;&gt; MobileGetRankUpPointHistory(MobileRankUpPointGetListInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.MobileRankUpPointGetListInputDto.html">MobileRankUpPointGetListInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.ResponseRankUpPointDto.html">ResponseRankUpPointDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_IMembershipAppService_MobileGetUsingPointHistory_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileGetUsingPointHistory*"></a>
+  <h4 id="HTCMobile_Customers_IMembershipAppService_MobileGetUsingPointHistory_HTCMobile_Membership_Dto_MobileUsingPointGetlistInputDto_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileGetUsingPointHistory(HTCMobile.Membership.Dto.MobileUsingPointGetlistInputDto)">MobileGetUsingPointHistory(MobileUsingPointGetlistInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseCMSModel&lt;List&lt;ResponseUsingPointHistoryDto&gt;&gt;&gt; MobileGetUsingPointHistory(MobileUsingPointGetlistInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Membership.Dto.MobileUsingPointGetlistInputDto.html">MobileUsingPointGetlistInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Membership.Dto.ResponseUsingPointHistoryDto.html">ResponseUsingPointHistoryDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_IMembershipAppService_MobileRemoveCustomerMembership_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileRemoveCustomerMembership*"></a>
+  <h4 id="HTCMobile_Customers_IMembershipAppService_MobileRemoveCustomerMembership_System_Int64_" data-uid="HTCMobile.Customers.IMembershipAppService.MobileRemoveCustomerMembership(System.Int64)">MobileRemoveCustomerMembership(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&gt; MobileRemoveCustomerMembership(long Id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">Id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel.html">ResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

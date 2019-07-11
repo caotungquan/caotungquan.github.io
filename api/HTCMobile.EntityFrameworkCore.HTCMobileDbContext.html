@@ -1,0 +1,1855 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HTCMobileDbContext
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HTCMobileDbContext
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext">
+  
+  
+  <h1 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext" class="text-break">Class HTCMobileDbContext
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.EntityFrameworkCore.DbContext</span></div>
+    <div class="level2"><span class="xref">Abp.EntityFrameworkCore.AbpDbContext</span></div>
+    <div class="level3"><span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext</span>&lt;<a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>, <a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>, <a class="xref" href="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.html">HTCMobileDbContext</a>&gt;</div>
+    <div class="level4"><span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroDbContext</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Tenant.html">Tenant</a>, <a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>, <a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>, <a class="xref" href="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.html">HTCMobileDbContext</a>&gt;</div>
+    <div class="level5"><span class="xref">HTCMobileDbContext</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure</span>&lt;<span class="xref">System.IServiceProvider</span>&gt;</div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies</span></div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbSetCache</span></div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbQueryCache</span></div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable</span></div>
+    <div><span class="xref">Abp.Dependency.ITransientDependency</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroDbContext&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroDbContext&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.Tenants</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroDbContext&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.Editions</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroDbContext&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.FeatureSettings</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroDbContext&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.TenantFeatureSettings</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroDbContext&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.EditionFeatureSettings</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroDbContext&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.BackgroundJobs</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroDbContext&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.UserAccounts</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroDbContext&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.Notifications</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.SaveChanges()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.SaveChangesAsync(System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.Roles</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.Users</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.UserLogins</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.UserLoginAttempts</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.UserRoles</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.UserClaims</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.UserTokens</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.RoleClaims</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.Permissions</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.RolePermissions</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.UserPermissions</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.Settings</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.AuditLogs</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.Languages</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.LanguageTexts</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.OrganizationUnits</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.UserOrganizationUnits</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.TenantNotifications</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.UserNotifications</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.NotificationSubscriptions</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.EntityChanges</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.EntityChangeSets</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.EntityPropertyChanges</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User, HTCMobile.EntityFrameworkCore.HTCMobileDbContext&gt;.EntityHistoryHelper</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.ConfigureGlobalFilters&lt;TEntity&gt;(Microsoft.EntityFrameworkCore.ModelBuilder, Microsoft.EntityFrameworkCore.Metadata.IMutableEntityType)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.ShouldFilterEntity&lt;TEntity&gt;(Microsoft.EntityFrameworkCore.Metadata.IMutableEntityType)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.CreateFilterExpression&lt;TEntity&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.SaveChanges()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.SaveChangesAsync(System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.ApplyAbpConcepts()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.ApplyAbpConcepts(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry, System.Nullable&lt;System.Int64&gt;, Abp.Events.Bus.Entities.EntityChangeReport)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.ApplyAbpConceptsForAddedEntity(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry, System.Nullable&lt;System.Int64&gt;, Abp.Events.Bus.Entities.EntityChangeReport)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.ApplyAbpConceptsForModifiedEntity(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry, System.Nullable&lt;System.Int64&gt;, Abp.Events.Bus.Entities.EntityChangeReport)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.ApplyAbpConceptsForDeletedEntity(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry, System.Nullable&lt;System.Int64&gt;, Abp.Events.Bus.Entities.EntityChangeReport)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.IsHardDeleteEntity(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.AddDomainEvents(System.Collections.Generic.List&lt;Abp.Events.Bus.Entities.DomainEventEntry&gt;, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.CheckAndSetId(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.CheckAndSetMustHaveTenantIdProperty(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.CheckAndSetMayHaveTenantIdProperty(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.SetCreationAuditProperties(System.Object, System.Nullable&lt;System.Int64&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.SetModificationAuditProperties(System.Object, System.Nullable&lt;System.Int64&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.CancelDeletionForSoftDelete(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.SetDeletionAuditProperties(System.Object, System.Nullable&lt;System.Int64&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.GetAuditUserId()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.GetCurrentTenantIdOrNull()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.CombineExpressions&lt;T&gt;(System.Linq.Expressions.Expression&lt;System.Func&lt;T, System.Boolean&gt;&gt;, System.Linq.Expressions.Expression&lt;System.Func&lt;T, System.Boolean&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.AbpSession</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.EntityChangeEventHelper</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.EventBus</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.GuidGenerator</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.CurrentUnitOfWorkProvider</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.MultiTenancyConfig</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.SuppressAutoSetTenantId</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.CurrentTenantId</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.IsSoftDeleteFilterEnabled</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.IsMayHaveTenantFilterEnabled</span>
+    </div>
+    <div>
+      <span class="xref">Abp.EntityFrameworkCore.AbpDbContext.IsMustHaveTenantFilterEnabled</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbSetCache.GetOrAddSet(Microsoft.EntityFrameworkCore.Internal.IDbSetSource, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbQueryCache.GetOrAddQuery(Microsoft.EntityFrameworkCore.Internal.IDbQuerySource, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Set&lt;TEntity&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Query&lt;TQuery&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChanges(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Boolean, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.SetPool(Microsoft.EntityFrameworkCore.Internal.IDbContextPool)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.SnapshotConfiguration()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.Resurrect(Microsoft.EntityFrameworkCore.Internal.DbContextPoolConfigurationSnapshot)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.ResetState()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Entry&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Entry(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Add&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddAsync&lt;TEntity&gt;(TEntity, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Attach&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Update&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Remove&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Add(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddAsync(System.Object, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Attach(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Update(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Remove(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRangeAsync(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AttachRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.UpdateRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.RemoveRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRangeAsync(System.Collections.Generic.IEnumerable&lt;System.Object&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AttachRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.UpdateRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.RemoveRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Find(System.Type, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync(System.Type, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync(System.Type, System.Object[], System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Find&lt;TEntity&gt;(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync&lt;TEntity&gt;(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync&lt;TEntity&gt;(System.Object[], System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Database</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.ChangeTracker</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Model</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.SetSource</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.QuerySource</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.EntityFinderFactory</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.QueryProvider</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.StateManager</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.ChangeDetector</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.EntityGraphAttacher</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.UpdateLogger</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.InfrastructureLogger</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure&lt;System.IServiceProvider&gt;.Instance</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.EntityFrameworkCore.html">HTCMobile.EntityFrameworkCore</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.EntityFrameworkCore.dll</h6>
+  <h5 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HTCMobileDbContext : AbpZeroDbContext&lt;Tenant, Role, User, HTCMobileDbContext&gt;, IDisposable, IInfrastructure&lt;IServiceProvider&gt;, IDbContextDependencies, IDbSetCache, IDbQueryCache, IDbContextPoolable, ITransientDependency</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext__ctor_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.#ctor*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_HTCMobile_EntityFrameworkCore_HTCMobileDbContext__" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{HTCMobile.EntityFrameworkCore.HTCMobileDbContext})">HTCMobileDbContext(DbContextOptions&lt;HTCMobileDbContext&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HTCMobileDbContext(DbContextOptions&lt;HTCMobileDbContext&gt; options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbContextOptions</span>&lt;<a class="xref" href="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.html">HTCMobileDbContext</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcAgencies_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcAgencies*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcAgencies" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcAgencies">HtcAgencies</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcAgency&gt; HtcAgencies { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcAgency.html">HtcAgency</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcArea_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcArea*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcArea" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcArea">HtcArea</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcArea&gt; HtcArea { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcArea.html">HtcArea</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcBenefits_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcBenefits*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcBenefits" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcBenefits">HtcBenefits</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcBenefits&gt; HtcBenefits { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcBenefits.html">HtcBenefits</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcBenefitTypes_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcBenefitTypes*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcBenefitTypes" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcBenefitTypes">HtcBenefitTypes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcBenefitType&gt; HtcBenefitTypes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcBenefitType.html">HtcBenefitType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarCssJs_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarCssJs*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarCssJs" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarCssJs">HtcCarCssJs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCarCssJs&gt; HtcCarCssJs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCarCssJs.html">HtcCarCssJs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarCssJsMobileApp_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarCssJsMobileApp*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarCssJsMobileApp" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarCssJsMobileApp">HtcCarCssJsMobileApp</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCarCssJsMobileApp&gt; HtcCarCssJsMobileApp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCarCssJsMobileApp.html">HtcCarCssJsMobileApp</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarImages_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarImages*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarImages" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarImages">HtcCarImages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCarImages&gt; HtcCarImages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCarImages.html">HtcCarImages</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarMultipleChoiceAnswerSheet_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarMultipleChoiceAnswerSheet*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarMultipleChoiceAnswerSheet" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarMultipleChoiceAnswerSheet">HtcCarMultipleChoiceAnswerSheet</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCarMultipleChoiceAnswerSheet&gt; HtcCarMultipleChoiceAnswerSheet { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCarMultipleChoiceAnswerSheet.html">HtcCarMultipleChoiceAnswerSheet</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarMultipleChoiceQuestion_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarMultipleChoiceQuestion*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarMultipleChoiceQuestion" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarMultipleChoiceQuestion">HtcCarMultipleChoiceQuestion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCarMultipleChoiceQuestion&gt; HtcCarMultipleChoiceQuestion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCarMultipleChoiceQuestion.html">HtcCarMultipleChoiceQuestion</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarProperties_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarProperties*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarProperties" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarProperties">HtcCarProperties</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCarProperties&gt; HtcCarProperties { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCarProperties.html">HtcCarProperties</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarRegistrationFee_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarRegistrationFee*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarRegistrationFee" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarRegistrationFee">HtcCarRegistrationFee</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCarRegistrationFee&gt; HtcCarRegistrationFee { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCarRegistrationFee.html">HtcCarRegistrationFee</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCars_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCars*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCars" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCars">HtcCars</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCar&gt; HtcCars { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCar.html">HtcCar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarSpec_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarSpec*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarSpec" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarSpec">HtcCarSpec</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCarSpec&gt; HtcCarSpec { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCarSpec.html">HtcCarSpec</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarSpecTypeDetail_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarSpecTypeDetail*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarSpecTypeDetail" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarSpecTypeDetail">HtcCarSpecTypeDetail</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCarSpecTypeDetail&gt; HtcCarSpecTypeDetail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCarSpecTypeDetail.html">HtcCarSpecTypeDetail</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarSpecTypeGroup_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarSpecTypeGroup*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarSpecTypeGroup" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarSpecTypeGroup">HtcCarSpecTypeGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCarSpecTypeGroup&gt; HtcCarSpecTypeGroup { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCarSpecTypeGroup.html">HtcCarSpecTypeGroup</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarVersion_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarVersion*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCarVersion" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCarVersion">HtcCarVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCarVersion&gt; HtcCarVersion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCarVersion.html">HtcCarVersion</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCategoryCar_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCategoryCar*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCategoryCar" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCategoryCar">HtcCategoryCar</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCategoryCar&gt; HtcCategoryCar { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCategoryCar.html">HtcCategoryCar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCity_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCity*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCity" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCity">HtcCity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCity&gt; HtcCity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCity.html">HtcCity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcComplain_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcComplain*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcComplain" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcComplain">HtcComplain</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcComplain&gt; HtcComplain { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<span class="xref">HtcComplain</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCustomerCars_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCustomerCars*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCustomerCars" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCustomerCars">HtcCustomerCars</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCustomerCar&gt; HtcCustomerCars { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCustomerCar.html">HtcCustomerCar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCustomerMemberships_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCustomerMemberships*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcCustomerMemberships" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcCustomerMemberships">HtcCustomerMemberships</h4>
+  <div class="markdown level1 summary"><p>Bảng liên kết giữ lịch hẹn và các dịch vụ sử dụng
+1 lịch đặt hẹn dịch vụ có thể sử dụng nhiều dịch vụ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcCustomerMemberships&gt; HtcCustomerMemberships { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCustomerMemberships.html">HtcCustomerMemberships</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcFacebookGroups_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcFacebookGroups*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcFacebookGroups" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcFacebookGroups">HtcFacebookGroups</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcFacebookGroups&gt; HtcFacebookGroups { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcFacebookGroups.html">HtcFacebookGroups</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcGuideBooks_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcGuideBooks*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcGuideBooks" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcGuideBooks">HtcGuideBooks</h4>
+  <div class="markdown level1 summary"><p>Sách hướng dẫn</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcGuideBook&gt; HtcGuideBooks { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcGuideBook.html">HtcGuideBook</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcGuideBooksContent_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcGuideBooksContent*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcGuideBooksContent" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcGuideBooksContent">HtcGuideBooksContent</h4>
+  <div class="markdown level1 summary"><p>Bảng lưu nội dung sách hướng dẫn theo mục lục</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcGuideBooksContent&gt; HtcGuideBooksContent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcGuideBooksContent.html">HtcGuideBooksContent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcIncentiveUsingHistory_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcIncentiveUsingHistory*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcIncentiveUsingHistory" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcIncentiveUsingHistory">HtcIncentiveUsingHistory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcIncentiveUsingHistory&gt; HtcIncentiveUsingHistory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcIncentiveUsingHistory.html">HtcIncentiveUsingHistory</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcLog_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcLog*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcLog" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcLog">HtcLog</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcLog&gt; HtcLog { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcLog.html">HtcLog</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcMaintenanceLevels_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcMaintenanceLevels*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcMaintenanceLevels" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcMaintenanceLevels">HtcMaintenanceLevels</h4>
+  <div class="markdown level1 summary"><p>Bảng danh muc 4 cấp bảo dưỡng</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcMaintenanceLevel&gt; HtcMaintenanceLevels { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcMaintenanceLevel.html">HtcMaintenanceLevel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcMaintenancePriceAgency_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcMaintenancePriceAgency*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcMaintenancePriceAgency" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcMaintenancePriceAgency">HtcMaintenancePriceAgency</h4>
+  <div class="markdown level1 summary"><p>Bảng liên kết Bảng giá bảo dưỡng và đại lý</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcMaintenancePriceAgency&gt; HtcMaintenancePriceAgency { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcMaintenancePriceAgency.html">HtcMaintenancePriceAgency</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcMaintenancePriceDetails_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcMaintenancePriceDetails*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcMaintenancePriceDetails" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcMaintenancePriceDetails">HtcMaintenancePriceDetails</h4>
+  <div class="markdown level1 summary"><p>Chi tiết bảng giá bảo dưỡng theo từng xe</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcMaintenancePriceDetails&gt; HtcMaintenancePriceDetails { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcMaintenancePriceDetails.html">HtcMaintenancePriceDetails</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcMaintenancePriceLists_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcMaintenancePriceLists*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcMaintenancePriceLists" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcMaintenancePriceLists">HtcMaintenancePriceLists</h4>
+  <div class="markdown level1 summary"><p>Danh sach Bảng giá bao dưỡng</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcMaintenancePriceLists&gt; HtcMaintenancePriceLists { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcMaintenancePriceLists.html">HtcMaintenancePriceLists</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcMarketingChannel_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcMarketingChannel*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcMarketingChannel" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcMarketingChannel">HtcMarketingChannel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcMarketingChannel&gt; HtcMarketingChannel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcMarketingChannel.html">HtcMarketingChannel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcMemberships_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcMemberships*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcMemberships" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcMemberships">HtcMemberships</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcMembership&gt; HtcMemberships { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcMembership.html">HtcMembership</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcNews_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcNews*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcNews" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcNews">HtcNews</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcNews&gt; HtcNews { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcNews.html">HtcNews</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcNewsCssJsMobileApp_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcNewsCssJsMobileApp*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcNewsCssJsMobileApp" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcNewsCssJsMobileApp">HtcNewsCssJsMobileApp</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcNewsCssJsMobileApp&gt; HtcNewsCssJsMobileApp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcNewsCssJsMobileApp.html">HtcNewsCssJsMobileApp</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcNewsGroups_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcNewsGroups*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcNewsGroups" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcNewsGroups">HtcNewsGroups</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcNewsGroup&gt; HtcNewsGroups { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcNewsGroup.html">HtcNewsGroup</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcNotificationRecipients_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcNotificationRecipients*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcNotificationRecipients" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcNotificationRecipients">HtcNotificationRecipients</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcNotificationRecipients&gt; HtcNotificationRecipients { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcNotificationRecipients.html">HtcNotificationRecipients</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcNotifications_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcNotifications*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcNotifications" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcNotifications">HtcNotifications</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcNotification&gt; HtcNotifications { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcNotification.html">HtcNotification</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcOtherFees_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcOtherFees*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcOtherFees" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcOtherFees">HtcOtherFees</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcOtherFees&gt; HtcOtherFees { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcOtherFees.html">HtcOtherFees</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcPointHistory_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcPointHistory*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcPointHistory" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcPointHistory">HtcPointHistory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcPointHistory&gt; HtcPointHistory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcPointHistory.html">HtcPointHistory</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcRegisterTestDrives_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcRegisterTestDrives*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcRegisterTestDrives" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcRegisterTestDrives">HtcRegisterTestDrives</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcRegisterTestDrive&gt; HtcRegisterTestDrives { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcRegisterTestDrive.html">HtcRegisterTestDrive</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcResendNotification_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcResendNotification*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcResendNotification" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcResendNotification">HtcResendNotification</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcResendNotification&gt; HtcResendNotification { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcResendNotification.html">HtcResendNotification</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcSetServiceSchedule_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcSetServiceSchedule*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcSetServiceSchedule" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcSetServiceSchedule">HtcSetServiceSchedule</h4>
+  <div class="markdown level1 summary"><p>Bảng lưu trữ thông tin đặt lịch hẹn dịch vụ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcSetServiceSchedule&gt; HtcSetServiceSchedule { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcSetServiceSchedule.html">HtcSetServiceSchedule</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcSettings_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcSettings*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcSettings" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcSettings">HtcSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcSetting&gt; HtcSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcSetting.html">HtcSetting</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcSurveyAnswer_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcSurveyAnswer*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcSurveyAnswer" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcSurveyAnswer">HtcSurveyAnswer</h4>
+  <div class="markdown level1 summary"><p>Bảng lưu trữ danh sách khảo sát</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcSurveyAnswer&gt; HtcSurveyAnswer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcSurveyAnswer.html">HtcSurveyAnswer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcSyncHistory_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcSyncHistory*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcSyncHistory" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcSyncHistory">HtcSyncHistory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcSyncHistory&gt; HtcSyncHistory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcSyncHistory.html">HtcSyncHistory</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcTechnicalGuides_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcTechnicalGuides*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcTechnicalGuides" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcTechnicalGuides">HtcTechnicalGuides</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcTechnicalGuide&gt; HtcTechnicalGuides { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcTechnicalGuide.html">HtcTechnicalGuide</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcTemplateEmail_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcTemplateEmail*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcTemplateEmail" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcTemplateEmail">HtcTemplateEmail</h4>
+  <div class="markdown level1 summary"><p>Bảng liên kết hạng thẻ và quyền lợi (n-n)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcTemplateEmail&gt; HtcTemplateEmail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcTemplateEmail.html">HtcTemplateEmail</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcTerm_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcTerm*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcTerm" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcTerm">HtcTerm</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcTerm&gt; HtcTerm { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcTerm.html">HtcTerm</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcUserDevice_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcUserDevice*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcUserDevice" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcUserDevice">HtcUserDevice</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcUserDevices&gt; HtcUserDevice { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcUserDevices.html">HtcUserDevices</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcUserNotification_" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcUserNotification*"></a>
+  <h4 id="HTCMobile_EntityFrameworkCore_HTCMobileDbContext_HtcUserNotification" data-uid="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.HtcUserNotification">HtcUserNotification</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HtcUserNotifications&gt; HtcUserNotification { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="HTCMobile.Model.HtcUserNotifications.html">HtcUserNotifications</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbSetCache</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbQueryCache</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Dependency.ITransientDependency</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

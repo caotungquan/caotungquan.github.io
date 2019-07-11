@@ -1,0 +1,590 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ISurveyAppService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ISurveyAppService
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.Survey.ISurveyAppService">
+  
+  
+  <h1 id="HTCMobile_Survey_ISurveyAppService" data-uid="HTCMobile.Survey.ISurveyAppService" class="text-break">Interface ISurveyAppService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.Survey.html">HTCMobile.Survey</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Application.dll</h6>
+  <h5 id="HTCMobile_Survey_ISurveyAppService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISurveyAppService : IApplicationService, ITransientDependency</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTCMobile_Survey_ISurveyAppService_CheckSurveyCustomer_" data-uid="HTCMobile.Survey.ISurveyAppService.CheckSurveyCustomer*"></a>
+  <h4 id="HTCMobile_Survey_ISurveyAppService_CheckSurveyCustomer_System_String_" data-uid="HTCMobile.Survey.ISurveyAppService.CheckSurveyCustomer(System.String)">CheckSurveyCustomer(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;SurveyDto&gt;&gt; CheckSurveyCustomer(string _token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">_token</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_ISurveyAppService_CMSExportSaleAnswer_" data-uid="HTCMobile.Survey.ISurveyAppService.CMSExportSaleAnswer*"></a>
+  <h4 id="HTCMobile_Survey_ISurveyAppService_CMSExportSaleAnswer_HTCMobile_Survey_Dto_ConditionExportAnswerInput_" data-uid="HTCMobile.Survey.ISurveyAppService.CMSExportSaleAnswer(HTCMobile.Survey.Dto.ConditionExportAnswerInput)">CMSExportSaleAnswer(ConditionExportAnswerInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IActionResult&gt; CMSExportSaleAnswer(ConditionExportAnswerInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.ConditionExportAnswerInput.html">ConditionExportAnswerInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_ISurveyAppService_CMSExportSaleSurvey_" data-uid="HTCMobile.Survey.ISurveyAppService.CMSExportSaleSurvey*"></a>
+  <h4 id="HTCMobile_Survey_ISurveyAppService_CMSExportSaleSurvey_HTCMobile_Survey_Dto_ConditionExportSurveyInput_" data-uid="HTCMobile.Survey.ISurveyAppService.CMSExportSaleSurvey(HTCMobile.Survey.Dto.ConditionExportSurveyInput)">CMSExportSaleSurvey(ConditionExportSurveyInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IActionResult&gt; CMSExportSaleSurvey(ConditionExportSurveyInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.ConditionExportSurveyInput.html">ConditionExportSurveyInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_ISurveyAppService_CMSExportServiceAnswer_" data-uid="HTCMobile.Survey.ISurveyAppService.CMSExportServiceAnswer*"></a>
+  <h4 id="HTCMobile_Survey_ISurveyAppService_CMSExportServiceAnswer_HTCMobile_Survey_Dto_ConditionExportAnswerInput_" data-uid="HTCMobile.Survey.ISurveyAppService.CMSExportServiceAnswer(HTCMobile.Survey.Dto.ConditionExportAnswerInput)">CMSExportServiceAnswer(ConditionExportAnswerInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IActionResult&gt; CMSExportServiceAnswer(ConditionExportAnswerInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.ConditionExportAnswerInput.html">ConditionExportAnswerInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_ISurveyAppService_CMSExportServiceSurvey_" data-uid="HTCMobile.Survey.ISurveyAppService.CMSExportServiceSurvey*"></a>
+  <h4 id="HTCMobile_Survey_ISurveyAppService_CMSExportServiceSurvey_HTCMobile_Survey_Dto_ConditionExportSurveyInput_" data-uid="HTCMobile.Survey.ISurveyAppService.CMSExportServiceSurvey(HTCMobile.Survey.Dto.ConditionExportSurveyInput)">CMSExportServiceSurvey(ConditionExportSurveyInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IActionResult&gt; CMSExportServiceSurvey(ConditionExportSurveyInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.ConditionExportSurveyInput.html">ConditionExportSurveyInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_ISurveyAppService_GetAllSaleSurveyAnswer_" data-uid="HTCMobile.Survey.ISurveyAppService.GetAllSaleSurveyAnswer*"></a>
+  <h4 id="HTCMobile_Survey_ISurveyAppService_GetAllSaleSurveyAnswer_HTCMobile_Survey_Dto_SurveyAnswerFilterInput_" data-uid="HTCMobile.Survey.ISurveyAppService.GetAllSaleSurveyAnswer(HTCMobile.Survey.Dto.SurveyAnswerFilterInput)">GetAllSaleSurveyAnswer(SurveyAnswerFilterInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseCMSModel&lt;List&lt;SurveyDto&gt;&gt;&gt; GetAllSaleSurveyAnswer(SurveyAnswerFilterInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.SurveyAnswerFilterInput.html">SurveyAnswerFilterInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_ISurveyAppService_GetAllSaleSurveyRequested_" data-uid="HTCMobile.Survey.ISurveyAppService.GetAllSaleSurveyRequested*"></a>
+  <h4 id="HTCMobile_Survey_ISurveyAppService_GetAllSaleSurveyRequested_HTCMobile_Survey_Dto_SurveyRequestedFilterInput_" data-uid="HTCMobile.Survey.ISurveyAppService.GetAllSaleSurveyRequested(HTCMobile.Survey.Dto.SurveyRequestedFilterInput)">GetAllSaleSurveyRequested(SurveyRequestedFilterInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseCMSModel&lt;List&lt;SurveyDto&gt;&gt;&gt; GetAllSaleSurveyRequested(SurveyRequestedFilterInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.SurveyRequestedFilterInput.html">SurveyRequestedFilterInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_ISurveyAppService_GetAllServiceSurveyAnswer_" data-uid="HTCMobile.Survey.ISurveyAppService.GetAllServiceSurveyAnswer*"></a>
+  <h4 id="HTCMobile_Survey_ISurveyAppService_GetAllServiceSurveyAnswer_HTCMobile_Survey_Dto_SurveyAnswerFilterInput_" data-uid="HTCMobile.Survey.ISurveyAppService.GetAllServiceSurveyAnswer(HTCMobile.Survey.Dto.SurveyAnswerFilterInput)">GetAllServiceSurveyAnswer(SurveyAnswerFilterInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseCMSModel&lt;List&lt;SurveyDto&gt;&gt;&gt; GetAllServiceSurveyAnswer(SurveyAnswerFilterInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.SurveyAnswerFilterInput.html">SurveyAnswerFilterInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_ISurveyAppService_GetAllServiceSurveyRequested_" data-uid="HTCMobile.Survey.ISurveyAppService.GetAllServiceSurveyRequested*"></a>
+  <h4 id="HTCMobile_Survey_ISurveyAppService_GetAllServiceSurveyRequested_HTCMobile_Survey_Dto_SurveyRequestedFilterInput_" data-uid="HTCMobile.Survey.ISurveyAppService.GetAllServiceSurveyRequested(HTCMobile.Survey.Dto.SurveyRequestedFilterInput)">GetAllServiceSurveyRequested(SurveyRequestedFilterInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseCMSModel&lt;List&lt;SurveyDto&gt;&gt;&gt; GetAllServiceSurveyRequested(SurveyRequestedFilterInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.SurveyRequestedFilterInput.html">SurveyRequestedFilterInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_ISurveyAppService_GetSurveyCustomer_" data-uid="HTCMobile.Survey.ISurveyAppService.GetSurveyCustomer*"></a>
+  <h4 id="HTCMobile_Survey_ISurveyAppService_GetSurveyCustomer_System_String_" data-uid="HTCMobile.Survey.ISurveyAppService.GetSurveyCustomer(System.String)">GetSurveyCustomer(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;SurveyDto&gt;&gt; GetSurveyCustomer(string _phone)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">_phone</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Survey.Dto.SurveyDto.html">SurveyDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Survey_ISurveyAppService_MobilePostSurveyAnswer_" data-uid="HTCMobile.Survey.ISurveyAppService.MobilePostSurveyAnswer*"></a>
+  <h4 id="HTCMobile_Survey_ISurveyAppService_MobilePostSurveyAnswer_HTCMobile_Survey_Dto_MobileSurveyAnswerInputDto_" data-uid="HTCMobile.Survey.ISurveyAppService.MobilePostSurveyAnswer(HTCMobile.Survey.Dto.MobileSurveyAnswerInputDto)">MobilePostSurveyAnswer(MobileSurveyAnswerInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;string&gt;&gt; MobilePostSurveyAnswer(MobileSurveyAnswerInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Survey.Dto.MobileSurveyAnswerInputDto.html">MobileSurveyAnswerInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

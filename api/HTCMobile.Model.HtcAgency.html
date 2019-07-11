@@ -1,0 +1,901 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HtcAgency
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HtcAgency
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.Model.HtcAgency">
+  
+  
+  <h1 id="HTCMobile_Model_HtcAgency" data-uid="HTCMobile.Model.HtcAgency" class="text-break">Class HtcAgency
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.Domain.Entities.Entity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div class="level2"><span class="xref">Abp.Domain.Entities.Auditing.CreationAuditedEntity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div class="level3"><span class="xref">Abp.Domain.Entities.Auditing.AuditedEntity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div class="level4"><span class="xref">Abp.Domain.Entities.Auditing.FullAuditedEntity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div class="level5"><span class="xref">HtcAgency</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Domain.Entities.IEntity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IFullAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.ICreationAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IHasCreationTime</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IModificationAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IHasModificationTime</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IDeletionAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IHasDeletionTime</span></div>
+    <div><span class="xref">Abp.Domain.Entities.ISoftDelete</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.FullAuditedEntity&lt;System.Int64&gt;.IsDeleted</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.FullAuditedEntity&lt;System.Int64&gt;.DeleterUserId</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.FullAuditedEntity&lt;System.Int64&gt;.DeletionTime</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.AuditedEntity&lt;System.Int64&gt;.LastModificationTime</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.AuditedEntity&lt;System.Int64&gt;.LastModifierUserId</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.CreationAuditedEntity&lt;System.Int64&gt;.CreationTime</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.CreationAuditedEntity&lt;System.Int64&gt;.CreatorUserId</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.IsTransient()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.Id</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.Model.html">HTCMobile.Model</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Core.dll</h6>
+  <h5 id="HTCMobile_Model_HtcAgency_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Table(&quot;HtcAgencies&quot;)]
+public class HtcAgency : FullAuditedEntity&lt;long&gt;, IEntity&lt;long&gt;, IFullAudited, IAudited, ICreationAudited, IHasCreationTime, IModificationAudited, IHasModificationTime, IDeletionAudited, IHasDeletionTime, ISoftDelete</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_AllowAutoSurveyCIS_" data-uid="HTCMobile.Model.HtcAgency.AllowAutoSurveyCIS*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_AllowAutoSurveyCIS" data-uid="HTCMobile.Model.HtcAgency.AllowAutoSurveyCIS">AllowAutoSurveyCIS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowAutoSurveyCIS { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_AllowAutoSurveySSI_" data-uid="HTCMobile.Model.HtcAgency.AllowAutoSurveySSI*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_AllowAutoSurveySSI" data-uid="HTCMobile.Model.HtcAgency.AllowAutoSurveySSI">AllowAutoSurveySSI</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowAutoSurveySSI { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_City_" data-uid="HTCMobile.Model.HtcAgency.City*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_City" data-uid="HTCMobile.Model.HtcAgency.City">City</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ForeignKey(&quot;CityId&quot;)]
+public HtcCity City { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Model.HtcCity.html">HtcCity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_CityId_" data-uid="HTCMobile.Model.HtcAgency.CityId*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_CityId" data-uid="HTCMobile.Model.HtcAgency.CityId">CityId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? CityId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_Code_" data-uid="HTCMobile.Model.HtcAgency.Code*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_Code" data-uid="HTCMobile.Model.HtcAgency.Code">Code</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+[StringLength(10)]
+public string Code { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_Detail_" data-uid="HTCMobile.Model.HtcAgency.Detail*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_Detail" data-uid="HTCMobile.Model.HtcAgency.Detail">Detail</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Detail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_Display_" data-uid="HTCMobile.Model.HtcAgency.Display*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_Display" data-uid="HTCMobile.Model.HtcAgency.Display">Display</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? Display { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_EmailAppointment_" data-uid="HTCMobile.Model.HtcAgency.EmailAppointment*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_EmailAppointment" data-uid="HTCMobile.Model.HtcAgency.EmailAppointment">EmailAppointment</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StringLength(255)]
+public string EmailAppointment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_EmailTestDriver_" data-uid="HTCMobile.Model.HtcAgency.EmailTestDriver*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_EmailTestDriver" data-uid="HTCMobile.Model.HtcAgency.EmailTestDriver">EmailTestDriver</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StringLength(255)]
+public string EmailTestDriver { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_Hotline_" data-uid="HTCMobile.Model.HtcAgency.Hotline*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_Hotline" data-uid="HTCMobile.Model.HtcAgency.Hotline">Hotline</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+[StringLength(50)]
+public string Hotline { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_HotlineSale_" data-uid="HTCMobile.Model.HtcAgency.HotlineSale*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_HotlineSale" data-uid="HTCMobile.Model.HtcAgency.HotlineSale">HotlineSale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StringLength(50)]
+public string HotlineSale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_HotlineService_" data-uid="HTCMobile.Model.HtcAgency.HotlineService*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_HotlineService" data-uid="HTCMobile.Model.HtcAgency.HotlineService">HotlineService</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StringLength(50)]
+public string HotlineService { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_Image_" data-uid="HTCMobile.Model.HtcAgency.Image*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_Image" data-uid="HTCMobile.Model.HtcAgency.Image">Image</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Image { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_IsActive_" data-uid="HTCMobile.Model.HtcAgency.IsActive*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_IsActive" data-uid="HTCMobile.Model.HtcAgency.IsActive">IsActive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? IsActive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_Name_" data-uid="HTCMobile.Model.HtcAgency.Name*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_Name" data-uid="HTCMobile.Model.HtcAgency.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+[StringLength(255)]
+public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_Phone_" data-uid="HTCMobile.Model.HtcAgency.Phone*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_Phone" data-uid="HTCMobile.Model.HtcAgency.Phone">Phone</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StringLength(50)]
+public string Phone { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_Region_" data-uid="HTCMobile.Model.HtcAgency.Region*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_Region" data-uid="HTCMobile.Model.HtcAgency.Region">Region</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StringLength(50)]
+public string Region { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_Scale_" data-uid="HTCMobile.Model.HtcAgency.Scale*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_Scale" data-uid="HTCMobile.Model.HtcAgency.Scale">Scale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StringLength(20)]
+public string Scale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_ShowroomAddress_" data-uid="HTCMobile.Model.HtcAgency.ShowroomAddress*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_ShowroomAddress" data-uid="HTCMobile.Model.HtcAgency.ShowroomAddress">ShowroomAddress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StringLength(500)]
+public string ShowroomAddress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_ShowroomLatitude_" data-uid="HTCMobile.Model.HtcAgency.ShowroomLatitude*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_ShowroomLatitude" data-uid="HTCMobile.Model.HtcAgency.ShowroomLatitude">ShowroomLatitude</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? ShowroomLatitude { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_ShowroomLongitude_" data-uid="HTCMobile.Model.HtcAgency.ShowroomLongitude*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_ShowroomLongitude" data-uid="HTCMobile.Model.HtcAgency.ShowroomLongitude">ShowroomLongitude</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? ShowroomLongitude { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_Status_" data-uid="HTCMobile.Model.HtcAgency.Status*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_Status" data-uid="HTCMobile.Model.HtcAgency.Status">Status</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StringLength(50)]
+public string Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_Website_" data-uid="HTCMobile.Model.HtcAgency.Website*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_Website" data-uid="HTCMobile.Model.HtcAgency.Website">Website</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StringLength(255)]
+public string Website { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_WorkshopAddress_" data-uid="HTCMobile.Model.HtcAgency.WorkshopAddress*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_WorkshopAddress" data-uid="HTCMobile.Model.HtcAgency.WorkshopAddress">WorkshopAddress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StringLength(500)]
+public string WorkshopAddress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_WorkshopLatitude_" data-uid="HTCMobile.Model.HtcAgency.WorkshopLatitude*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_WorkshopLatitude" data-uid="HTCMobile.Model.HtcAgency.WorkshopLatitude">WorkshopLatitude</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? WorkshopLatitude { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcAgency_WorkshopLongitude_" data-uid="HTCMobile.Model.HtcAgency.WorkshopLongitude*"></a>
+  <h4 id="HTCMobile_Model_HtcAgency_WorkshopLongitude" data-uid="HTCMobile.Model.HtcAgency.WorkshopLongitude">WorkshopLongitude</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? WorkshopLongitude { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Domain.Entities.IEntity&lt;TPrimaryKey&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IFullAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.ICreationAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IHasCreationTime</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IModificationAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IHasModificationTime</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IDeletionAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IHasDeletionTime</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.ISoftDelete</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

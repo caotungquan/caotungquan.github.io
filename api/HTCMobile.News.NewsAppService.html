@@ -1,0 +1,1170 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NewsAppService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NewsAppService
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.News.NewsAppService">
+  
+  
+  <h1 id="HTCMobile_News_NewsAppService" data-uid="HTCMobile.News.NewsAppService" class="text-break">Class NewsAppService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.AbpServiceBase</span></div>
+    <div class="level2"><span class="xref">Abp.Application.Services.ApplicationService</span></div>
+    <div class="level3"><a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html">HTCMobileAppServiceBase</a></div>
+    <div class="level4"><span class="xref">NewsAppService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span></div>
+    <div><a class="xref" href="HTCMobile.News.INewsAppService.html">INewsAppService</a></div>
+    <div><span class="xref">Abp.Application.Services.IApplicationService</span></div>
+    <div><span class="xref">Abp.Dependency.ITransientDependency</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_TenantManager">HTCMobileAppServiceBase.TenantManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_UserManager">HTCMobileAppServiceBase.UserManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserAsync">HTCMobileAppServiceBase.GetCurrentUserAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserTimeZoneAsync">HTCMobileAppServiceBase.GetCurrentUserTimeZoneAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetUserTimeZone_System_Nullable_System_Int64__">HTCMobileAppServiceBase.GetUserTimeZone(Nullable&lt;Int64&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentTenantAsync">HTCMobileAppServiceBase.GetCurrentTenantAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_CheckErrors_Microsoft_AspNetCore_Identity_IdentityResult_">HTCMobileAppServiceBase.CheckErrors(IdentityResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcel__1_System_Collections_Generic_List___0__System_String_">HTCMobileAppServiceBase.ExportExcel&lt;T&gt;(List&lt;T&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcelNoData__1_System_String_">HTCMobileAppServiceBase.ExportExcelNoData&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_Base64ToImage_System_String_">HTCMobileAppServiceBase.Base64ToImage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImage_Microsoft_AspNetCore_Http_IFormFile_">HTCMobileAppServiceBase.SaveImage(IFormFile)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImageFromBase64_System_String_System_String_">HTCMobileAppServiceBase.SaveImageFromBase64(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveFileFromBase64_System_String_System_String_System_String_System_String_System_Int32_">HTCMobileAppServiceBase.SaveFileFromBase64(String, String, String, String, Int32)</a>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.CommonPostfixes</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGrantedAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGranted(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabledAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabled(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AbpSession</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AppliedCrossCuttingConcerns</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.SettingManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.UnitOfWorkManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.CurrentUnitOfWork</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSourceName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSource</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.ObjectMapper</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.News.html">HTCMobile.News</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Application.dll</h6>
+  <h5 id="HTCMobile_News_NewsAppService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DontWrapResult]
+[ApiVersion(&quot;1&quot;)]
+[ApiVersion(&quot;2&quot;)]
+[Route(&quot;api/v{version}/News&quot;)]
+public class NewsAppService : HTCMobileAppServiceBase, IAvoidDuplicateCrossCuttingConcerns, INewsAppService, IApplicationService, ITransientDependency</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HTCMobile_News_NewsAppService__ctor_" data-uid="HTCMobile.News.NewsAppService.#ctor*"></a>
+  <h4 id="HTCMobile_News_NewsAppService__ctor_Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcNews_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcNewsGroup_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Authorization_Users_User_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcNewsCssJsMobileApp_System_Int64__Abp_Runtime_Caching_ICacheManager_" data-uid="HTCMobile.News.NewsAppService.#ctor(Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcNews,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcNewsGroup,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Authorization.Users.User,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcNewsCssJsMobileApp,System.Int64},Abp.Runtime.Caching.ICacheManager)">NewsAppService(IRepository&lt;HtcNews, Int64&gt;, IRepository&lt;HtcNewsGroup, Int64&gt;, IRepository&lt;User, Int64&gt;, IRepository&lt;HtcNewsCssJsMobileApp, Int64&gt;, ICacheManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NewsAppService(IRepository&lt;HtcNews, long&gt; newsRepository, IRepository&lt;HtcNewsGroup, long&gt; newsGroupRepository, IRepository&lt;User, long&gt; userRepository, IRepository&lt;HtcNewsCssJsMobileApp, long&gt; newsCssJsMobileAppRepository, ICacheManager cacheManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcNews.html">HtcNews</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">newsRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcNewsGroup.html">HtcNewsGroup</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">newsGroupRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">userRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcNewsCssJsMobileApp.html">HtcNewsCssJsMobileApp</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">newsCssJsMobileAppRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Runtime.Caching.ICacheManager</span></td>
+        <td><span class="parametername">cacheManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_ChangeOrder_" data-uid="HTCMobile.News.NewsAppService.ChangeOrder*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_ChangeOrder_HTCMobile_News_Dto_ChangeOrderInputDto_" data-uid="HTCMobile.News.NewsAppService.ChangeOrder(HTCMobile.News.Dto.ChangeOrderInputDto)">ChangeOrder(ChangeOrderInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSChangeOrder&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.News.CreateEdit&quot;})]
+public Task&lt;ResponseModel&gt; ChangeOrder(ChangeOrderInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.News.Dto.ChangeOrderInputDto.html">ChangeOrderInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel.html">ResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_CMSChangeGroupOfNew_" data-uid="HTCMobile.News.NewsAppService.CMSChangeGroupOfNew*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_CMSChangeGroupOfNew_HTCMobile_News_Dto_CMSChangeGroupOfNewsInputDto_" data-uid="HTCMobile.News.NewsAppService.CMSChangeGroupOfNew(HTCMobile.News.Dto.CMSChangeGroupOfNewsInputDto)">CMSChangeGroupOfNew(CMSChangeGroupOfNewsInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSChangeGroupOfNews&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.News.CreateEdit&quot;})]
+public Task&lt;ResponseModel&lt;string&gt;&gt; CMSChangeGroupOfNew(CMSChangeGroupOfNewsInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.News.Dto.CMSChangeGroupOfNewsInputDto.html">CMSChangeGroupOfNewsInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_CMSCreateOrUpdateNews_" data-uid="HTCMobile.News.NewsAppService.CMSCreateOrUpdateNews*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_CMSCreateOrUpdateNews_HTCMobile_News_Dto_CreateNewsInput_" data-uid="HTCMobile.News.NewsAppService.CMSCreateOrUpdateNews(HTCMobile.News.Dto.CreateNewsInput)">CMSCreateOrUpdateNews(CreateNewsInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSNewsPost&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.News.CreateEdit&quot;})]
+public Task&lt;ResponseModel&lt;NewsCMSOutput&gt;&gt; CMSCreateOrUpdateNews(CreateNewsInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.News.Dto.CreateNewsInput.html">CreateNewsInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsCMSOutput.html">NewsCMSOutput</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_CMSCreateOrUpdateNewsgroup_" data-uid="HTCMobile.News.NewsAppService.CMSCreateOrUpdateNewsgroup*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_CMSCreateOrUpdateNewsgroup_HTCMobile_News_Dto_CreateNewsgroupInput_" data-uid="HTCMobile.News.NewsAppService.CMSCreateOrUpdateNewsgroup(HTCMobile.News.Dto.CreateNewsgroupInput)">CMSCreateOrUpdateNewsgroup(CreateNewsgroupInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSNewsgroupPost&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.News.CreateEdit&quot;})]
+public Task&lt;ResponseModel&lt;NewsgroupCMSOutput&gt;&gt; CMSCreateOrUpdateNewsgroup(CreateNewsgroupInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.News.Dto.CreateNewsgroupInput.html">CreateNewsgroupInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsgroupCMSOutput.html">NewsgroupCMSOutput</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_CMSDeleteNews_" data-uid="HTCMobile.News.NewsAppService.CMSDeleteNews*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_CMSDeleteNews_System_Collections_Generic_List_System_Int64__" data-uid="HTCMobile.News.NewsAppService.CMSDeleteNews(System.Collections.Generic.List{System.Int64})">CMSDeleteNews(List&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSDeleteNews&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.News.Delete&quot;})]
+public Task&lt;ResponseModel&lt;NewsDto&gt;&gt; CMSDeleteNews(List&lt;long&gt; Ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">Ids</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsDto.html">NewsDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_CMSDeleteNewsgroup_" data-uid="HTCMobile.News.NewsAppService.CMSDeleteNewsgroup*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_CMSDeleteNewsgroup_System_Collections_Generic_List_System_Int64__" data-uid="HTCMobile.News.NewsAppService.CMSDeleteNewsgroup(System.Collections.Generic.List{System.Int64})">CMSDeleteNewsgroup(List&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSDeleteNewsgroup&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.News.Delete&quot;})]
+public Task&lt;ResponseModel&lt;NewsgroupCMSOutput&gt;&gt; CMSDeleteNewsgroup(List&lt;long&gt; Ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">Ids</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsgroupCMSOutput.html">NewsgroupCMSOutput</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_CMSGetAllNews_" data-uid="HTCMobile.News.NewsAppService.CMSGetAllNews*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_CMSGetAllNews_HTCMobile_News_Dto_GetNewsListDtoInput_" data-uid="HTCMobile.News.NewsAppService.CMSGetAllNews(HTCMobile.News.Dto.GetNewsListDtoInput)">CMSGetAllNews(GetNewsListDtoInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetNewsList&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.News&quot;})]
+public Task&lt;ResponseCMSModel&lt;List&lt;NewsCMSOutput&gt;&gt;&gt; CMSGetAllNews(GetNewsListDtoInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.News.Dto.GetNewsListDtoInput.html">GetNewsListDtoInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsCMSOutput.html">NewsCMSOutput</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_CMSGetAllNewsgroups_" data-uid="HTCMobile.News.NewsAppService.CMSGetAllNewsgroups*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_CMSGetAllNewsgroups_HTCMobile_News_Dto_GetNewsGroupListDtoInput_" data-uid="HTCMobile.News.NewsAppService.CMSGetAllNewsgroups(HTCMobile.News.Dto.GetNewsGroupListDtoInput)">CMSGetAllNewsgroups(GetNewsGroupListDtoInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetNewsgroupsList&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.News&quot;})]
+public Task&lt;ResponseCMSModel&lt;List&lt;NewsgroupCMSOutput&gt;&gt;&gt; CMSGetAllNewsgroups(GetNewsGroupListDtoInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.News.Dto.GetNewsGroupListDtoInput.html">GetNewsGroupListDtoInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsgroupCMSOutput.html">NewsgroupCMSOutput</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_CMSGetDetailNewsgroup_" data-uid="HTCMobile.News.NewsAppService.CMSGetDetailNewsgroup*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_CMSGetDetailNewsgroup_Abp_Application_Services_Dto_EntityDto_System_Int64__" data-uid="HTCMobile.News.NewsAppService.CMSGetDetailNewsgroup(Abp.Application.Services.Dto.EntityDto{System.Int64})">CMSGetDetailNewsgroup(EntityDto&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetDetailNewsGroup&quot;)]
+public Task&lt;ResponseModel&lt;NewsgroupCMSOutput&gt;&gt; CMSGetDetailNewsgroup(EntityDto&lt;long&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsgroupCMSOutput.html">NewsgroupCMSOutput</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_CMSSortNewsGroup_" data-uid="HTCMobile.News.NewsAppService.CMSSortNewsGroup*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_CMSSortNewsGroup_HTCMobile_News_Dto_CMSSortNewsGroupInputDto_" data-uid="HTCMobile.News.NewsAppService.CMSSortNewsGroup(HTCMobile.News.Dto.CMSSortNewsGroupInputDto)">CMSSortNewsGroup(CMSSortNewsGroupInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSSortNewsGroup&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.News.CreateEdit&quot;})]
+public Task&lt;ResponseModel&lt;string&gt;&gt; CMSSortNewsGroup(CMSSortNewsGroupInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.News.Dto.CMSSortNewsGroupInputDto.html">CMSSortNewsGroupInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_GetDetail_" data-uid="HTCMobile.News.NewsAppService.GetDetail*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_GetDetail_Abp_Application_Services_Dto_EntityDto_System_Int64__" data-uid="HTCMobile.News.NewsAppService.GetDetail(Abp.Application.Services.Dto.EntityDto{System.Int64})">GetDetail(EntityDto&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetDetail&quot;)]
+public Task&lt;ResponseModel&lt;NewsCMSOutput&gt;&gt; GetDetail(EntityDto&lt;long&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsCMSOutput.html">NewsCMSOutput</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_GetDetailMobile_" data-uid="HTCMobile.News.NewsAppService.GetDetailMobile*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_GetDetailMobile_Abp_Application_Services_Dto_EntityDto_System_Int64__" data-uid="HTCMobile.News.NewsAppService.GetDetailMobile(Abp.Application.Services.Dto.EntityDto{System.Int64})">GetDetailMobile(EntityDto&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGetDetail&quot;)]
+public Task&lt;ResponseModel&lt;NewsCMSOutput&gt;&gt; GetDetailMobile(EntityDto&lt;long&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsCMSOutput.html">NewsCMSOutput</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_GetListNewsGroupHome_" data-uid="HTCMobile.News.NewsAppService.GetListNewsGroupHome*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_GetListNewsGroupHome_HTCMobile_News_Dto_GetListInputID_" data-uid="HTCMobile.News.NewsAppService.GetListNewsGroupHome(HTCMobile.News.Dto.GetListInputID)">GetListNewsGroupHome(GetListInputID)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGetListNewsHome&quot;)]
+public Task&lt;ResponseCMSModel&lt;List&lt;NewsDto&gt;&gt;&gt; GetListNewsGroupHome(GetListInputID input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.News.Dto.GetListInputID.html">GetListInputID</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsDto.html">NewsDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_GetNewsGroups_" data-uid="HTCMobile.News.NewsAppService.GetNewsGroups*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_GetNewsGroups" data-uid="HTCMobile.News.NewsAppService.GetNewsGroups">GetNewsGroups()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGetNewsGroupsList&quot;)]
+public Task&lt;ResponseModel&lt;List&lt;NewsGroupDtoOutput&gt;&gt;&gt; GetNewsGroups()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsGroupDtoOutput.html">NewsGroupDtoOutput</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_GetNewsHTC_" data-uid="HTCMobile.News.NewsAppService.GetNewsHTC*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_GetNewsHTC_HTCMobile_GetListInput_" data-uid="HTCMobile.News.NewsAppService.GetNewsHTC(HTCMobile.GetListInput)">GetNewsHTC(GetListInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGetNewsHTC&quot;)]
+public Task&lt;ResponseCMSModel&lt;List&lt;NewsDto&gt;&gt;&gt; GetNewsHTC(GetListInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GetListInput.html">GetListInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsDto.html">NewsDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_GetNewsMarketAndProduct_" data-uid="HTCMobile.News.NewsAppService.GetNewsMarketAndProduct*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_GetNewsMarketAndProduct_HTCMobile_GetListInput_" data-uid="HTCMobile.News.NewsAppService.GetNewsMarketAndProduct(HTCMobile.GetListInput)">GetNewsMarketAndProduct(GetListInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGeNewsMarketAndProduct&quot;)]
+public Task&lt;ResponseCMSModel&lt;List&lt;NewsDto&gt;&gt;&gt; GetNewsMarketAndProduct(GetListInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GetListInput.html">GetListInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsDto.html">NewsDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_GetPromotion_" data-uid="HTCMobile.News.NewsAppService.GetPromotion*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_GetPromotion" data-uid="HTCMobile.News.NewsAppService.GetPromotion">GetPromotion()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGetNewsPromotion&quot;)]
+public Task&lt;ResponseModel&lt;List&lt;NewsDto&gt;&gt;&gt; GetPromotion()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsDto.html">NewsDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_GetTitleNewsGroupsFromHome_" data-uid="HTCMobile.News.NewsAppService.GetTitleNewsGroupsFromHome*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_GetTitleNewsGroupsFromHome" data-uid="HTCMobile.News.NewsAppService.GetTitleNewsGroupsFromHome">GetTitleNewsGroupsFromHome()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetTitleNewsgroupFromHome&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.News&quot;})]
+public Task&lt;ResponseModel&lt;List&lt;DropdownDto&gt;&gt;&gt; GetTitleNewsGroupsFromHome()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.DropdownDto.html">DropdownDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_GetTitleNewsGroupsFromHTC_" data-uid="HTCMobile.News.NewsAppService.GetTitleNewsGroupsFromHTC*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_GetTitleNewsGroupsFromHTC" data-uid="HTCMobile.News.NewsAppService.GetTitleNewsGroupsFromHTC">GetTitleNewsGroupsFromHTC()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetTitleNewsgroupFromHTC&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.News&quot;})]
+public Task&lt;ResponseModel&lt;List&lt;DropdownDto&gt;&gt;&gt; GetTitleNewsGroupsFromHTC()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.DropdownDto.html">DropdownDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_News_NewsAppService_MoveToGroup_" data-uid="HTCMobile.News.NewsAppService.MoveToGroup*"></a>
+  <h4 id="HTCMobile_News_NewsAppService_MoveToGroup_System_Collections_Generic_List_System_Int64__System_Int64_" data-uid="HTCMobile.News.NewsAppService.MoveToGroup(System.Collections.Generic.List{System.Int64},System.Int64)">MoveToGroup(List&lt;Int64&gt;, Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSMoveToGroup&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.News.CreateEdit&quot;})]
+public Task&lt;ResponseModel&lt;NewsGroupDtoOutput&gt;&gt; MoveToGroup(List&lt;long&gt; newsIds, long groupId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">newsIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">groupId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.News.Dto.NewsGroupDtoOutput.html">NewsGroupDtoOutput</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.News.INewsAppService.html">INewsAppService</a>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IApplicationService</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Dependency.ITransientDependency</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

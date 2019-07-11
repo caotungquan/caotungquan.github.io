@@ -1,0 +1,1197 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RoleAppService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RoleAppService
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.Roles.RoleAppService">
+  
+  
+  <h1 id="HTCMobile_Roles_RoleAppService" data-uid="HTCMobile.Roles.RoleAppService" class="text-break">Class RoleAppService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.AbpServiceBase</span></div>
+    <div class="level2"><span class="xref">Abp.Application.Services.ApplicationService</span></div>
+    <div class="level3"><span class="xref">Abp.Application.Services.CrudAppServiceBase</span>&lt;<a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>, <a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.Roles.Dto.CreateRoleDto.html">CreateRoleDto</a>, <a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>&gt;</div>
+    <div class="level4"><span class="xref">Abp.Application.Services.AsyncCrudAppService</span>&lt;<a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>, <a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.Roles.Dto.CreateRoleDto.html">CreateRoleDto</a>, <a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>, <span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;, <span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</div>
+    <div class="level5"><span class="xref">Abp.Application.Services.AsyncCrudAppService</span>&lt;<a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>, <a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.Roles.Dto.CreateRoleDto.html">CreateRoleDto</a>, <a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>, <span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</div>
+    <div class="level6"><span class="xref">Abp.Application.Services.AsyncCrudAppService</span>&lt;<a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>, <a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.Roles.Dto.CreateRoleDto.html">CreateRoleDto</a>, <a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>&gt;</div>
+    <div class="level7"><span class="xref">RoleAppService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span></div>
+    <div><a class="xref" href="HTCMobile.Roles.IRoleAppService.html">IRoleAppService</a></div>
+    <div><span class="xref">Abp.Application.Services.IAsyncCrudAppService</span>&lt;<a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.Roles.Dto.CreateRoleDto.html">CreateRoleDto</a>, <a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>&gt;</div>
+    <div><span class="xref">Abp.Application.Services.IAsyncCrudAppService</span>&lt;<a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.Roles.Dto.CreateRoleDto.html">CreateRoleDto</a>, <a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>, <span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</div>
+    <div><span class="xref">Abp.Application.Services.IAsyncCrudAppService</span>&lt;<a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>, <span class="xref">System.Int32</span>, <span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span>, <a class="xref" href="HTCMobile.Roles.Dto.CreateRoleDto.html">CreateRoleDto</a>, <a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>, <span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;, <span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</div>
+    <div><span class="xref">Abp.Application.Services.IApplicationService</span></div>
+    <div><span class="xref">Abp.Dependency.ITransientDependency</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Get(Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.GetAll(Abp.Application.Services.Dto.PagedResultRequestDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Create(HTCMobile.Roles.Dto.CreateRoleDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Update(HTCMobile.Roles.Dto.RoleDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Delete(Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.GetEntityByIdAsync(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.AsyncQueryableExecuter</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.Repository</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.ApplySorting(System.Linq.IQueryable&lt;HTCMobile.Authorization.Roles.Role&gt;, Abp.Application.Services.Dto.PagedResultRequestDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.ApplyPaging(System.Linq.IQueryable&lt;HTCMobile.Authorization.Roles.Role&gt;, Abp.Application.Services.Dto.PagedResultRequestDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.CreateFilteredQuery(Abp.Application.Services.Dto.PagedResultRequestDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.MapToEntityDto(HTCMobile.Authorization.Roles.Role)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.MapToEntity(HTCMobile.Roles.Dto.CreateRoleDto)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.MapToEntity(HTCMobile.Roles.Dto.RoleDto, HTCMobile.Authorization.Roles.Role)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.CheckPermission(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.CheckGetPermission()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.CheckGetAllPermission()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.CheckCreatePermission()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.CheckUpdatePermission()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.CheckDeletePermission()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.GetPermissionName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.GetAllPermissionName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.CreatePermissionName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.UpdatePermissionName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.DeletePermissionName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.CommonPostfixes</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGrantedAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGranted(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabledAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabled(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AbpSession</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AppliedCrossCuttingConcerns</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.SettingManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.UnitOfWorkManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.CurrentUnitOfWork</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSourceName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSource</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.ObjectMapper</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.Roles.html">HTCMobile.Roles</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Application.dll</h6>
+  <h5 id="HTCMobile_Roles_RoleAppService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AbpAuthorize(new string[]{&quot;Pages.Setting&quot;})]
+[ApiVersion(&quot;1&quot;)]
+[ApiVersion(&quot;2&quot;)]
+[Route(&quot;api/v{version}/Role&quot;)]
+[DontWrapResult]
+public class RoleAppService : AsyncCrudAppService&lt;Role, RoleDto, int, PagedResultRequestDto, CreateRoleDto, RoleDto&gt;, IAvoidDuplicateCrossCuttingConcerns, IRoleAppService, IAsyncCrudAppService&lt;RoleDto, int, PagedResultRequestDto, CreateRoleDto, RoleDto&gt;, IAsyncCrudAppService&lt;RoleDto, int, PagedResultRequestDto, CreateRoleDto, RoleDto, EntityDto&lt;int&gt;&gt;, IAsyncCrudAppService&lt;RoleDto, int, PagedResultRequestDto, CreateRoleDto, RoleDto, EntityDto&lt;int&gt;, EntityDto&lt;int&gt;&gt;, IApplicationService, ITransientDependency</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService__ctor_" data-uid="HTCMobile.Roles.RoleAppService.#ctor*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService__ctor_Abp_Domain_Repositories_IRepository_HTCMobile_Authorization_Roles_Role__HTCMobile_Authorization_Roles_RoleManager_HTCMobile_Authorization_Users_UserManager_Abp_EntityFrameworkCore_IDbContextProvider_HTCMobile_EntityFrameworkCore_HTCMobileDbContext__" data-uid="HTCMobile.Roles.RoleAppService.#ctor(Abp.Domain.Repositories.IRepository{HTCMobile.Authorization.Roles.Role},HTCMobile.Authorization.Roles.RoleManager,HTCMobile.Authorization.Users.UserManager,Abp.EntityFrameworkCore.IDbContextProvider{HTCMobile.EntityFrameworkCore.HTCMobileDbContext})">RoleAppService(IRepository&lt;Role&gt;, RoleManager, UserManager, IDbContextProvider&lt;HTCMobileDbContext&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoleAppService(IRepository&lt;Role&gt; repository, RoleManager roleManager, UserManager userManager, IDbContextProvider&lt;HTCMobileDbContext&gt; dbContextProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>&gt;</td>
+        <td><span class="parametername">repository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Authorization.Roles.RoleManager.html">RoleManager</a></td>
+        <td><span class="parametername">roleManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Authorization.Users.UserManager.html">UserManager</a></td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.EntityFrameworkCore.IDbContextProvider</span>&lt;<a class="xref" href="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.html">HTCMobileDbContext</a>&gt;</td>
+        <td><span class="parametername">dbContextProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_ApplySorting_" data-uid="HTCMobile.Roles.RoleAppService.ApplySorting*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_ApplySorting_System_Linq_IQueryable_HTCMobile_Authorization_Roles_Role__Abp_Application_Services_Dto_PagedResultRequestDto_" data-uid="HTCMobile.Roles.RoleAppService.ApplySorting(System.Linq.IQueryable{HTCMobile.Authorization.Roles.Role},Abp.Application.Services.Dto.PagedResultRequestDto)">ApplySorting(IQueryable&lt;Role&gt;, PagedResultRequestDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IQueryable&lt;Role&gt; ApplySorting(IQueryable&lt;Role&gt; query, PagedResultRequestDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>&gt;</td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.ApplySorting(System.Linq.IQueryable&lt;HTCMobile.Authorization.Roles.Role&gt;, Abp.Application.Services.Dto.PagedResultRequestDto)</span></div>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_CheckErrors_" data-uid="HTCMobile.Roles.RoleAppService.CheckErrors*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_CheckErrors_Microsoft_AspNetCore_Identity_IdentityResult_" data-uid="HTCMobile.Roles.RoleAppService.CheckErrors(Microsoft.AspNetCore.Identity.IdentityResult)">CheckErrors(IdentityResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckErrors(IdentityResult identityResult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IdentityResult</span></td>
+        <td><span class="parametername">identityResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_CMSDelete_" data-uid="HTCMobile.Roles.RoleAppService.CMSDelete*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_CMSDelete_System_Collections_Generic_List_System_Int32__" data-uid="HTCMobile.Roles.RoleAppService.CMSDelete(System.Collections.Generic.List{System.Int32})">CMSDelete(List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSDelete&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Setting.Delete&quot;})]
+public Task&lt;ResponseModel&lt;string&gt;&gt; CMSDelete(List&lt;int&gt; ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_Create_" data-uid="HTCMobile.Roles.RoleAppService.Create*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_Create_HTCMobile_Roles_Dto_CreateRoleDto_" data-uid="HTCMobile.Roles.RoleAppService.Create(HTCMobile.Roles.Dto.CreateRoleDto)">Create(CreateRoleDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSCreateDisable&quot;)]
+[ApiExplorerSettings(IgnoreApi = true)]
+public override Task&lt;RoleDto&gt; Create(CreateRoleDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Roles.Dto.CreateRoleDto.html">CreateRoleDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Create(HTCMobile.Roles.Dto.CreateRoleDto)</span></div>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_CreateFilteredQuery_" data-uid="HTCMobile.Roles.RoleAppService.CreateFilteredQuery*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_CreateFilteredQuery_Abp_Application_Services_Dto_PagedResultRequestDto_" data-uid="HTCMobile.Roles.RoleAppService.CreateFilteredQuery(Abp.Application.Services.Dto.PagedResultRequestDto)">CreateFilteredQuery(PagedResultRequestDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IQueryable&lt;Role&gt; CreateFilteredQuery(PagedResultRequestDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.CrudAppServiceBase&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto&gt;.CreateFilteredQuery(Abp.Application.Services.Dto.PagedResultRequestDto)</span></div>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_CreateV2_" data-uid="HTCMobile.Roles.RoleAppService.CreateV2*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_CreateV2_HTCMobile_Roles_Dto_CreateRoleDto_" data-uid="HTCMobile.Roles.RoleAppService.CreateV2(HTCMobile.Roles.Dto.CreateRoleDto)">CreateV2(CreateRoleDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSCreate&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Setting.CreateEdit&quot;})]
+public Task&lt;ResponseModel&lt;RoleDto&gt;&gt; CreateV2(CreateRoleDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Roles.Dto.CreateRoleDto.html">CreateRoleDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_Delete_" data-uid="HTCMobile.Roles.RoleAppService.Delete*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_Delete_Abp_Application_Services_Dto_EntityDto_System_Int32__" data-uid="HTCMobile.Roles.RoleAppService.Delete(Abp.Application.Services.Dto.EntityDto{System.Int32})">Delete(EntityDto&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpDelete]
+[Route(&quot;CMSDeleteDisable&quot;)]
+[ApiExplorerSettings(IgnoreApi = true)]
+public override Task Delete([FromQuery] EntityDto&lt;int&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Delete(Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;)</span></div>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_DeleteV2_" data-uid="HTCMobile.Roles.RoleAppService.DeleteV2*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_DeleteV2_Abp_Application_Services_Dto_EntityDto_System_Int32__" data-uid="HTCMobile.Roles.RoleAppService.DeleteV2(Abp.Application.Services.Dto.EntityDto{System.Int32})">DeleteV2(EntityDto&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpDelete]
+[Route(&quot;Delete&quot;)]
+[ApiExplorerSettings(IgnoreApi = true)]
+public Task&lt;ResponseModel&lt;string&gt;&gt; DeleteV2([FromQuery] EntityDto&lt;int&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_Get_" data-uid="HTCMobile.Roles.RoleAppService.Get*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_Get_Abp_Application_Services_Dto_EntityDto_System_Int32__" data-uid="HTCMobile.Roles.RoleAppService.Get(Abp.Application.Services.Dto.EntityDto{System.Int32})">Get(EntityDto&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetDetailDisable&quot;)]
+[ApiExplorerSettings(IgnoreApi = true)]
+public override Task&lt;RoleDto&gt; Get(EntityDto&lt;int&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Get(Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;)</span></div>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_GetAll_" data-uid="HTCMobile.Roles.RoleAppService.GetAll*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_GetAll_Abp_Application_Services_Dto_PagedResultRequestDto_" data-uid="HTCMobile.Roles.RoleAppService.GetAll(Abp.Application.Services.Dto.PagedResultRequestDto)">GetAll(PagedResultRequestDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetListDisable&quot;)]
+[ApiExplorerSettings(IgnoreApi = true)]
+public override Task&lt;PagedResultDto&lt;RoleDto&gt;&gt; GetAll(PagedResultRequestDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.PagedResultRequestDto</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Abp.Application.Services.Dto.PagedResultDto</span>&lt;<a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.GetAll(Abp.Application.Services.Dto.PagedResultRequestDto)</span></div>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_GetAllPermission_" data-uid="HTCMobile.Roles.RoleAppService.GetAllPermission*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_GetAllPermission" data-uid="HTCMobile.Roles.RoleAppService.GetAllPermission">GetAllPermission()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetListAllPermission&quot;)]
+public Task&lt;List&lt;PermissionItemDto&gt;&gt; GetAllPermission()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Roles.Dto.PermissionItemDto.html">PermissionItemDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_GetAllPermissions_" data-uid="HTCMobile.Roles.RoleAppService.GetAllPermissions*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_GetAllPermissions" data-uid="HTCMobile.Roles.RoleAppService.GetAllPermissions">GetAllPermissions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetListPermissions&quot;)]
+public Task&lt;ListResultDto&lt;PermissionDto&gt;&gt; GetAllPermissions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Abp.Application.Services.Dto.ListResultDto</span>&lt;<a class="xref" href="HTCMobile.Roles.Dto.PermissionDto.html">PermissionDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_GetAllV2_" data-uid="HTCMobile.Roles.RoleAppService.GetAllV2*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_GetAllV2_HTCMobile_Roles_Dto_GetAllRoleDto_" data-uid="HTCMobile.Roles.RoleAppService.GetAllV2(HTCMobile.Roles.Dto.GetAllRoleDto)">GetAllV2(GetAllRoleDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetList&quot;)]
+public Task&lt;ResponseCMSModel&lt;List&lt;RoleDto&gt;&gt;&gt; GetAllV2(GetAllRoleDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Roles.Dto.GetAllRoleDto.html">GetAllRoleDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_GetEntityByIdAsync_" data-uid="HTCMobile.Roles.RoleAppService.GetEntityByIdAsync*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_GetEntityByIdAsync_System_Int32_" data-uid="HTCMobile.Roles.RoleAppService.GetEntityByIdAsync(System.Int32)">GetEntityByIdAsync(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task&lt;Role&gt; GetEntityByIdAsync(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.GetEntityByIdAsync(System.Int32)</span></div>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_GetRoleForEdit_" data-uid="HTCMobile.Roles.RoleAppService.GetRoleForEdit*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_GetRoleForEdit_Abp_Application_Services_Dto_EntityDto_" data-uid="HTCMobile.Roles.RoleAppService.GetRoleForEdit(Abp.Application.Services.Dto.EntityDto)">GetRoleForEdit(EntityDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetRoleForEdit&quot;)]
+public Task&lt;GetRoleForEditOutput&gt; GetRoleForEdit(EntityDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.Roles.Dto.GetRoleForEditOutput.html">GetRoleForEditOutput</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_GetRolesAsync_" data-uid="HTCMobile.Roles.RoleAppService.GetRolesAsync*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_GetRolesAsync_HTCMobile_Roles_Dto_GetRolesInput_" data-uid="HTCMobile.Roles.RoleAppService.GetRolesAsync(HTCMobile.Roles.Dto.GetRolesInput)">GetRolesAsync(GetRolesInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetRole&quot;)]
+public Task&lt;ListResultDto&lt;RoleListDto&gt;&gt; GetRolesAsync(GetRolesInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Roles.Dto.GetRolesInput.html">GetRolesInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Abp.Application.Services.Dto.ListResultDto</span>&lt;<a class="xref" href="HTCMobile.Roles.Dto.RoleListDto.html">RoleListDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_Getv2_" data-uid="HTCMobile.Roles.RoleAppService.Getv2*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_Getv2_Abp_Application_Services_Dto_EntityDto_System_Int32__" data-uid="HTCMobile.Roles.RoleAppService.Getv2(Abp.Application.Services.Dto.EntityDto{System.Int32})">Getv2(EntityDto&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetDetail&quot;)]
+public Task&lt;ResponseModel&lt;RoleDto&gt;&gt; Getv2(EntityDto&lt;int&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_Update_" data-uid="HTCMobile.Roles.RoleAppService.Update*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_Update_HTCMobile_Roles_Dto_RoleDto_" data-uid="HTCMobile.Roles.RoleAppService.Update(HTCMobile.Roles.Dto.RoleDto)">Update(RoleDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSUpdateDisable&quot;)]
+[ApiExplorerSettings(IgnoreApi = true)]
+public override Task&lt;RoleDto&gt; Update([FromBody] RoleDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Application.Services.AsyncCrudAppService&lt;HTCMobile.Authorization.Roles.Role, HTCMobile.Roles.Dto.RoleDto, System.Int32, Abp.Application.Services.Dto.PagedResultRequestDto, HTCMobile.Roles.Dto.CreateRoleDto, HTCMobile.Roles.Dto.RoleDto, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;, Abp.Application.Services.Dto.EntityDto&lt;System.Int32&gt;&gt;.Update(HTCMobile.Roles.Dto.RoleDto)</span></div>
+  
+  
+  <a id="HTCMobile_Roles_RoleAppService_UpdateV2_" data-uid="HTCMobile.Roles.RoleAppService.UpdateV2*"></a>
+  <h4 id="HTCMobile_Roles_RoleAppService_UpdateV2_HTCMobile_Roles_Dto_RoleDto_" data-uid="HTCMobile.Roles.RoleAppService.UpdateV2(HTCMobile.Roles.Dto.RoleDto)">UpdateV2(RoleDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSUpdate&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Setting.CreateEdit&quot;})]
+public Task&lt;ResponseModel&lt;RoleDto&gt;&gt; UpdateV2([FromBody] RoleDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Roles.Dto.RoleDto.html">RoleDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Roles.IRoleAppService.html">IRoleAppService</a>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IAsyncCrudAppService&lt;TEntityDto, TPrimaryKey, TGetAllInput, TCreateInput, TUpdateInput&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IAsyncCrudAppService&lt;TEntityDto, TPrimaryKey, TGetAllInput, TCreateInput, TUpdateInput, TGetInput&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IAsyncCrudAppService&lt;TEntityDto, TPrimaryKey, TGetAllInput, TCreateInput, TUpdateInput, TGetInput, TDeleteInput&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IApplicationService</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Dependency.ITransientDependency</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

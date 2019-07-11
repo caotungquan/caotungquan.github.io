@@ -1,0 +1,696 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ProfileAppService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ProfileAppService
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.Customers.ProfileAppService">
+  
+  
+  <h1 id="HTCMobile_Customers_ProfileAppService" data-uid="HTCMobile.Customers.ProfileAppService" class="text-break">Class ProfileAppService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.AbpServiceBase</span></div>
+    <div class="level2"><span class="xref">Abp.Application.Services.ApplicationService</span></div>
+    <div class="level3"><a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html">HTCMobileAppServiceBase</a></div>
+    <div class="level4"><span class="xref">ProfileAppService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span></div>
+    <div><a class="xref" href="HTCMobile.Customers.IProfileAppService.html">IProfileAppService</a></div>
+    <div><span class="xref">Abp.Application.Services.IApplicationService</span></div>
+    <div><span class="xref">Abp.Dependency.ITransientDependency</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_TenantManager">HTCMobileAppServiceBase.TenantManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_UserManager">HTCMobileAppServiceBase.UserManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserAsync">HTCMobileAppServiceBase.GetCurrentUserAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserTimeZoneAsync">HTCMobileAppServiceBase.GetCurrentUserTimeZoneAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetUserTimeZone_System_Nullable_System_Int64__">HTCMobileAppServiceBase.GetUserTimeZone(Nullable&lt;Int64&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentTenantAsync">HTCMobileAppServiceBase.GetCurrentTenantAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_CheckErrors_Microsoft_AspNetCore_Identity_IdentityResult_">HTCMobileAppServiceBase.CheckErrors(IdentityResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcel__1_System_Collections_Generic_List___0__System_String_">HTCMobileAppServiceBase.ExportExcel&lt;T&gt;(List&lt;T&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcelNoData__1_System_String_">HTCMobileAppServiceBase.ExportExcelNoData&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_Base64ToImage_System_String_">HTCMobileAppServiceBase.Base64ToImage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImage_Microsoft_AspNetCore_Http_IFormFile_">HTCMobileAppServiceBase.SaveImage(IFormFile)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImageFromBase64_System_String_System_String_">HTCMobileAppServiceBase.SaveImageFromBase64(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveFileFromBase64_System_String_System_String_System_String_System_String_System_Int32_">HTCMobileAppServiceBase.SaveFileFromBase64(String, String, String, String, Int32)</a>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.CommonPostfixes</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGrantedAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGranted(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabledAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabled(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AbpSession</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AppliedCrossCuttingConcerns</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.SettingManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.UnitOfWorkManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.CurrentUnitOfWork</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSourceName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSource</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.ObjectMapper</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.Customers.html">HTCMobile.Customers</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Application.dll</h6>
+  <h5 id="HTCMobile_Customers_ProfileAppService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DontWrapResult]
+[ApiVersion(&quot;1&quot;)]
+[ApiVersion(&quot;2&quot;)]
+[Route(&quot;api/v{version}/Profile&quot;)]
+[AbpAuthorize(new string[]{})]
+public class ProfileAppService : HTCMobileAppServiceBase, IAvoidDuplicateCrossCuttingConcerns, IProfileAppService, IApplicationService, ITransientDependency</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HTCMobile_Customers_ProfileAppService__ctor_" data-uid="HTCMobile.Customers.ProfileAppService.#ctor*"></a>
+  <h4 id="HTCMobile_Customers_ProfileAppService__ctor_Abp_Domain_Repositories_IRepository_HTCMobile_Authorization_Users_User_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Authorization_Roles_Role_System_Int32__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcIncentiveUsingHistory_System_Int64__Abp_Domain_Repositories_IRepository_Abp_Authorization_Users_UserRole_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcCustomerCar_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcCustomerMemberships_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcAgency_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcCar_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcMembership_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcBenefits_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcCarImages_System_Int64__Abp_Runtime_Caching_ICacheManager_Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcUserNotifications_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Authorization_Users_User_System_Int64__" data-uid="HTCMobile.Customers.ProfileAppService.#ctor(Abp.Domain.Repositories.IRepository{HTCMobile.Authorization.Users.User,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Authorization.Roles.Role,System.Int32},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcIncentiveUsingHistory,System.Int64},Abp.Domain.Repositories.IRepository{Abp.Authorization.Users.UserRole,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcCustomerCar,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcCustomerMemberships,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcAgency,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcCar,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcMembership,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcBenefits,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcCarImages,System.Int64},Abp.Runtime.Caching.ICacheManager,Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcUserNotifications,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Authorization.Users.User,System.Int64})">ProfileAppService(IRepository&lt;User, Int64&gt;, IRepository&lt;Role, Int32&gt;, IRepository&lt;HtcIncentiveUsingHistory, Int64&gt;, IRepository&lt;UserRole, Int64&gt;, IRepository&lt;HtcCustomerCar, Int64&gt;, IRepository&lt;HtcCustomerMemberships, Int64&gt;, IRepository&lt;HtcAgency, Int64&gt;, IRepository&lt;HtcCar, Int64&gt;, IRepository&lt;HtcMembership, Int64&gt;, IRepository&lt;HtcBenefits, Int64&gt;, IRepository&lt;HtcCarImages, Int64&gt;, ICacheManager, IRepository&lt;HtcUserNotifications, Int64&gt;, IRepository&lt;User, Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProfileAppService(IRepository&lt;User, long&gt; customerRepository, IRepository&lt;Role, int&gt; roleRepository, IRepository&lt;HtcIncentiveUsingHistory, long&gt; incentiveUsingHistoryRepository, IRepository&lt;UserRole, long&gt; userRoleRepository, IRepository&lt;HtcCustomerCar, long&gt; customerCarRepository, IRepository&lt;HtcCustomerMemberships, long&gt; membershipRepository, IRepository&lt;HtcAgency, long&gt; agencyRepository, IRepository&lt;HtcCar, long&gt; carRepository, IRepository&lt;HtcMembership, long&gt; membershipCardRepository, IRepository&lt;HtcBenefits, long&gt; benefitRepository, IRepository&lt;HtcCarImages, long&gt; carImageRepository, ICacheManager cacheManager, IRepository&lt;HtcUserNotifications, long&gt; htcUserNotificationsRepository, IRepository&lt;User, long&gt; userRepository)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">customerRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">roleRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcIncentiveUsingHistory.html">HtcIncentiveUsingHistory</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">incentiveUsingHistoryRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<span class="xref">Abp.Authorization.Users.UserRole</span>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">userRoleRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCustomerCar.html">HtcCustomerCar</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">customerCarRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCustomerMemberships.html">HtcCustomerMemberships</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">membershipRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcAgency.html">HtcAgency</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">agencyRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCar.html">HtcCar</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">carRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcMembership.html">HtcMembership</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">membershipCardRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcBenefits.html">HtcBenefits</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">benefitRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCarImages.html">HtcCarImages</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">carImageRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Runtime.Caching.ICacheManager</span></td>
+        <td><span class="parametername">cacheManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcUserNotifications.html">HtcUserNotifications</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">htcUserNotificationsRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">userRepository</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTCMobile_Customers_ProfileAppService_CreateOrUpdateCar_" data-uid="HTCMobile.Customers.ProfileAppService.CreateOrUpdateCar*"></a>
+  <h4 id="HTCMobile_Customers_ProfileAppService_CreateOrUpdateCar_HTCMobile_Customers_Dto_CreateCustomerCarDto_" data-uid="HTCMobile.Customers.ProfileAppService.CreateOrUpdateCar(HTCMobile.Customers.Dto.CreateCustomerCarDto)">CreateOrUpdateCar(CreateCustomerCarDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;MobilePostCar&quot;)]
+[HttpPost]
+public Task&lt;ResponseModel&lt;CreateCustomerCarOutput&gt;&gt; CreateOrUpdateCar(CreateCustomerCarDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Customers.Dto.CreateCustomerCarDto.html">CreateCustomerCarDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Profiles.Dto.CreateCustomerCarOutput.html">CreateCustomerCarOutput</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_ProfileAppService_DeleteCar_" data-uid="HTCMobile.Customers.ProfileAppService.DeleteCar*"></a>
+  <h4 id="HTCMobile_Customers_ProfileAppService_DeleteCar_System_Int64_" data-uid="HTCMobile.Customers.ProfileAppService.DeleteCar(System.Int64)">DeleteCar(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpDelete]
+[Route(&quot;MobileDeleteCar&quot;)]
+public Task&lt;ResponseModel&lt;CreateCustomerCarOutput&gt;&gt; DeleteCar(long Id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">Id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Profiles.Dto.CreateCustomerCarOutput.html">CreateCustomerCarOutput</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_ProfileAppService_Get_" data-uid="HTCMobile.Customers.ProfileAppService.Get*"></a>
+  <h4 id="HTCMobile_Customers_ProfileAppService_Get_Abp_Application_Services_Dto_EntityDto_System_Int64__" data-uid="HTCMobile.Customers.ProfileAppService.Get(Abp.Application.Services.Dto.EntityDto{System.Int64})">Get(EntityDto&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;MobileGetDetail&quot;)]
+[HttpGet]
+public Task&lt;ResponseModel&lt;CustomerProfileDto&gt;&gt; Get(EntityDto&lt;long&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Customers.Dto.CustomerProfileDto.html">CustomerProfileDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_ProfileAppService_Getprofile_" data-uid="HTCMobile.Customers.ProfileAppService.Getprofile*"></a>
+  <h4 id="HTCMobile_Customers_ProfileAppService_Getprofile_System_Int64_" data-uid="HTCMobile.Customers.ProfileAppService.Getprofile(System.Int64)">Getprofile(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiExplorerSettings(IgnoreApi = true)]
+[RemoteService(true, IsEnabled = false)]
+[AbpAllowAnonymous]
+public Task&lt;ResponseModel&lt;CustomerProfileDto&gt;&gt; Getprofile(long id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Customers.Dto.CustomerProfileDto.html">CustomerProfileDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_ProfileAppService_Update_" data-uid="HTCMobile.Customers.ProfileAppService.Update*"></a>
+  <h4 id="HTCMobile_Customers_ProfileAppService_Update_HTCMobile_Customers_Dto_UpdateCustomerDto_" data-uid="HTCMobile.Customers.ProfileAppService.Update(HTCMobile.Customers.Dto.UpdateCustomerDto)">Update(UpdateCustomerDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;MobileUpdate&quot;)]
+[HttpPost]
+public Task&lt;ResponseModel&lt;CustomerDto&gt;&gt; Update(UpdateCustomerDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Customers.Dto.UpdateCustomerDto.html">UpdateCustomerDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Customers.Dto.CustomerDto.html">CustomerDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_ProfileAppService_UpdateAvatarV2_" data-uid="HTCMobile.Customers.ProfileAppService.UpdateAvatarV2*"></a>
+  <h4 id="HTCMobile_Customers_ProfileAppService_UpdateAvatarV2_Microsoft_AspNetCore_Http_IFormFile_" data-uid="HTCMobile.Customers.ProfileAppService.UpdateAvatarV2(Microsoft.AspNetCore.Http.IFormFile)">UpdateAvatarV2(IFormFile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;MobileUpdateAvatar&quot;)]
+[HttpPost]
+public Task&lt;ResponseModel&lt;CustomerProfileDto&gt;&gt; UpdateAvatarV2(IFormFile file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.IFormFile</span></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Customers.Dto.CustomerProfileDto.html">CustomerProfileDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Customers_ProfileAppService_UpdateSettingProfile_" data-uid="HTCMobile.Customers.ProfileAppService.UpdateSettingProfile*"></a>
+  <h4 id="HTCMobile_Customers_ProfileAppService_UpdateSettingProfile_HTCMobile_Customers_Dto_UpdateCustomerSetting_" data-uid="HTCMobile.Customers.ProfileAppService.UpdateSettingProfile(HTCMobile.Customers.Dto.UpdateCustomerSetting)">UpdateSettingProfile(UpdateCustomerSetting)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route(&quot;MobileUpdateSetting&quot;)]
+[HttpPost]
+public Task&lt;ResponseModel&lt;CreateCustomerCarOutput&gt;&gt; UpdateSettingProfile(UpdateCustomerSetting _setting)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Customers.Dto.UpdateCustomerSetting.html">UpdateCustomerSetting</a></td>
+        <td><span class="parametername">_setting</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.Profiles.Dto.CreateCustomerCarOutput.html">CreateCustomerCarOutput</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Customers.IProfileAppService.html">IProfileAppService</a>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IApplicationService</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Dependency.ITransientDependency</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1107 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TestSyncAppService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TestSyncAppService
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.TestSync.TestSyncAppService">
+  
+  
+  <h1 id="HTCMobile_TestSync_TestSyncAppService" data-uid="HTCMobile.TestSync.TestSyncAppService" class="text-break">Class TestSyncAppService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.AbpServiceBase</span></div>
+    <div class="level2"><span class="xref">Abp.Application.Services.ApplicationService</span></div>
+    <div class="level3"><a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html">HTCMobileAppServiceBase</a></div>
+    <div class="level4"><span class="xref">TestSyncAppService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span></div>
+    <div><a class="xref" href="HTCMobile.TestSync.ITestSyncAppService.html">ITestSyncAppService</a></div>
+    <div><span class="xref">Abp.Application.Services.IApplicationService</span></div>
+    <div><span class="xref">Abp.Dependency.ITransientDependency</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_TenantManager">HTCMobileAppServiceBase.TenantManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_UserManager">HTCMobileAppServiceBase.UserManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserAsync">HTCMobileAppServiceBase.GetCurrentUserAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserTimeZoneAsync">HTCMobileAppServiceBase.GetCurrentUserTimeZoneAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetUserTimeZone_System_Nullable_System_Int64__">HTCMobileAppServiceBase.GetUserTimeZone(Nullable&lt;Int64&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentTenantAsync">HTCMobileAppServiceBase.GetCurrentTenantAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_CheckErrors_Microsoft_AspNetCore_Identity_IdentityResult_">HTCMobileAppServiceBase.CheckErrors(IdentityResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcel__1_System_Collections_Generic_List___0__System_String_">HTCMobileAppServiceBase.ExportExcel&lt;T&gt;(List&lt;T&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcelNoData__1_System_String_">HTCMobileAppServiceBase.ExportExcelNoData&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_Base64ToImage_System_String_">HTCMobileAppServiceBase.Base64ToImage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImage_Microsoft_AspNetCore_Http_IFormFile_">HTCMobileAppServiceBase.SaveImage(IFormFile)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImageFromBase64_System_String_System_String_">HTCMobileAppServiceBase.SaveImageFromBase64(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveFileFromBase64_System_String_System_String_System_String_System_String_System_Int32_">HTCMobileAppServiceBase.SaveFileFromBase64(String, String, String, String, Int32)</a>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.CommonPostfixes</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGrantedAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGranted(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabledAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabled(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AbpSession</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AppliedCrossCuttingConcerns</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.SettingManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.UnitOfWorkManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.CurrentUnitOfWork</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSourceName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSource</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.ObjectMapper</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.TestSync.html">HTCMobile.TestSync</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Application.dll</h6>
+  <h5 id="HTCMobile_TestSync_TestSyncAppService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DontWrapResult]
+[ApiVersion(&quot;1&quot;)]
+[ApiVersion(&quot;2&quot;)]
+[Route(&quot;api/v{version}/TestSync&quot;)]
+public class TestSyncAppService : HTCMobileAppServiceBase, IAvoidDuplicateCrossCuttingConcerns, ITestSyncAppService, IApplicationService, ITransientDependency</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService__ctor_" data-uid="HTCMobile.TestSync.TestSyncAppService.#ctor*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService__ctor_HTCMobile_ISyncServiceReminder_HTCMobile_ISyncCar_HTCMobile_SyncDataIdocnet_ISyncSurveyJob_HTCMobile_ISyncNews_HTCMobile_SyncDataIdocnet_ISyncSurveyJob_HTCMobile_ISyncServiceReminder_Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcSetting_System_Int64__HTCMobile_SyncDataIdocnet_IHappyBirthdayJob_HTCMobile_IInviteSurveyJob_HTCMobile_INotiSmsExtend_HTCMobile_ISyncMembership_HTCMobile_ISyncRegisterCarFree_HTCMobile_SyncDataIdocnet_ICleanLogJob_HTCMobile_IEmailServices_" data-uid="HTCMobile.TestSync.TestSyncAppService.#ctor(HTCMobile.ISyncServiceReminder,HTCMobile.ISyncCar,HTCMobile.SyncDataIdocnet.ISyncSurveyJob,HTCMobile.ISyncNews,HTCMobile.SyncDataIdocnet.ISyncSurveyJob,HTCMobile.ISyncServiceReminder,Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcSetting,System.Int64},HTCMobile.SyncDataIdocnet.IHappyBirthdayJob,HTCMobile.IInviteSurveyJob,HTCMobile.INotiSmsExtend,HTCMobile.ISyncMembership,HTCMobile.ISyncRegisterCarFree,HTCMobile.SyncDataIdocnet.ICleanLogJob,HTCMobile.IEmailServices)">TestSyncAppService(ISyncServiceReminder, ISyncCar, ISyncSurveyJob, ISyncNews, ISyncSurveyJob, ISyncServiceReminder, IRepository&lt;HtcSetting, Int64&gt;, IHappyBirthdayJob, IInviteSurveyJob, INotiSmsExtend, ISyncMembership, ISyncRegisterCarFree, ICleanLogJob, IEmailServices)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TestSyncAppService(ISyncServiceReminder syncServiceReminder, ISyncCar syncCar, ISyncSurveyJob syncSurvey, ISyncNews syncNews, ISyncSurveyJob SyncSurveyJob, ISyncServiceReminder SyncServiceReminder, IRepository&lt;HtcSetting, long&gt; settingRepository, IHappyBirthdayJob HappyBirthdayJob, IInviteSurveyJob inviteSurvey, INotiSmsExtend notiSMSExtend, ISyncMembership syncMembership, ISyncRegisterCarFree syncRegisterCarFree, ICleanLogJob cleanLogJob, IEmailServices emailServices)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ISyncServiceReminder.html">ISyncServiceReminder</a></td>
+        <td><span class="parametername">syncServiceReminder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ISyncCar.html">ISyncCar</a></td>
+        <td><span class="parametername">syncCar</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.SyncDataIdocnet.ISyncSurveyJob.html">ISyncSurveyJob</a></td>
+        <td><span class="parametername">syncSurvey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ISyncNews.html">ISyncNews</a></td>
+        <td><span class="parametername">syncNews</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.SyncDataIdocnet.ISyncSurveyJob.html">ISyncSurveyJob</a></td>
+        <td><span class="parametername">SyncSurveyJob</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ISyncServiceReminder.html">ISyncServiceReminder</a></td>
+        <td><span class="parametername">SyncServiceReminder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcSetting.html">HtcSetting</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">settingRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.SyncDataIdocnet.IHappyBirthdayJob.html">IHappyBirthdayJob</a></td>
+        <td><span class="parametername">HappyBirthdayJob</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.IInviteSurveyJob.html">IInviteSurveyJob</a></td>
+        <td><span class="parametername">inviteSurvey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.INotiSmsExtend.html">INotiSmsExtend</a></td>
+        <td><span class="parametername">notiSMSExtend</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ISyncMembership.html">ISyncMembership</a></td>
+        <td><span class="parametername">syncMembership</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ISyncRegisterCarFree.html">ISyncRegisterCarFree</a></td>
+        <td><span class="parametername">syncRegisterCarFree</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.SyncDataIdocnet.ICleanLogJob.html">ICleanLogJob</a></td>
+        <td><span class="parametername">cleanLogJob</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.IEmailServices.html">IEmailServices</a></td>
+        <td><span class="parametername">emailServices</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_Birdthday_" data-uid="HTCMobile.TestSync.TestSyncAppService.Birdthday*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_Birdthday" data-uid="HTCMobile.TestSync.TestSyncAppService.Birdthday">Birdthday()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestBirthday&quot;)]
+public ResponseModel&lt;string&gt; Birdthday()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_SaveLogTest_" data-uid="HTCMobile.TestSync.TestSyncAppService.SaveLogTest*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_SaveLogTest" data-uid="HTCMobile.TestSync.TestSyncAppService.SaveLogTest">SaveLogTest()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;SaveLogTest&quot;)]
+public ResponseModel&lt;string&gt; SaveLogTest()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_SetupTime_" data-uid="HTCMobile.TestSync.TestSyncAppService.SetupTime*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_SetupTime" data-uid="HTCMobile.TestSync.TestSyncAppService.SetupTime">SetupTime()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;TimeJob&quot;)]
+public ResponseModel&lt;string&gt; SetupTime()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_StopHangfire_" data-uid="HTCMobile.TestSync.TestSyncAppService.StopHangfire*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_StopHangfire" data-uid="HTCMobile.TestSync.TestSyncAppService.StopHangfire">StopHangfire()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;StopHangFire&quot;)]
+public ResponseModel&lt;string&gt; StopHangfire()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_surveySale_" data-uid="HTCMobile.TestSync.TestSyncAppService.surveySale*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_surveySale" data-uid="HTCMobile.TestSync.TestSyncAppService.surveySale">surveySale()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSurveySale&quot;)]
+public ResponseModel&lt;string&gt; surveySale()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_surveyService_" data-uid="HTCMobile.TestSync.TestSyncAppService.surveyService*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_surveyService" data-uid="HTCMobile.TestSync.TestSyncAppService.surveyService">surveyService()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSurveyService&quot;)]
+public ResponseModel&lt;string&gt; surveyService()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_SyncServiceReminder_" data-uid="HTCMobile.TestSync.TestSyncAppService.SyncServiceReminder*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_SyncServiceReminder_System_Collections_Generic_List_HTCMobile_SyncDataIdocnet_Dto_ServiceReminder_ServiceRemiderItemApiResponseDto__" data-uid="HTCMobile.TestSync.TestSyncAppService.SyncServiceReminder(System.Collections.Generic.List{HTCMobile.SyncDataIdocnet.Dto.ServiceReminder.ServiceRemiderItemApiResponseDto})">SyncServiceReminder(List&lt;ServiceRemiderItemApiResponseDto&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;ServiceReminder&quot;)]
+public ResponseModel&lt;string&gt; SyncServiceReminder(List&lt;ServiceRemiderItemApiResponseDto&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.SyncDataIdocnet.Dto.ServiceReminder.ServiceRemiderItemApiResponseDto.html">ServiceRemiderItemApiResponseDto</a>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_syncSurveySale_" data-uid="HTCMobile.TestSync.TestSyncAppService.syncSurveySale*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_syncSurveySale_System_Collections_Generic_List_HTCMobile_SyncDataIdocnet_Dto_Survey_SurveySaleApiResponseDto__" data-uid="HTCMobile.TestSync.TestSyncAppService.syncSurveySale(System.Collections.Generic.List{HTCMobile.SyncDataIdocnet.Dto.Survey.SurveySaleApiResponseDto})">syncSurveySale(List&lt;SurveySaleApiResponseDto&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;SurveySale&quot;)]
+public ResponseModel&lt;string&gt; syncSurveySale(List&lt;SurveySaleApiResponseDto&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.SyncDataIdocnet.Dto.Survey.SurveySaleApiResponseDto.html">SurveySaleApiResponseDto</a>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_syncSurveyService_" data-uid="HTCMobile.TestSync.TestSyncAppService.syncSurveyService*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_syncSurveyService_System_Collections_Generic_List_HTCMobile_SyncDataIdocnet_Dto_Survey_SurveyServiceApiResponseDto__" data-uid="HTCMobile.TestSync.TestSyncAppService.syncSurveyService(System.Collections.Generic.List{HTCMobile.SyncDataIdocnet.Dto.Survey.SurveyServiceApiResponseDto})">syncSurveyService(List&lt;SurveyServiceApiResponseDto&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;SurveyService&quot;)]
+public ResponseModel&lt;string&gt; syncSurveyService(List&lt;SurveyServiceApiResponseDto&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.SyncDataIdocnet.Dto.Survey.SurveyServiceApiResponseDto.html">SurveyServiceApiResponseDto</a>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestCleanLog_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestCleanLog*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestCleanLog" data-uid="HTCMobile.TestSync.TestSyncAppService.TestCleanLog">TestCleanLog()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestCleanLog&quot;)]
+public ResponseModel&lt;string&gt; TestCleanLog()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSendEmail_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSendEmail*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSendEmail" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSendEmail">TestSendEmail()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSendEmail&quot;)]
+public ResponseModel&lt;string&gt; TestSendEmail()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSendSms_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSendSms*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSendSms_System_String_System_String_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSendSms(System.String,System.String)">TestSendSms(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSendSms&quot;)]
+public ResponseModel&lt;string&gt; TestSendSms(string phoneNumber, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">phoneNumber</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSyncBenefitHistory_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncBenefitHistory*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSyncBenefitHistory" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncBenefitHistory">TestSyncBenefitHistory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSyncBenefitHistory&quot;)]
+public ResponseModel&lt;string&gt; TestSyncBenefitHistory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSyncCar_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncCar*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSyncCar" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncCar">TestSyncCar()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSyncCar&quot;)]
+public ResponseModel&lt;string&gt; TestSyncCar()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSyncFee_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncFee*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSyncFee" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncFee">TestSyncFee()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSyncFee&quot;)]
+public ResponseModel&lt;string&gt; TestSyncFee()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSyncMembership_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncMembership*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSyncMembership" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncMembership">TestSyncMembership()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSyncMembership&quot;)]
+public ResponseModel&lt;string&gt; TestSyncMembership()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSyncMembershipBenerfit_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncMembershipBenerfit*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSyncMembershipBenerfit" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncMembershipBenerfit">TestSyncMembershipBenerfit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSyncMembershipBenerfit&quot;)]
+public ResponseModel&lt;string&gt; TestSyncMembershipBenerfit()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSyncMembershipRank_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncMembershipRank*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSyncMembershipRank" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncMembershipRank">TestSyncMembershipRank()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSyncMembershipRank&quot;)]
+public ResponseModel&lt;string&gt; TestSyncMembershipRank()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSyncNewTablet_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncNewTablet*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSyncNewTablet" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncNewTablet">TestSyncNewTablet()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSyncNewTablet&quot;)]
+public ResponseModel&lt;string&gt; TestSyncNewTablet()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSyncNewWebsite_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncNewWebsite*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSyncNewWebsite" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncNewWebsite">TestSyncNewWebsite()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSyncNewWebsite&quot;)]
+public ResponseModel&lt;string&gt; TestSyncNewWebsite()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSyncPointHistory_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncPointHistory*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSyncPointHistory" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncPointHistory">TestSyncPointHistory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSyncPointHistory&quot;)]
+public ResponseModel&lt;string&gt; TestSyncPointHistory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSyncReminder_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncReminder*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSyncReminder" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncReminder">TestSyncReminder()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSyncReminder&quot;)]
+public ResponseModel&lt;string&gt; TestSyncReminder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSyncSurveySale_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncSurveySale*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSyncSurveySale" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncSurveySale">TestSyncSurveySale()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSyncSurveySale&quot;)]
+public ResponseModel&lt;string&gt; TestSyncSurveySale()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_TestSync_TestSyncAppService_TestSyncSurveyService_" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncSurveyService*"></a>
+  <h4 id="HTCMobile_TestSync_TestSyncAppService_TestSyncSurveyService" data-uid="HTCMobile.TestSync.TestSyncAppService.TestSyncSurveyService">TestSyncSurveyService()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;TestSyncSurveyService&quot;)]
+public ResponseModel&lt;string&gt; TestSyncSurveyService()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.TestSync.ITestSyncAppService.html">ITestSyncAppService</a>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IApplicationService</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Dependency.ITransientDependency</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

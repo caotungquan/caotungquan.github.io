@@ -1,0 +1,1069 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GuidebookAppService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GuidebookAppService
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.GuideBooks.GuidebookAppService">
+  
+  
+  <h1 id="HTCMobile_GuideBooks_GuidebookAppService" data-uid="HTCMobile.GuideBooks.GuidebookAppService" class="text-break">Class GuidebookAppService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.AbpServiceBase</span></div>
+    <div class="level2"><span class="xref">Abp.Application.Services.ApplicationService</span></div>
+    <div class="level3"><a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html">HTCMobileAppServiceBase</a></div>
+    <div class="level4"><span class="xref">GuidebookAppService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span></div>
+    <div><a class="xref" href="HTCMobile.GuideBooks.IGuidebookAppService.html">IGuidebookAppService</a></div>
+    <div><span class="xref">Abp.Application.Services.IApplicationService</span></div>
+    <div><span class="xref">Abp.Dependency.ITransientDependency</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_TenantManager">HTCMobileAppServiceBase.TenantManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_UserManager">HTCMobileAppServiceBase.UserManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserAsync">HTCMobileAppServiceBase.GetCurrentUserAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentUserTimeZoneAsync">HTCMobileAppServiceBase.GetCurrentUserTimeZoneAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetUserTimeZone_System_Nullable_System_Int64__">HTCMobileAppServiceBase.GetUserTimeZone(Nullable&lt;Int64&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_GetCurrentTenantAsync">HTCMobileAppServiceBase.GetCurrentTenantAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_CheckErrors_Microsoft_AspNetCore_Identity_IdentityResult_">HTCMobileAppServiceBase.CheckErrors(IdentityResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcel__1_System_Collections_Generic_List___0__System_String_">HTCMobileAppServiceBase.ExportExcel&lt;T&gt;(List&lt;T&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_ExportExcelNoData__1_System_String_">HTCMobileAppServiceBase.ExportExcelNoData&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_Base64ToImage_System_String_">HTCMobileAppServiceBase.Base64ToImage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImage_Microsoft_AspNetCore_Http_IFormFile_">HTCMobileAppServiceBase.SaveImage(IFormFile)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveImageFromBase64_System_String_System_String_">HTCMobileAppServiceBase.SaveImageFromBase64(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTCMobile.HTCMobileAppServiceBase.html#HTCMobile_HTCMobileAppServiceBase_SaveFileFromBase64_System_String_System_String_System_String_System_String_System_Int32_">HTCMobileAppServiceBase.SaveFileFromBase64(String, String, String, String, Int32)</a>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.CommonPostfixes</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGrantedAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsGranted(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabledAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.IsEnabled(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AbpSession</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.PermissionChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.FeatureChecker</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Application.Services.ApplicationService.AppliedCrossCuttingConcerns</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.L(System.String, System.Globalization.CultureInfo, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.SettingManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.UnitOfWorkManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.CurrentUnitOfWork</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationManager</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSourceName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.LocalizationSource</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Abp.AbpServiceBase.ObjectMapper</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.GuideBooks.html">HTCMobile.GuideBooks</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Application.dll</h6>
+  <h5 id="HTCMobile_GuideBooks_GuidebookAppService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DontWrapResult]
+[ApiVersion(&quot;1&quot;)]
+[ApiVersion(&quot;2&quot;)]
+[Route(&quot;api/v{version}/GuideBook&quot;)]
+public class GuidebookAppService : HTCMobileAppServiceBase, IAvoidDuplicateCrossCuttingConcerns, IGuidebookAppService, IApplicationService, ITransientDependency</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService__ctor_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.#ctor*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService__ctor_Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcGuideBook_System_Int64__Abp_EntityFrameworkCore_IDbContextProvider_HTCMobile_EntityFrameworkCore_HTCMobileDbContext__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcGuideBooksContent_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcCar_System_Int64__Abp_Domain_Repositories_IRepository_HTCMobile_Model_HtcCarImages_System_Int64__Abp_Runtime_Caching_ICacheManager_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.#ctor(Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcGuideBook,System.Int64},Abp.EntityFrameworkCore.IDbContextProvider{HTCMobile.EntityFrameworkCore.HTCMobileDbContext},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcGuideBooksContent,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcCar,System.Int64},Abp.Domain.Repositories.IRepository{HTCMobile.Model.HtcCarImages,System.Int64},Abp.Runtime.Caching.ICacheManager)">GuidebookAppService(IRepository&lt;HtcGuideBook, Int64&gt;, IDbContextProvider&lt;HTCMobileDbContext&gt;, IRepository&lt;HtcGuideBooksContent, Int64&gt;, IRepository&lt;HtcCar, Int64&gt;, IRepository&lt;HtcCarImages, Int64&gt;, ICacheManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GuidebookAppService(IRepository&lt;HtcGuideBook, long&gt; guideBookRepository, IDbContextProvider&lt;HTCMobileDbContext&gt; dbContextProvider, IRepository&lt;HtcGuideBooksContent, long&gt; guideBookContentRepository, IRepository&lt;HtcCar, long&gt; carRepository, IRepository&lt;HtcCarImages, long&gt; carImageRepository, ICacheManager cacheManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcGuideBook.html">HtcGuideBook</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">guideBookRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.EntityFrameworkCore.IDbContextProvider</span>&lt;<a class="xref" href="HTCMobile.EntityFrameworkCore.HTCMobileDbContext.html">HTCMobileDbContext</a>&gt;</td>
+        <td><span class="parametername">dbContextProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcGuideBooksContent.html">HtcGuideBooksContent</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">guideBookContentRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCar.html">HtcCar</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">carRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Repositories.IRepository</span>&lt;<a class="xref" href="HTCMobile.Model.HtcCarImages.html">HtcCarImages</a>, <span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">carImageRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Runtime.Caching.ICacheManager</span></td>
+        <td><span class="parametername">cacheManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_CMSContentGetListParent_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSContentGetListParent*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_CMSContentGetListParent_System_Int64_System_Nullable_System_Int64__" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSContentGetListParent(System.Int64,System.Nullable{System.Int64})">CMSContentGetListParent(Int64, Nullable&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSContentGetListParent&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Guidebook&quot;})]
+public Task&lt;ResponseModel&lt;List&lt;CMSResponseGuidebookContentDto&gt;&gt;&gt; CMSContentGetListParent(long guideBookId, long? contentId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">guideBookId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">contentId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.CMSResponseGuidebookContentDto.html">CMSResponseGuidebookContentDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_CMSGetDetail_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSGetDetail*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_CMSGetDetail_Abp_Application_Services_Dto_EntityDto_System_Int64__" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSGetDetail(Abp.Application.Services.Dto.EntityDto{System.Int64})">CMSGetDetail(EntityDto&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSGetDetail&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Guidebook&quot;})]
+public Task&lt;ResponseModel&lt;GuideBookDetailDto&gt;&gt; CMSGetDetail(EntityDto&lt;long&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.GuideBookDetailDto.html">GuideBookDetailDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_CMSGuidebookContentCreateUpdate_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSGuidebookContentCreateUpdate*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_CMSGuidebookContentCreateUpdate_HTCMobile_GuideBooks_Dto_CMSGuideBookContentInputDto_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSGuidebookContentCreateUpdate(HTCMobile.GuideBooks.Dto.CMSGuideBookContentInputDto)">CMSGuidebookContentCreateUpdate(CMSGuideBookContentInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSContentPost&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Guidebook.CreateEdit&quot;})]
+public Task&lt;ResponseModel&lt;CMSResponseGuidebookContentDto&gt;&gt; CMSGuidebookContentCreateUpdate(CMSGuideBookContentInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GuideBooks.Dto.CMSGuideBookContentInputDto.html">CMSGuideBookContentInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.CMSResponseGuidebookContentDto.html">CMSResponseGuidebookContentDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_CMSGuidebookContentDelete_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSGuidebookContentDelete*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_CMSGuidebookContentDelete_Abp_Application_Services_Dto_EntityDto_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSGuidebookContentDelete(Abp.Application.Services.Dto.EntityDto)">CMSGuidebookContentDelete(EntityDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AbpAuthorize(new string[]{&quot;Pages.Guidebook.Delete&quot;})]
+[HttpDelete]
+[Route(&quot;CMSContentDelete&quot;)]
+public Task&lt;ResponseModel&gt; CMSGuidebookContentDelete(EntityDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel.html">ResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_CMSGuidebookContentList_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSGuidebookContentList*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_CMSGuidebookContentList_Abp_Application_Services_Dto_EntityDto_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSGuidebookContentList(Abp.Application.Services.Dto.EntityDto)">CMSGuidebookContentList(EntityDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;CMSContentGetList&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Guidebook&quot;})]
+public Task&lt;ResponseModel&lt;List&lt;CMSResponseGuidebookContentDto&gt;&gt;&gt; CMSGuidebookContentList(EntityDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.CMSResponseGuidebookContentDto.html">CMSResponseGuidebookContentDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_CMSImportPdf_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSImportPdf*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_CMSImportPdf_HTCMobile_GuideBooks_Dto_CMSImportPdfInputDto_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSImportPdf(HTCMobile.GuideBooks.Dto.CMSImportPdfInputDto)">CMSImportPdf(CMSImportPdfInputDto)</h4>
+  <div class="markdown level1 summary"><p>Import noi dung sách file pdf</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSImportPdf&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Guidebook.CreateEdit&quot;})]
+public Task&lt;ResponseModel&lt;string&gt;&gt; CMSImportPdf(CMSImportPdfInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GuideBooks.Dto.CMSImportPdfInputDto.html">CMSImportPdfInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_CMSSortData_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSSortData*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_CMSSortData_HTCMobile_GuideBooks_Dto_CMSChangeOrderNumberInputDto_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CMSSortData(HTCMobile.GuideBooks.Dto.CMSChangeOrderNumberInputDto)">CMSSortData(CMSChangeOrderNumberInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Route(&quot;CMSSortData&quot;)]
+[AbpAuthorize(new string[]{&quot;Pages.Guidebook.CreateEdit&quot;})]
+public Task&lt;ResponseModel&lt;string&gt;&gt; CMSSortData(CMSChangeOrderNumberInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GuideBooks.Dto.CMSChangeOrderNumberInputDto.html">CMSChangeOrderNumberInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_ContentOrder_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.ContentOrder*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_ContentOrder_HTCMobile_Customers_Dto_GuideBookOrderInputDto_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.ContentOrder(HTCMobile.Customers.Dto.GuideBookOrderInputDto)">ContentOrder(GuideBookOrderInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AbpAuthorize(new string[]{&quot;Pages.Guidebook.CreateEdit&quot;})]
+[HttpPost]
+[Route(&quot;CMSContentChangeOrder&quot;)]
+public Task&lt;ResponseModel&gt; ContentOrder(GuideBookOrderInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Customers.Dto.GuideBookOrderInputDto.html">GuideBookOrderInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel.html">ResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_CreateOrUpdateAsync_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CreateOrUpdateAsync*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_CreateOrUpdateAsync_HTCMobile_GuideBooks_Dto_CmsGuideBookInputDto_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CreateOrUpdateAsync(HTCMobile.GuideBooks.Dto.CmsGuideBookInputDto)">CreateOrUpdateAsync(CmsGuideBookInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[AbpAuthorize(new string[]{&quot;Pages.Guidebook.CreateEdit&quot;})]
+[Route(&quot;CMSPost&quot;)]
+public Task&lt;ResponseModel&lt;GuideBookDetailDto&gt;&gt; CreateOrUpdateAsync(CmsGuideBookInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GuideBooks.Dto.CmsGuideBookInputDto.html">CmsGuideBookInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.GuideBookDetailDto.html">GuideBookDetailDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_CreateUpdateGuideBook_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CreateUpdateGuideBook*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_CreateUpdateGuideBook_HTCMobile_GuideBooks_Dto_CMSCreateGuidebookInputDto_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.CreateUpdateGuideBook(HTCMobile.GuideBooks.Dto.CMSCreateGuidebookInputDto)">CreateUpdateGuideBook(CMSCreateGuidebookInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AbpAuthorize(new string[]{&quot;Pages.Guidebook.CreateEdit&quot;})]
+[HttpPost]
+[Route(&quot;CMSCreateUpdate&quot;)]
+public Task&lt;ResponseModel&lt;GuideBookDetailDto&gt;&gt; CreateUpdateGuideBook(CMSCreateGuidebookInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GuideBooks.Dto.CMSCreateGuidebookInputDto.html">CMSCreateGuidebookInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.GuideBookDetailDto.html">GuideBookDetailDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_Delete_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.Delete*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_Delete_System_Collections_Generic_List_System_Int64__" data-uid="HTCMobile.GuideBooks.GuidebookAppService.Delete(System.Collections.Generic.List{System.Int64})">Delete(List&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AbpAuthorize(new string[]{&quot;Pages.Guidebook.Delete&quot;})]
+[HttpPost]
+[Route(&quot;CMSDelete&quot;)]
+public Task&lt;ResponseModel&gt; Delete([FromBody] List&lt;long&gt; ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel.html">ResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_GetAll_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.GetAll*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_GetAll_HTCMobile_GuideBooks_Dto_CMSGetGuideBookInput_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.GetAll(HTCMobile.GuideBooks.Dto.CMSGetGuideBookInput)">GetAll(CMSGetGuideBookInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AbpAuthorize(new string[]{&quot;Pages.Guidebook&quot;})]
+[HttpPost]
+[Route(&quot;CMSGetList&quot;)]
+public Task&lt;ResponseCMSModel&lt;List&lt;GuideBookDto&gt;&gt;&gt; GetAll(CMSGetGuideBookInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GuideBooks.Dto.CMSGetGuideBookInput.html">CMSGetGuideBookInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.GuideBookDto.html">GuideBookDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_GetDetail_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.GetDetail*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_GetDetail_Abp_Application_Services_Dto_EntityDto_System_Int64__" data-uid="HTCMobile.GuideBooks.GuidebookAppService.GetDetail(Abp.Application.Services.Dto.EntityDto{System.Int64})">GetDetail(EntityDto&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGetDetail&quot;)]
+public Task&lt;ResponseModel&lt;GuideBookDetailDto&gt;&gt; GetDetail(EntityDto&lt;long&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.GuideBookDetailDto.html">GuideBookDetailDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_MobileGetAll_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.MobileGetAll*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_MobileGetAll_HTCMobile_GuideBooks_Dto_GetGuideBookInput_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.MobileGetAll(HTCMobile.GuideBooks.Dto.GetGuideBookInput)">MobileGetAll(GetGuideBookInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileGetList&quot;)]
+public Task&lt;ResponseCMSModel&lt;List&lt;GuideBookDto&gt;&gt;&gt; MobileGetAll(GetGuideBookInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GuideBooks.Dto.GetGuideBookInput.html">GetGuideBookInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.GuideBookDto.html">GuideBookDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_MobileGuidebookContentList_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.MobileGuidebookContentList*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_MobileGuidebookContentList_Abp_Application_Services_Dto_EntityDto_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.MobileGuidebookContentList(Abp.Application.Services.Dto.EntityDto)">MobileGuidebookContentList(EntityDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;MobileContentGetList&quot;)]
+public Task&lt;ResponseModel&lt;List&lt;CMSResponseGuidebookContentDto&gt;&gt;&gt; MobileGuidebookContentList(EntityDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.CMSResponseGuidebookContentDto.html">CMSResponseGuidebookContentDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_GuidebookAppService_Order_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.Order*"></a>
+  <h4 id="HTCMobile_GuideBooks_GuidebookAppService_Order_HTCMobile_Customers_Dto_GuideBookOrderInputDto_" data-uid="HTCMobile.GuideBooks.GuidebookAppService.Order(HTCMobile.Customers.Dto.GuideBookOrderInputDto)">Order(GuideBookOrderInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AbpAuthorize(new string[]{&quot;Pages.Guidebook.CreateEdit&quot;})]
+[HttpPost]
+[Route(&quot;CMSChangeOrder&quot;)]
+public Task&lt;ResponseModel&gt; Order(GuideBookOrderInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Customers.Dto.GuideBookOrderInputDto.html">GuideBookOrderInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel.html">ResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Application.Services.IAvoidDuplicateCrossCuttingConcerns</span>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.GuideBooks.IGuidebookAppService.html">IGuidebookAppService</a>
+  </div>
+  <div>
+      <span class="xref">Abp.Application.Services.IApplicationService</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Dependency.ITransientDependency</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

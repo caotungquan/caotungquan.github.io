@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SignInManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SignInManager
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.Identity.SignInManager">
+  
+  
+  <h1 id="HTCMobile_Identity_SignInManager" data-uid="HTCMobile.Identity.SignInManager" class="text-break">Class SignInManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.AspNetCore.Identity.SignInManager</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div class="level2"><span class="xref">Abp.Authorization.AbpSignInManager</span>&lt;<a class="xref" href="HTCMobile.MultiTenancy.Tenant.html">Tenant</a>, <a class="xref" href="HTCMobile.Authorization.Roles.Role.html">Role</a>, <a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div class="level3"><span class="xref">SignInManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Dependency.ITransientDependency</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Abp.Authorization.AbpSignInManager&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SignInOrTwoFactorAsync(Abp.Authorization.Users.AbpLoginResult&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Users.User&gt;, System.Boolean, System.Nullable&lt;System.Boolean&gt;, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.AbpSignInManager&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SignOutAndSignInAsync(System.Security.Claims.ClaimsIdentity, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.AbpSignInManager&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SignInAsync(System.Security.Claims.ClaimsIdentity, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.AbpSignInManager&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.SignInAsync(HTCMobile.Authorization.Users.User, System.Boolean, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.AbpSignInManager&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.StoreTwoFactorInfo(HTCMobile.Authorization.Users.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.AbpSignInManager&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.GetVerifiedTenantIdAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.AbpSignInManager&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.IsTwoFactorClientRememberedAsync(HTCMobile.Authorization.Users.User)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.AbpSignInManager&lt;HTCMobile.MultiTenancy.Tenant, HTCMobile.Authorization.Roles.Role, HTCMobile.Authorization.Users.User&gt;.RememberTwoFactorClientAsync(HTCMobile.Authorization.Users.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.CreateUserPrincipalAsync(HTCMobile.Authorization.Users.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.IsSignedIn(System.Security.Claims.ClaimsPrincipal)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.CanSignInAsync(HTCMobile.Authorization.Users.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.RefreshSignInAsync(HTCMobile.Authorization.Users.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.SignInAsync(HTCMobile.Authorization.Users.User, System.Boolean, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.SignInAsync(HTCMobile.Authorization.Users.User, Microsoft.AspNetCore.Authentication.AuthenticationProperties, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.SignOutAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.ValidateSecurityStampAsync(System.Security.Claims.ClaimsPrincipal)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.ValidateTwoFactorSecurityStampAsync(System.Security.Claims.ClaimsPrincipal)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.ValidateSecurityStampAsync(HTCMobile.Authorization.Users.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.PasswordSignInAsync(HTCMobile.Authorization.Users.User, System.String, System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.PasswordSignInAsync(System.String, System.String, System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.CheckPasswordSignInAsync(HTCMobile.Authorization.Users.User, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.IsTwoFactorClientRememberedAsync(HTCMobile.Authorization.Users.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.RememberTwoFactorClientAsync(HTCMobile.Authorization.Users.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.ForgetTwoFactorClientAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.TwoFactorRecoveryCodeSignInAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.TwoFactorAuthenticatorSignInAsync(System.String, System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.TwoFactorSignInAsync(System.String, System.String, System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.GetTwoFactorAuthenticationUserAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.ExternalLoginSignInAsync(System.String, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.ExternalLoginSignInAsync(System.String, System.String, System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.GetExternalAuthenticationSchemesAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.GetExternalLoginInfoAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.UpdateExternalAuthenticationTokensAsync(Microsoft.AspNetCore.Identity.ExternalLoginInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.ConfigureExternalAuthenticationProperties(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.SignInOrTwoFactorAsync(HTCMobile.Authorization.Users.User, System.Boolean, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.IsLockedOut(HTCMobile.Authorization.Users.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.LockedOut(HTCMobile.Authorization.Users.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.PreSignInCheck(HTCMobile.Authorization.Users.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.ResetLockout(HTCMobile.Authorization.Users.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.UserManager</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.ClaimsFactory</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.Options</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.SignInManager&lt;HTCMobile.Authorization.Users.User&gt;.Context</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.Identity.html">HTCMobile.Identity</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Core.dll</h6>
+  <h5 id="HTCMobile_Identity_SignInManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SignInManager : AbpSignInManager&lt;Tenant, Role, User&gt;, ITransientDependency</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HTCMobile_Identity_SignInManager__ctor_" data-uid="HTCMobile.Identity.SignInManager.#ctor*"></a>
+  <h4 id="HTCMobile_Identity_SignInManager__ctor_HTCMobile_Authorization_Users_UserManager_Microsoft_AspNetCore_Http_IHttpContextAccessor_HTCMobile_Authorization_Users_UserClaimsPrincipalFactory_Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_SignInManager_HTCMobile_Authorization_Users_User___Abp_Domain_Uow_IUnitOfWorkManager_Abp_Configuration_ISettingManager_Microsoft_AspNetCore_Authentication_IAuthenticationSchemeProvider_" data-uid="HTCMobile.Identity.SignInManager.#ctor(HTCMobile.Authorization.Users.UserManager,Microsoft.AspNetCore.Http.IHttpContextAccessor,HTCMobile.Authorization.Users.UserClaimsPrincipalFactory,Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.SignInManager{HTCMobile.Authorization.Users.User}},Abp.Domain.Uow.IUnitOfWorkManager,Abp.Configuration.ISettingManager,Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider)">SignInManager(UserManager, IHttpContextAccessor, UserClaimsPrincipalFactory, IOptions&lt;IdentityOptions&gt;, ILogger&lt;SignInManager&lt;User&gt;&gt;, IUnitOfWorkManager, ISettingManager, IAuthenticationSchemeProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SignInManager(UserManager userManager, IHttpContextAccessor contextAccessor, UserClaimsPrincipalFactory claimsFactory, IOptions&lt;IdentityOptions&gt; optionsAccessor, ILogger&lt;SignInManager&lt;User&gt;&gt; logger, IUnitOfWorkManager unitOfWorkManager, ISettingManager settingManager, IAuthenticationSchemeProvider schemes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Authorization.Users.UserManager.html">UserManager</a></td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.IHttpContextAccessor</span></td>
+        <td><span class="parametername">contextAccessor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Authorization.Users.UserClaimsPrincipalFactory.html">UserClaimsPrincipalFactory</a></td>
+        <td><span class="parametername">claimsFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Options.IOptions</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityOptions</span>&gt;</td>
+        <td><span class="parametername">optionsAccessor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.SignInManager</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Domain.Uow.IUnitOfWorkManager</span></td>
+        <td><span class="parametername">unitOfWorkManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Abp.Configuration.ISettingManager</span></td>
+        <td><span class="parametername">settingManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider</span></td>
+        <td><span class="parametername">schemes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Dependency.ITransientDependency</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

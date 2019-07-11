@@ -1,0 +1,720 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HtcSetServiceSchedule
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HtcSetServiceSchedule
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.Model.HtcSetServiceSchedule">
+  
+  
+  <h1 id="HTCMobile_Model_HtcSetServiceSchedule" data-uid="HTCMobile.Model.HtcSetServiceSchedule" class="text-break">Class HtcSetServiceSchedule
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.Domain.Entities.Entity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div class="level2"><span class="xref">Abp.Domain.Entities.Auditing.CreationAuditedEntity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div class="level3"><span class="xref">Abp.Domain.Entities.Auditing.AuditedEntity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div class="level4"><span class="xref">Abp.Domain.Entities.Auditing.FullAuditedEntity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div class="level5"><span class="xref">HtcSetServiceSchedule</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Domain.Entities.IEntity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IFullAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.ICreationAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IHasCreationTime</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IModificationAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IHasModificationTime</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IDeletionAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IHasDeletionTime</span></div>
+    <div><span class="xref">Abp.Domain.Entities.ISoftDelete</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.FullAuditedEntity&lt;System.Int64&gt;.IsDeleted</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.FullAuditedEntity&lt;System.Int64&gt;.DeleterUserId</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.FullAuditedEntity&lt;System.Int64&gt;.DeletionTime</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.AuditedEntity&lt;System.Int64&gt;.LastModificationTime</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.AuditedEntity&lt;System.Int64&gt;.LastModifierUserId</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.CreationAuditedEntity&lt;System.Int64&gt;.CreationTime</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.CreationAuditedEntity&lt;System.Int64&gt;.CreatorUserId</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.IsTransient()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.Id</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.Model.html">HTCMobile.Model</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Core.dll</h6>
+  <h5 id="HTCMobile_Model_HtcSetServiceSchedule_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HtcSetServiceSchedule : FullAuditedEntity&lt;long&gt;, IEntity&lt;long&gt;, IFullAudited, IAudited, ICreationAudited, IHasCreationTime, IModificationAudited, IHasModificationTime, IDeletionAudited, IHasDeletionTime, ISoftDelete</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_Agency_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.Agency*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_Agency" data-uid="HTCMobile.Model.HtcSetServiceSchedule.Agency">Agency</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ForeignKey(&quot;AgencyId&quot;)]
+public HtcAgency Agency { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Model.HtcAgency.html">HtcAgency</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_AgencyId_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.AgencyId*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_AgencyId" data-uid="HTCMobile.Model.HtcSetServiceSchedule.AgencyId">AgencyId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long AgencyId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_Car_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.Car*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_Car" data-uid="HTCMobile.Model.HtcSetServiceSchedule.Car">Car</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ForeignKey(&quot;CarId&quot;)]
+public HtcCar Car { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Model.HtcCar.html">HtcCar</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_CarId_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CarId*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_CarId" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CarId">CarId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? CarId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_CarName_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CarName*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_CarName" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CarName">CarName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CarName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_City_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.City*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_City" data-uid="HTCMobile.Model.HtcSetServiceSchedule.City">City</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ForeignKey(&quot;CityId&quot;)]
+public HtcCity City { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Model.HtcCity.html">HtcCity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_CityId_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CityId*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_CityId" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CityId">CityId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long CityId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_CustomerEmail_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CustomerEmail*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_CustomerEmail" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CustomerEmail">CustomerEmail</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MaxLength(50)]
+public string CustomerEmail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_CustomerName_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CustomerName*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_CustomerName" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CustomerName">CustomerName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+[MaxLength(250)]
+public string CustomerName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_CustomerNote_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CustomerNote*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_CustomerNote" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CustomerNote">CustomerNote</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+public string CustomerNote { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_CustomerPhone_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CustomerPhone*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_CustomerPhone" data-uid="HTCMobile.Model.HtcSetServiceSchedule.CustomerPhone">CustomerPhone</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+[MaxLength(50)]
+public string CustomerPhone { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_DateAppointment_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.DateAppointment*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_DateAppointment" data-uid="HTCMobile.Model.HtcSetServiceSchedule.DateAppointment">DateAppointment</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+public DateTime DateAppointment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_Honorifics_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.Honorifics*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_Honorifics" data-uid="HTCMobile.Model.HtcSetServiceSchedule.Honorifics">Honorifics</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Honorifics { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_LicensePlates_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.LicensePlates*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_LicensePlates" data-uid="HTCMobile.Model.HtcSetServiceSchedule.LicensePlates">LicensePlates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LicensePlates { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_ServiceName_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.ServiceName*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_ServiceName" data-uid="HTCMobile.Model.HtcSetServiceSchedule.ServiceName">ServiceName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+public string ServiceName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_StaffName_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.StaffName*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_StaffName" data-uid="HTCMobile.Model.HtcSetServiceSchedule.StaffName">StaffName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StaffName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_Status_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.Status*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_Status" data-uid="HTCMobile.Model.HtcSetServiceSchedule.Status">Status</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_User_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.User*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_User" data-uid="HTCMobile.Model.HtcSetServiceSchedule.User">User</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ForeignKey(&quot;UserId&quot;)]
+public User User { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Model_HtcSetServiceSchedule_UserId_" data-uid="HTCMobile.Model.HtcSetServiceSchedule.UserId*"></a>
+  <h4 id="HTCMobile_Model_HtcSetServiceSchedule_UserId" data-uid="HTCMobile.Model.HtcSetServiceSchedule.UserId">UserId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+public long? UserId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Domain.Entities.IEntity&lt;TPrimaryKey&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IFullAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.ICreationAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IHasCreationTime</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IModificationAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IHasModificationTime</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IDeletionAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IHasDeletionTime</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.ISoftDelete</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

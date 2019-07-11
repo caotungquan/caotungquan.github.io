@@ -1,0 +1,981 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class User
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class User
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.Authorization.Users.User">
+  
+  
+  <h1 id="HTCMobile_Authorization_Users_User" data-uid="HTCMobile.Authorization.Users.User" class="text-break">Class User
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Abp.Domain.Entities.Entity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div class="level2"><span class="xref">Abp.Domain.Entities.Auditing.CreationAuditedEntity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div class="level3"><span class="xref">Abp.Domain.Entities.Auditing.AuditedEntity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div class="level4"><span class="xref">Abp.Domain.Entities.Auditing.FullAuditedEntity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div class="level5"><span class="xref">Abp.Authorization.Users.AbpUserBase</span></div>
+    <div class="level6"><span class="xref">Abp.Authorization.Users.AbpUser</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div class="level7"><span class="xref">User</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Abp.Domain.Entities.IEntity</span>&lt;<span class="xref">System.Int64</span>&gt;</div>
+    <div><span class="xref">Abp.Domain.Entities.IMayHaveTenant</span></div>
+    <div><span class="xref">Abp.Domain.Entities.IPassivable</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IFullAudited</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IAudited</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.ICreationAudited</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IModificationAudited</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IFullAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.ICreationAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IHasCreationTime</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IModificationAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IHasModificationTime</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IDeletionAudited</span>&lt;<a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a>&gt;</div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IDeletionAudited</span></div>
+    <div><span class="xref">Abp.Domain.Entities.Auditing.IHasDeletionTime</span></div>
+    <div><span class="xref">Abp.Domain.Entities.ISoftDelete</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUser&lt;HTCMobile.Authorization.Users.User&gt;.MaxConcurrencyStampLength</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUser&lt;HTCMobile.Authorization.Users.User&gt;.SetNormalizedNames()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUser&lt;HTCMobile.Authorization.Users.User&gt;.NormalizedUserName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUser&lt;HTCMobile.Authorization.Users.User&gt;.NormalizedEmailAddress</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUser&lt;HTCMobile.Authorization.Users.User&gt;.ConcurrencyStamp</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUser&lt;HTCMobile.Authorization.Users.User&gt;.Tokens</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUser&lt;HTCMobile.Authorization.Users.User&gt;.DeleterUser</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUser&lt;HTCMobile.Authorization.Users.User&gt;.CreatorUser</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUser&lt;HTCMobile.Authorization.Users.User&gt;.LastModifierUser</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.MaxUserNameLength</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.MaxEmailAddressLength</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.MaxNameLength</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.MaxSurnameLength</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.MaxAuthenticationSourceLength</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.AdminUserName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.MaxPasswordLength</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.MaxPlainPasswordLength</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.MaxEmailConfirmationCodeLength</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.MaxPasswordResetCodeLength</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.MaxPhoneNumberLength</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.MaxSecurityStampLength</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.SetNewPasswordResetCode()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.SetNewEmailConfirmationCode()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.ToUserIdentifier()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.AuthenticationSource</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.UserName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.TenantId</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.FullName</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.Password</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.EmailConfirmationCode</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.PasswordResetCode</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.LockoutEndDateUtc</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.AccessFailedCount</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.IsLockoutEnabled</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.PhoneNumber</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.IsPhoneNumberConfirmed</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.SecurityStamp</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.IsTwoFactorEnabled</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.Logins</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.Roles</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.Claims</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.Permissions</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.Settings</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.IsEmailConfirmed</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.IsActive</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Authorization.Users.AbpUserBase.LastLoginTime</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.FullAuditedEntity&lt;System.Int64&gt;.IsDeleted</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.FullAuditedEntity&lt;System.Int64&gt;.DeleterUserId</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.FullAuditedEntity&lt;System.Int64&gt;.DeletionTime</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.AuditedEntity&lt;System.Int64&gt;.LastModificationTime</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.AuditedEntity&lt;System.Int64&gt;.LastModifierUserId</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.CreationAuditedEntity&lt;System.Int64&gt;.CreationTime</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.CreationAuditedEntity&lt;System.Int64&gt;.CreatorUserId</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.IsTransient()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">Abp.Domain.Entities.Entity&lt;System.Int64&gt;.Id</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.Authorization.Users.html">HTCMobile.Authorization.Users</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Core.dll</h6>
+  <h5 id="HTCMobile_Authorization_Users_User_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class User : AbpUser&lt;User&gt;, IEntity&lt;long&gt;, IMayHaveTenant, IPassivable, IFullAudited&lt;User&gt;, IAudited&lt;User&gt;, ICreationAudited&lt;User&gt;, IModificationAudited&lt;User&gt;, IFullAudited, IAudited, ICreationAudited, IHasCreationTime, IModificationAudited, IHasModificationTime, IDeletionAudited&lt;User&gt;, IDeletionAudited, IHasDeletionTime, ISoftDelete</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="HTCMobile_Authorization_Users_User_DefaultPassword" data-uid="HTCMobile.Authorization.Users.User.DefaultPassword">DefaultPassword</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DefaultPassword = &quot;123qwe&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="HTCMobile_Authorization_Users_User_MaxDescriptionLength" data-uid="HTCMobile.Authorization.Users.User.MaxDescriptionLength">MaxDescriptionLength</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxDescriptionLength = 65536</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_Address_" data-uid="HTCMobile.Authorization.Users.User.Address*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_Address" data-uid="HTCMobile.Authorization.Users.User.Address">Address</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Address { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_Avatar_" data-uid="HTCMobile.Authorization.Users.User.Avatar*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_Avatar" data-uid="HTCMobile.Authorization.Users.User.Avatar">Avatar</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Avatar { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_Birthday_" data-uid="HTCMobile.Authorization.Users.User.Birthday*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_Birthday" data-uid="HTCMobile.Authorization.Users.User.Birthday">Birthday</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? Birthday { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_CustomerAddress_" data-uid="HTCMobile.Authorization.Users.User.CustomerAddress*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_CustomerAddress" data-uid="HTCMobile.Authorization.Users.User.CustomerAddress">CustomerAddress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CustomerAddress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_CustomerEmail_" data-uid="HTCMobile.Authorization.Users.User.CustomerEmail*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_CustomerEmail" data-uid="HTCMobile.Authorization.Users.User.CustomerEmail">CustomerEmail</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CustomerEmail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_Description_" data-uid="HTCMobile.Authorization.Users.User.Description*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_Description" data-uid="HTCMobile.Authorization.Users.User.Description">Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StringLength(65536)]
+public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_EmailAddress_" data-uid="HTCMobile.Authorization.Users.User.EmailAddress*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_EmailAddress" data-uid="HTCMobile.Authorization.Users.User.EmailAddress">EmailAddress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string EmailAddress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Authorization.Users.AbpUserBase.EmailAddress</span></div>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_ExpireTimeOtp_" data-uid="HTCMobile.Authorization.Users.User.ExpireTimeOtp*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_ExpireTimeOtp" data-uid="HTCMobile.Authorization.Users.User.ExpireTimeOtp">ExpireTimeOtp</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? ExpireTimeOtp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_Gender_" data-uid="HTCMobile.Authorization.Users.User.Gender*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_Gender" data-uid="HTCMobile.Authorization.Users.User.Gender">Gender</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Gender { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_IdentityCard_" data-uid="HTCMobile.Authorization.Users.User.IdentityCard*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_IdentityCard" data-uid="HTCMobile.Authorization.Users.User.IdentityCard">IdentityCard</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IdentityCard { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_IsCustomer_" data-uid="HTCMobile.Authorization.Users.User.IsCustomer*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_IsCustomer" data-uid="HTCMobile.Authorization.Users.User.IsCustomer">IsCustomer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCustomer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_IsNewsfeed_" data-uid="HTCMobile.Authorization.Users.User.IsNewsfeed*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_IsNewsfeed" data-uid="HTCMobile.Authorization.Users.User.IsNewsfeed">IsNewsfeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNewsfeed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_IsNotification_" data-uid="HTCMobile.Authorization.Users.User.IsNotification*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_IsNotification" data-uid="HTCMobile.Authorization.Users.User.IsNotification">IsNotification</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNotification { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_Name_" data-uid="HTCMobile.Authorization.Users.User.Name*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_Name" data-uid="HTCMobile.Authorization.Users.User.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Authorization.Users.AbpUserBase.Name</span></div>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_Position_" data-uid="HTCMobile.Authorization.Users.User.Position*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_Position" data-uid="HTCMobile.Authorization.Users.User.Position">Position</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Position { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_Surname_" data-uid="HTCMobile.Authorization.Users.User.Surname*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_Surname" data-uid="HTCMobile.Authorization.Users.User.Surname">Surname</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Surname { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Abp.Authorization.Users.AbpUserBase.Surname</span></div>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_TimeZone_" data-uid="HTCMobile.Authorization.Users.User.TimeZone*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_TimeZone" data-uid="HTCMobile.Authorization.Users.User.TimeZone">TimeZone</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TimeZone { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_Token_" data-uid="HTCMobile.Authorization.Users.User.Token*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_Token" data-uid="HTCMobile.Authorization.Users.User.Token">Token</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Token { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_CreateRandomPassword_" data-uid="HTCMobile.Authorization.Users.User.CreateRandomPassword*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_CreateRandomPassword" data-uid="HTCMobile.Authorization.Users.User.CreateRandomPassword">CreateRandomPassword()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CreateRandomPassword()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_Authorization_Users_User_CreateTenantAdminUser_" data-uid="HTCMobile.Authorization.Users.User.CreateTenantAdminUser*"></a>
+  <h4 id="HTCMobile_Authorization_Users_User_CreateTenantAdminUser_System_Int32_System_String_" data-uid="HTCMobile.Authorization.Users.User.CreateTenantAdminUser(System.Int32,System.String)">CreateTenantAdminUser(Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static User CreateTenantAdminUser(int tenantId, string emailAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tenantId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Authorization.Users.User.html">User</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Abp.Domain.Entities.IEntity&lt;TPrimaryKey&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.IMayHaveTenant</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.IPassivable</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IFullAudited&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IAudited&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.ICreationAudited&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IModificationAudited&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IFullAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.ICreationAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IHasCreationTime</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IModificationAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IHasModificationTime</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IDeletionAudited&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IDeletionAudited</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.Auditing.IHasDeletionTime</span>
+  </div>
+  <div>
+      <span class="xref">Abp.Domain.Entities.ISoftDelete</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

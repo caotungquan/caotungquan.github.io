@@ -1,0 +1,590 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IGuidebookAppService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IGuidebookAppService
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTCMobile.GuideBooks.IGuidebookAppService">
+  
+  
+  <h1 id="HTCMobile_GuideBooks_IGuidebookAppService" data-uid="HTCMobile.GuideBooks.IGuidebookAppService" class="text-break">Interface IGuidebookAppService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTCMobile.GuideBooks.html">HTCMobile.GuideBooks</a></h6>
+  <h6><strong>Assembly</strong>: HTCMobile.Application.dll</h6>
+  <h5 id="HTCMobile_GuideBooks_IGuidebookAppService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IGuidebookAppService : IApplicationService, ITransientDependency</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTCMobile_GuideBooks_IGuidebookAppService_CMSGuidebookContentCreateUpdate_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.CMSGuidebookContentCreateUpdate*"></a>
+  <h4 id="HTCMobile_GuideBooks_IGuidebookAppService_CMSGuidebookContentCreateUpdate_HTCMobile_GuideBooks_Dto_CMSGuideBookContentInputDto_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.CMSGuidebookContentCreateUpdate(HTCMobile.GuideBooks.Dto.CMSGuideBookContentInputDto)">CMSGuidebookContentCreateUpdate(CMSGuideBookContentInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;CMSResponseGuidebookContentDto&gt;&gt; CMSGuidebookContentCreateUpdate(CMSGuideBookContentInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GuideBooks.Dto.CMSGuideBookContentInputDto.html">CMSGuideBookContentInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.CMSResponseGuidebookContentDto.html">CMSResponseGuidebookContentDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_IGuidebookAppService_CMSGuidebookContentDelete_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.CMSGuidebookContentDelete*"></a>
+  <h4 id="HTCMobile_GuideBooks_IGuidebookAppService_CMSGuidebookContentDelete_Abp_Application_Services_Dto_EntityDto_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.CMSGuidebookContentDelete(Abp.Application.Services.Dto.EntityDto)">CMSGuidebookContentDelete(EntityDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&gt; CMSGuidebookContentDelete(EntityDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel.html">ResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_IGuidebookAppService_CMSGuidebookContentList_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.CMSGuidebookContentList*"></a>
+  <h4 id="HTCMobile_GuideBooks_IGuidebookAppService_CMSGuidebookContentList_Abp_Application_Services_Dto_EntityDto_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.CMSGuidebookContentList(Abp.Application.Services.Dto.EntityDto)">CMSGuidebookContentList(EntityDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;List&lt;CMSResponseGuidebookContentDto&gt;&gt;&gt; CMSGuidebookContentList(EntityDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.CMSResponseGuidebookContentDto.html">CMSResponseGuidebookContentDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_IGuidebookAppService_CMSSortData_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.CMSSortData*"></a>
+  <h4 id="HTCMobile_GuideBooks_IGuidebookAppService_CMSSortData_HTCMobile_GuideBooks_Dto_CMSChangeOrderNumberInputDto_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.CMSSortData(HTCMobile.GuideBooks.Dto.CMSChangeOrderNumberInputDto)">CMSSortData(CMSChangeOrderNumberInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;string&gt;&gt; CMSSortData(CMSChangeOrderNumberInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GuideBooks.Dto.CMSChangeOrderNumberInputDto.html">CMSChangeOrderNumberInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_IGuidebookAppService_CreateOrUpdateAsync_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.CreateOrUpdateAsync*"></a>
+  <h4 id="HTCMobile_GuideBooks_IGuidebookAppService_CreateOrUpdateAsync_HTCMobile_GuideBooks_Dto_CmsGuideBookInputDto_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.CreateOrUpdateAsync(HTCMobile.GuideBooks.Dto.CmsGuideBookInputDto)">CreateOrUpdateAsync(CmsGuideBookInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;GuideBookDetailDto&gt;&gt; CreateOrUpdateAsync(CmsGuideBookInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GuideBooks.Dto.CmsGuideBookInputDto.html">CmsGuideBookInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.GuideBookDetailDto.html">GuideBookDetailDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_IGuidebookAppService_CreateUpdateGuideBook_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.CreateUpdateGuideBook*"></a>
+  <h4 id="HTCMobile_GuideBooks_IGuidebookAppService_CreateUpdateGuideBook_HTCMobile_GuideBooks_Dto_CMSCreateGuidebookInputDto_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.CreateUpdateGuideBook(HTCMobile.GuideBooks.Dto.CMSCreateGuidebookInputDto)">CreateUpdateGuideBook(CMSCreateGuidebookInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;GuideBookDetailDto&gt;&gt; CreateUpdateGuideBook(CMSCreateGuidebookInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GuideBooks.Dto.CMSCreateGuidebookInputDto.html">CMSCreateGuidebookInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.GuideBookDetailDto.html">GuideBookDetailDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_IGuidebookAppService_Delete_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.Delete*"></a>
+  <h4 id="HTCMobile_GuideBooks_IGuidebookAppService_Delete_System_Collections_Generic_List_System_Int64__" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.Delete(System.Collections.Generic.List{System.Int64})">Delete(List&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&gt; Delete(List&lt;long&gt; ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel.html">ResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_IGuidebookAppService_GetAll_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.GetAll*"></a>
+  <h4 id="HTCMobile_GuideBooks_IGuidebookAppService_GetAll_HTCMobile_GuideBooks_Dto_CMSGetGuideBookInput_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.GetAll(HTCMobile.GuideBooks.Dto.CMSGetGuideBookInput)">GetAll(CMSGetGuideBookInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseCMSModel&lt;List&lt;GuideBookDto&gt;&gt;&gt; GetAll(CMSGetGuideBookInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.GuideBooks.Dto.CMSGetGuideBookInput.html">CMSGetGuideBookInput</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseCMSModel-1.html">ResponseCMSModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.GuideBookDto.html">GuideBookDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_IGuidebookAppService_GetDetail_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.GetDetail*"></a>
+  <h4 id="HTCMobile_GuideBooks_IGuidebookAppService_GetDetail_Abp_Application_Services_Dto_EntityDto_System_Int64__" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.GetDetail(Abp.Application.Services.Dto.EntityDto{System.Int64})">GetDetail(EntityDto&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;GuideBookDetailDto&gt;&gt; GetDetail(EntityDto&lt;long&gt; input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.GuideBookDetailDto.html">GuideBookDetailDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_IGuidebookAppService_MobileGuidebookContentList_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.MobileGuidebookContentList*"></a>
+  <h4 id="HTCMobile_GuideBooks_IGuidebookAppService_MobileGuidebookContentList_Abp_Application_Services_Dto_EntityDto_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.MobileGuidebookContentList(Abp.Application.Services.Dto.EntityDto)">MobileGuidebookContentList(EntityDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&lt;List&lt;CMSResponseGuidebookContentDto&gt;&gt;&gt; MobileGuidebookContentList(EntityDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Abp.Application.Services.Dto.EntityDto</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel-1.html">ResponseModel</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="HTCMobile.GuideBooks.Dto.CMSResponseGuidebookContentDto.html">CMSResponseGuidebookContentDto</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTCMobile_GuideBooks_IGuidebookAppService_Order_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.Order*"></a>
+  <h4 id="HTCMobile_GuideBooks_IGuidebookAppService_Order_HTCMobile_Customers_Dto_GuideBookOrderInputDto_" data-uid="HTCMobile.GuideBooks.IGuidebookAppService.Order(HTCMobile.Customers.Dto.GuideBookOrderInputDto)">Order(GuideBookOrderInputDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseModel&gt; Order(GuideBookOrderInputDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTCMobile.Customers.Dto.GuideBookOrderInputDto.html">GuideBookOrderInputDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="HTCMobile.ResponseModel.html">ResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_GetCacheKey_System_Object_">Utilities.GetCacheKey(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="HTCMobile.Utilities.html#HTCMobile_Utilities_SetStatus__1_System_Object_System_Boolean_System_String_">Utilities.SetStatus&lt;T&gt;(Object, Boolean, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
